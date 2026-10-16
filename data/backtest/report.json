@@ -1,0 +1,3104 @@
+{
+ "generated_at": "2026-10-16T15:59:02.549Z",
+ "months": 24,
+ "markets": {
+  "off": {
+   "fit": {
+    "k": 0.75,
+    "sigmaFloor": 0,
+    "newModelScale": 0.5,
+    "trainBrier": 0.21993033333333323,
+    "testBrier": 0.16728274999999995,
+    "testBrierDefault": 0.19989258333333337,
+    "trainMonths": 12,
+    "testMonths": 12
+   },
+   "rows": [
+    {
+     "month": "2024-10",
+     "h": 15,
+     "asOf": "2024-10-15",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.7435,
+      "Google": 0.086,
+      "Mistral": 0.034,
+      "NexusFlow": 0.03,
+      "Nvidia": 0.024,
+      "SpaceXAI": 0.0235,
+      "Meta": 0.0195,
+      "01 AI": 0.0175,
+      "Z.ai": 0.011,
+      "Alibaba": 0.006,
+      "Anthropic": 0.005
+     },
+     "brier": 0.07724099999999995,
+     "logLoss": 0.2963865130819272,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-10",
+     "h": 7,
+     "asOf": "2024-10-23",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8785,
+      "Google": 0.0485,
+      "Mistral": 0.0155,
+      "NexusFlow": 0.0125,
+      "SpaceXAI": 0.0115,
+      "Z.ai": 0.0115,
+      "Meta": 0.0095,
+      "Alibaba": 0.004,
+      "Nvidia": 0.004,
+      "01 AI": 0.003,
+      "Anthropic": 0.0015
+     },
+     "brier": 0.017909000000000008,
+     "logLoss": 0.12953937135498522,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-10",
+     "h": 3,
+     "asOf": "2024-10-23",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.954,
+      "Google": 0.018,
+      "Z.ai": 0.006,
+      "NexusFlow": 0.005,
+      "Meta": 0.005,
+      "SpaceXAI": 0.005,
+      "Mistral": 0.0035,
+      "01 AI": 0.001,
+      "Alibaba": 0.001,
+      "Nvidia": 0.001,
+      "Anthropic": 0.0005
+     },
+     "brier": 0.0025665000000000037,
+     "logLoss": 0.04709160753385057,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-10",
+     "h": 1,
+     "asOf": "2024-10-28",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-11",
+     "h": 15,
+     "asOf": "2024-11-13",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.7485,
+      "Google": 0.0915,
+      "Anthropic": 0.031,
+      "SpaceXAI": 0.0265,
+      "Mistral": 0.0235,
+      "NexusFlow": 0.023,
+      "Meta": 0.02,
+      "Z.ai": 0.016,
+      "01 AI": 0.011,
+      "Alibaba": 0.0065,
+      "Nvidia": 0.0025
+     },
+     "brier": 0.07519449999999997,
+     "logLoss": 0.2896840751224539,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-11",
+     "h": 7,
+     "asOf": "2024-11-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8965,
+      "Google": 0.0355,
+      "SpaceXAI": 0.014,
+      "Mistral": 0.0125,
+      "Anthropic": 0.0095,
+      "Meta": 0.009,
+      "Z.ai": 0.008,
+      "NexusFlow": 0.0065,
+      "01 AI": 0.005,
+      "Nvidia": 0.003,
+      "Alibaba": 0.0005
+     },
+     "brier": 0.012636500000000009,
+     "logLoss": 0.10925698593694952,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-11",
+     "h": 3,
+     "asOf": "2024-11-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.968,
+      "Google": 0.012,
+      "SpaceXAI": 0.005,
+      "Mistral": 0.004,
+      "Z.ai": 0.0025,
+      "Meta": 0.0025,
+      "Anthropic": 0.002,
+      "Alibaba": 0.0015,
+      "Nvidia": 0.001,
+      "01 AI": 0.001,
+      "NexusFlow": 0.0005
+     },
+     "brier": 0.001230000000000002,
+     "logLoss": 0.03252319170556006,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-11",
+     "h": 1,
+     "asOf": "2024-11-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-12",
+     "h": 15,
+     "asOf": "2024-12-15",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8075,
+      "Google": 0.071,
+      "Mistral": 0.024,
+      "Anthropic": 0.0175,
+      "SpaceXAI": 0.0155,
+      "Z.ai": 0.015,
+      "Meta": 0.015,
+      "01 AI": 0.0115,
+      "NexusFlow": 0.011,
+      "Alibaba": 0.006,
+      "Nvidia": 0.006
+     },
+     "brier": 0.043995000000000006,
+     "logLoss": 0.21381222388532545,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-12",
+     "h": 7,
+     "asOf": "2024-12-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.9025,
+      "Google": 0.0205,
+      "Mistral": 0.0145,
+      "SpaceXAI": 0.0115,
+      "Anthropic": 0.011,
+      "Alibaba": 0.0075,
+      "NexusFlow": 0.0075,
+      "DeepSeek": 0.0065,
+      "Meta": 0.0065,
+      "Z.ai": 0.006,
+      "01 AI": 0.003,
+      "Nvidia": 0.003
+     },
+     "brier": 0.01064100000000001,
+     "logLoss": 0.1025865887751011,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-12",
+     "h": 3,
+     "asOf": "2024-12-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.97,
+      "Google": 0.0125,
+      "SpaceXAI": 0.005,
+      "Anthropic": 0.003,
+      "NexusFlow": 0.002,
+      "Alibaba": 0.002,
+      "01 AI": 0.0015,
+      "DeepSeek": 0.001,
+      "Mistral": 0.001,
+      "Meta": 0.001,
+      "Z.ai": 0.001
+     },
+     "brier": 0.0011045000000000015,
+     "logLoss": 0.030459207484708574,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2024-12",
+     "h": 1,
+     "asOf": "2024-12-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-01",
+     "h": 15,
+     "asOf": "2025-01-15",
+     "actual": "DeepSeek",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8445,
+      "Google": 0.0415,
+      "DeepSeek": 0.0275,
+      "Mistral": 0.024,
+      "StepFun": 0.0085,
+      "SpaceXAI": 0.0085,
+      "Alibaba": 0.0085,
+      "Anthropic": 0.008,
+      "Meta": 0.0075,
+      "NexusFlow": 0.0075,
+      "Z.ai": 0.007,
+      "01 AI": 0.005,
+      "Nvidia": 0.002
+     },
+     "brier": 1.6617060000000003,
+     "logLoss": 3.5935692743096115,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-01",
+     "h": 7,
+     "asOf": "2025-01-22",
+     "actual": "DeepSeek",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.9295,
+      "Google": 0.024,
+      "DeepSeek": 0.0165,
+      "Mistral": 0.008,
+      "Alibaba": 0.0045,
+      "Meta": 0.0045,
+      "Anthropic": 0.003,
+      "StepFun": 0.0025,
+      "01 AI": 0.0025,
+      "SpaceXAI": 0.002,
+      "NexusFlow": 0.0015,
+      "Nvidia": 0.0015
+     },
+     "brier": 1.831953,
+     "logLoss": 4.104394898075602,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-01",
+     "h": 3,
+     "asOf": "2025-01-24",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 0.961,
+      "OpenAI": 0.029,
+      "Google": 0.0025,
+      "Mistral": 0.002,
+      "Anthropic": 0.002,
+      "NexusFlow": 0.0015,
+      "Alibaba": 0.001,
+      "StepFun": 0.0005,
+      "Z.ai": 0.0005
+     },
+     "brier": 0.0023800000000000028,
+     "logLoss": 0.0397808700118446,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-01",
+     "h": 1,
+     "asOf": "2025-01-28",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-02",
+     "h": 15,
+     "asOf": "2025-02-11",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 0.62,
+      "OpenAI": 0.1255,
+      "Google": 0.102,
+      "Meta": 0.054,
+      "Alibaba": 0.034,
+      "Nvidia": 0.021,
+      "Mistral": 0.0145,
+      "Z.ai": 0.0125,
+      "StepFun": 0.0045,
+      "Anthropic": 0.004,
+      "SpaceXAI": 0.0035,
+      "01 AI": 0.0025,
+      "NexusFlow": 0.002
+     },
+     "brier": 0.17549249999999997,
+     "logLoss": 0.4780358009429998,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-02",
+     "h": 7,
+     "asOf": "2025-02-17",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 0.8185,
+      "Google": 0.0625,
+      "OpenAI": 0.05,
+      "Meta": 0.0195,
+      "Alibaba": 0.0185,
+      "Mistral": 0.01,
+      "Nvidia": 0.008,
+      "Z.ai": 0.005,
+      "StepFun": 0.0035,
+      "Anthropic": 0.0025,
+      "NexusFlow": 0.001,
+      "01 AI": 0.0005,
+      "SpaceXAI": 0.0005
+     },
+     "brier": 0.04028,
+     "logLoss": 0.20028188217094745,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-02",
+     "h": 3,
+     "asOf": "2025-02-21",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 0.929,
+      "OpenAI": 0.022,
+      "Google": 0.015,
+      "Alibaba": 0.01,
+      "NexusFlow": 0.0075,
+      "Meta": 0.0075,
+      "Z.ai": 0.005,
+      "Nvidia": 0.002,
+      "Mistral": 0.001,
+      "StepFun": 0.0005,
+      "01 AI": 0.0005
+     },
+     "brier": 0.005992999999999994,
+     "logLoss": 0.07364654016829848,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-02",
+     "h": 1,
+     "asOf": "2025-02-21",
+     "actual": "DeepSeek",
+     "leader": "DeepSeek",
+     "probs": {
+      "DeepSeek": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-03",
+     "h": 15,
+     "asOf": "2025-03-15",
+     "actual": "OpenAI",
+     "leader": "SpaceXAI",
+     "probs": {
+      "SpaceXAI": 0.6575,
+      "OpenAI": 0.1415,
+      "Google": 0.047,
+      "Meta": 0.0435,
+      "NexusFlow": 0.0305,
+      "DeepSeek": 0.018,
+      "Mistral": 0.0165,
+      "Nvidia": 0.0155,
+      "01 AI": 0.0145,
+      "Alibaba": 0.01,
+      "Z.ai": 0.0025,
+      "Tencent": 0.001,
+      "StepFun": 0.001,
+      "Anthropic": 0.001
+     },
+     "brier": 1.1755159999999998,
+     "logLoss": 1.9554555618988447,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-03",
+     "h": 7,
+     "asOf": "2025-03-20",
+     "actual": "OpenAI",
+     "leader": "SpaceXAI",
+     "probs": {
+      "SpaceXAI": 0.834,
+      "OpenAI": 0.0735,
+      "Meta": 0.0175,
+      "NexusFlow": 0.0155,
+      "Google": 0.0155,
+      "DeepSeek": 0.01,
+      "Mistral": 0.0095,
+      "Nvidia": 0.0065,
+      "01 AI": 0.0065,
+      "Alibaba": 0.005,
+      "Z.ai": 0.0025,
+      "Anthropic": 0.0025,
+      "StepFun": 0.0015
+     },
+     "brier": 1.5550594999999998,
+     "logLoss": 2.610469872763346,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-03",
+     "h": 3,
+     "asOf": "2025-03-26",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.957,
+      "SpaceXAI": 0.0095,
+      "Meta": 0.009,
+      "NexusFlow": 0.0045,
+      "Google": 0.004,
+      "01 AI": 0.004,
+      "Mistral": 0.0035,
+      "DeepSeek": 0.0025,
+      "Alibaba": 0.0025,
+      "Nvidia": 0.002,
+      "Anthropic": 0.001,
+      "Z.ai": 0.0005
+     },
+     "brier": 0.0021025000000000037,
+     "logLoss": 0.04395188752918283,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-03",
+     "h": 1,
+     "asOf": "2025-03-26",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-04",
+     "h": 15,
+     "asOf": "2025-04-09",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.7245,
+      "SpaceXAI": 0.051,
+      "Meta": 0.0375,
+      "Anthropic": 0.0375,
+      "Google": 0.03,
+      "NexusFlow": 0.0255,
+      "DeepSeek": 0.0255,
+      "Nvidia": 0.019,
+      "Mistral": 0.0185,
+      "01 AI": 0.017,
+      "Alibaba": 0.01,
+      "Z.ai": 0.003,
+      "StepFun": 0.001
+     },
+     "brier": 0.0846165,
+     "logLoss": 0.32227351722139996,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-04",
+     "h": 7,
+     "asOf": "2025-04-16",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8625,
+      "SpaceXAI": 0.037,
+      "Meta": 0.018,
+      "Anthropic": 0.0155,
+      "Google": 0.0135,
+      "NexusFlow": 0.012,
+      "DeepSeek": 0.0095,
+      "Nvidia": 0.008,
+      "01 AI": 0.008,
+      "Mistral": 0.0075,
+      "Alibaba": 0.0075,
+      "Z.ai": 0.001
+     },
+     "brier": 0.021497499999999992,
+     "logLoss": 0.1479201300766222,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-04",
+     "h": 3,
+     "asOf": "2025-04-23",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.9595,
+      "Meta": 0.0085,
+      "Anthropic": 0.005,
+      "SpaceXAI": 0.005,
+      "StepFun": 0.0045,
+      "Google": 0.004,
+      "DeepSeek": 0.0035,
+      "NexusFlow": 0.0025,
+      "Mistral": 0.0025,
+      "01 AI": 0.0025,
+      "Alibaba": 0.001,
+      "Nvidia": 0.001,
+      "Z.ai": 0.0005
+     },
+     "brier": 0.0018319999999999986,
+     "logLoss": 0.04134296353438243,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-04",
+     "h": 1,
+     "asOf": "2025-04-23",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-05",
+     "h": 15,
+     "asOf": "2025-05-11",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.7315,
+      "Meta": 0.043,
+      "Z.ai": 0.0355,
+      "Anthropic": 0.034,
+      "SpaceXAI": 0.027,
+      "01 AI": 0.0225,
+      "NexusFlow": 0.0225,
+      "DeepSeek": 0.0185,
+      "Google": 0.0175,
+      "Mistral": 0.014,
+      "Nvidia": 0.014,
+      "StepFun": 0.0135,
+      "Alibaba": 0.004,
+      "Tencent": 0.0025
+     },
+     "brier": 0.07934399999999998,
+     "logLoss": 0.312658058521958,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-05",
+     "h": 7,
+     "asOf": "2025-05-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8635,
+      "Z.ai": 0.0215,
+      "SpaceXAI": 0.02,
+      "Anthropic": 0.019,
+      "Meta": 0.0155,
+      "Google": 0.013,
+      "NexusFlow": 0.012,
+      "StepFun": 0.0115,
+      "Nvidia": 0.007,
+      "DeepSeek": 0.0065,
+      "01 AI": 0.0045,
+      "Alibaba": 0.004,
+      "Mistral": 0.001,
+      "Tencent": 0.001
+     },
+     "brier": 0.02067049999999999,
+     "logLoss": 0.1467613813954037,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-05",
+     "h": 3,
+     "asOf": "2025-05-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.957,
+      "Z.ai": 0.0055,
+      "Anthropic": 0.0055,
+      "Google": 0.005,
+      "StepFun": 0.0045,
+      "DeepSeek": 0.0045,
+      "SpaceXAI": 0.004,
+      "01 AI": 0.0035,
+      "Meta": 0.003,
+      "Nvidia": 0.003,
+      "NexusFlow": 0.0015,
+      "Tencent": 0.001,
+      "Alibaba": 0.001,
+      "Mistral": 0.001
+     },
+     "brier": 0.002026500000000003,
+     "logLoss": 0.04395188752918283,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-05",
+     "h": 1,
+     "asOf": "2025-05-22",
+     "actual": "OpenAI",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-06",
+     "h": 15,
+     "asOf": "2025-06-11",
+     "actual": "Google",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.7735,
+      "Meta": 0.042,
+      "Z.ai": 0.0385,
+      "SpaceXAI": 0.0325,
+      "NexusFlow": 0.0235,
+      "DeepSeek": 0.0155,
+      "Nvidia": 0.0145,
+      "StepFun": 0.0145,
+      "01 AI": 0.014,
+      "Anthropic": 0.01,
+      "Google": 0.009,
+      "Tencent": 0.0055,
+      "Alibaba": 0.0045,
+      "Mistral": 0.0025
+     },
+     "brier": 1.5862514999999997,
+     "logLoss": 4.710530701645918,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-06",
+     "h": 7,
+     "asOf": "2025-06-18",
+     "actual": "Google",
+     "leader": "OpenAI",
+     "probs": {
+      "OpenAI": 0.8555,
+      "DeepSeek": 0.036,
+      "Z.ai": 0.024,
+      "SpaceXAI": 0.0205,
+      "Meta": 0.0155,
+      "NexusFlow": 0.0135,
+      "Alibaba": 0.008,
+      "StepFun": 0.0065,
+      "01 AI": 0.006,
+      "Google": 0.006,
+      "Anthropic": 0.005,
+      "Mistral": 0.0025,
+      "Tencent": 0.001
+     },
+     "brier": 1.7228055,
+     "logLoss": 5.115995809754082,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2025-06",
+     "h": 3,
+     "asOf": "2025-06-24",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.9625,
+      "OpenAI": 0.0115,
+      "Z.ai": 0.0065,
+      "Meta": 0.0065,
+      "NexusFlow": 0.004,
+      "DeepSeek": 0.0015,
+      "StepFun": 0.0015,
+      "01 AI": 0.0015,
+      "SpaceXAI": 0.0015,
+      "Alibaba": 0.001,
+      "Anthropic": 0.001,
+      "Mistral": 0.0005,
+      "Tencent": 0.0005
+     },
+     "brier": 0.0016504999999999985,
+     "logLoss": 0.03822121282019774,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-06",
+     "h": 1,
+     "asOf": "2025-06-24",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-07",
+     "h": 15,
+     "asOf": "2025-07-15",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.7465,
+      "OpenAI": 0.061,
+      "Meta": 0.043,
+      "SpaceXAI": 0.031,
+      "Z.ai": 0.0305,
+      "NexusFlow": 0.0295,
+      "DeepSeek": 0.0205,
+      "01 AI": 0.016,
+      "StepFun": 0.0145,
+      "Alibaba": 0.005,
+      "Mistral": 0.0015,
+      "Anthropic": 0.001
+     },
+     "brier": 0.07350849999999998,
+     "logLoss": 0.2923596620028919,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-07",
+     "h": 7,
+     "asOf": "2025-07-17",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.8745,
+      "OpenAI": 0.029,
+      "SpaceXAI": 0.021,
+      "Meta": 0.0205,
+      "NexusFlow": 0.0155,
+      "Z.ai": 0.01,
+      "DeepSeek": 0.0095,
+      "StepFun": 0.007,
+      "01 AI": 0.0065,
+      "Alibaba": 0.0045,
+      "Mistral": 0.001,
+      "Tencent": 0.0005,
+      "Anthropic": 0.0005
+     },
+     "brier": 0.01799599999999999,
+     "logLoss": 0.13410298452348024,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-07",
+     "h": 3,
+     "asOf": "2025-07-25",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.964,
+      "OpenAI": 0.0085,
+      "SpaceXAI": 0.0055,
+      "Meta": 0.004,
+      "Z.ai": 0.004,
+      "NexusFlow": 0.004,
+      "Alibaba": 0.003,
+      "StepFun": 0.0025,
+      "01 AI": 0.002,
+      "DeepSeek": 0.002,
+      "Moonshot": 0.0005
+     },
+     "brier": 0.0014700000000000021,
+     "logLoss": 0.03666398437159147,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-07",
+     "h": 1,
+     "asOf": "2025-07-28",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-08",
+     "h": 15,
+     "asOf": "2025-08-14",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.692,
+      "OpenAI": 0.093,
+      "Alibaba": 0.0325,
+      "SpaceXAI": 0.0305,
+      "DeepSeek": 0.03,
+      "Meta": 0.0285,
+      "Anthropic": 0.022,
+      "Z.ai": 0.021,
+      "NexusFlow": 0.019,
+      "StepFun": 0.016,
+      "01 AI": 0.015,
+      "Tencent": 0.0005
+     },
+     "brier": 0.10897900000000002,
+     "logLoss": 0.36816932336446756,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-08",
+     "h": 7,
+     "asOf": "2025-08-21",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.8645,
+      "OpenAI": 0.033,
+      "SpaceXAI": 0.015,
+      "Meta": 0.013,
+      "DeepSeek": 0.013,
+      "Alibaba": 0.0125,
+      "StepFun": 0.0115,
+      "Anthropic": 0.01,
+      "Z.ai": 0.009,
+      "NexusFlow": 0.007,
+      "01 AI": 0.006,
+      "Mistral": 0.0055
+     },
+     "brier": 0.020596999999999987,
+     "logLoss": 0.1456039738587918,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-08",
+     "h": 3,
+     "asOf": "2025-08-27",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.9525,
+      "OpenAI": 0.0135,
+      "Alibaba": 0.0065,
+      "DeepSeek": 0.0065,
+      "Meta": 0.005,
+      "Z.ai": 0.0045,
+      "Anthropic": 0.003,
+      "SpaceXAI": 0.0025,
+      "01 AI": 0.002,
+      "NexusFlow": 0.0015,
+      "StepFun": 0.0015,
+      "Mistral": 0.001
+     },
+     "brier": 0.0025929999999999994,
+     "logLoss": 0.04866517198128101,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-08",
+     "h": 1,
+     "asOf": "2025-08-28",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-09",
+     "h": 15,
+     "asOf": "2025-09-08",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.7155,
+      "OpenAI": 0.068,
+      "Alibaba": 0.0485,
+      "Meta": 0.0275,
+      "DeepSeek": 0.026,
+      "Z.ai": 0.0245,
+      "Anthropic": 0.0225,
+      "StepFun": 0.018,
+      "01 AI": 0.0145,
+      "SpaceXAI": 0.0125,
+      "NexusFlow": 0.0115,
+      "Mistral": 0.006,
+      "Tencent": 0.005
+     },
+     "brier": 0.09133899999999998,
+     "logLoss": 0.3347736799856314,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-09",
+     "h": 7,
+     "asOf": "2025-09-18",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.877,
+      "OpenAI": 0.0315,
+      "Alibaba": 0.0215,
+      "DeepSeek": 0.011,
+      "Anthropic": 0.0105,
+      "Z.ai": 0.0095,
+      "StepFun": 0.0095,
+      "01 AI": 0.009,
+      "SpaceXAI": 0.0065,
+      "Tencent": 0.0065,
+      "NexusFlow": 0.0055,
+      "Mistral": 0.002
+     },
+     "brier": 0.017195000000000002,
+     "logLoss": 0.13124828660995402,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-09",
+     "h": 3,
+     "asOf": "2025-09-18",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.952,
+      "OpenAI": 0.0085,
+      "Alibaba": 0.008,
+      "DeepSeek": 0.008,
+      "Anthropic": 0.005,
+      "Tencent": 0.004,
+      "Z.ai": 0.0035,
+      "01 AI": 0.0035,
+      "NexusFlow": 0.003,
+      "StepFun": 0.002,
+      "SpaceXAI": 0.001,
+      "Mistral": 0.001,
+      "Meituan": 0.0005
+     },
+     "brier": 0.0025850000000000035,
+     "logLoss": 0.04919024419077178,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-09",
+     "h": 1,
+     "asOf": "2025-09-18",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-10",
+     "h": 15,
+     "asOf": "2025-10-07",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.7185,
+      "Alibaba": 0.075,
+      "OpenAI": 0.049,
+      "Z.ai": 0.034,
+      "Anthropic": 0.0305,
+      "DeepSeek": 0.0275,
+      "Tencent": 0.016,
+      "StepFun": 0.011,
+      "01 AI": 0.0105,
+      "NexusFlow": 0.0105,
+      "SpaceXAI": 0.0095,
+      "Mistral": 0.0075,
+      "Meituan": 0.0005
+     },
+     "brier": 0.09085499999999999,
+     "logLoss": 0.3305895734630574,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-10",
+     "h": 7,
+     "asOf": "2025-10-17",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.864,
+      "Alibaba": 0.029,
+      "OpenAI": 0.028,
+      "Z.ai": 0.019,
+      "DeepSeek": 0.0145,
+      "Anthropic": 0.014,
+      "StepFun": 0.0105,
+      "Tencent": 0.008,
+      "NexusFlow": 0.0055,
+      "Mistral": 0.0035,
+      "SpaceXAI": 0.003,
+      "Meituan": 0.001
+     },
+     "brier": 0.021115000000000002,
+     "logLoss": 0.14618251017808145,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-10",
+     "h": 3,
+     "asOf": "2025-10-17",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.947,
+      "OpenAI": 0.0135,
+      "Alibaba": 0.0115,
+      "DeepSeek": 0.0075,
+      "Anthropic": 0.0065,
+      "StepFun": 0.0045,
+      "Z.ai": 0.0045,
+      "SpaceXAI": 0.002,
+      "Mistral": 0.002,
+      "NexusFlow": 0.0005,
+      "Meituan": 0.0005
+     },
+     "brier": 0.003271000000000005,
+     "logLoss": 0.054456185796058855,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-10",
+     "h": 1,
+     "asOf": "2025-10-17",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-11",
+     "h": 15,
+     "asOf": "2025-11-09",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.724,
+      "Alibaba": 0.064,
+      "OpenAI": 0.049,
+      "DeepSeek": 0.0325,
+      "Z.ai": 0.026,
+      "Anthropic": 0.0255,
+      "StepFun": 0.022,
+      "Tencent": 0.017,
+      "NexusFlow": 0.014,
+      "SpaceXAI": 0.014,
+      "Mistral": 0.0105,
+      "Meituan": 0.0015
+     },
+     "brier": 0.08633300000000001,
+     "logLoss": 0.3229638865964207,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-11",
+     "h": 7,
+     "asOf": "2025-11-20",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.8995,
+      "OpenAI": 0.0195,
+      "Alibaba": 0.018,
+      "SpaceXAI": 0.014,
+      "StepFun": 0.008,
+      "DeepSeek": 0.008,
+      "NexusFlow": 0.008,
+      "Anthropic": 0.008,
+      "Z.ai": 0.0075,
+      "Tencent": 0.0055,
+      "Mistral": 0.003,
+      "Baidu": 0.001
+     },
+     "brier": 0.011353000000000007,
+     "logLoss": 0.1059162255915493,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-11",
+     "h": 3,
+     "asOf": "2025-11-26",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.964,
+      "OpenAI": 0.0065,
+      "Anthropic": 0.0065,
+      "StepFun": 0.0055,
+      "Alibaba": 0.0045,
+      "SpaceXAI": 0.004,
+      "Tencent": 0.003,
+      "Z.ai": 0.003,
+      "Baidu": 0.001,
+      "DeepSeek": 0.001,
+      "Mistral": 0.001
+     },
+     "brier": 0.0014680000000000016,
+     "logLoss": 0.03666398437159147,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-11",
+     "h": 1,
+     "asOf": "2025-11-26",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-12",
+     "h": 15,
+     "asOf": "2025-12-15",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.775,
+      "OpenAI": 0.052,
+      "Anthropic": 0.0315,
+      "Alibaba": 0.0295,
+      "SpaceXAI": 0.023,
+      "Z.ai": 0.0205,
+      "StepFun": 0.0175,
+      "DeepSeek": 0.016,
+      "Tencent": 0.016,
+      "Baidu": 0.012,
+      "Mistral": 0.0065,
+      "Meituan": 0.0005
+     },
+     "brier": 0.05714549999999999,
+     "logLoss": 0.25489224962879004,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-12",
+     "h": 7,
+     "asOf": "2025-12-23",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.9085,
+      "OpenAI": 0.0215,
+      "Anthropic": 0.017,
+      "SpaceXAI": 0.013,
+      "Alibaba": 0.0115,
+      "StepFun": 0.0065,
+      "Z.ai": 0.006,
+      "DeepSeek": 0.006,
+      "Tencent": 0.0045,
+      "Baidu": 0.0035,
+      "Mistral": 0.002
+     },
+     "brier": 0.009575500000000004,
+     "logLoss": 0.0959603911459112,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-12",
+     "h": 3,
+     "asOf": "2025-12-23",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.96,
+      "Alibaba": 0.0095,
+      "OpenAI": 0.0075,
+      "Anthropic": 0.006,
+      "Mistral": 0.0035,
+      "Baidu": 0.003,
+      "SpaceXAI": 0.0025,
+      "DeepSeek": 0.0025,
+      "StepFun": 0.0025,
+      "Z.ai": 0.002,
+      "Tencent": 0.001
+     },
+     "brier": 0.001827500000000003,
+     "logLoss": 0.040821994520255166,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2025-12",
+     "h": 1,
+     "asOf": "2025-12-23",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-01",
+     "h": 15,
+     "asOf": "2026-01-09",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.8085,
+      "OpenAI": 0.045,
+      "SpaceXAI": 0.026,
+      "Anthropic": 0.025,
+      "Alibaba": 0.022,
+      "Tencent": 0.017,
+      "StepFun": 0.017,
+      "DeepSeek": 0.013,
+      "Z.ai": 0.0105,
+      "Baidu": 0.0095,
+      "Mistral": 0.0065
+     },
+     "brier": 0.041472,
+     "logLoss": 0.21257459996497552,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-01",
+     "h": 7,
+     "asOf": "2026-01-09",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.8975,
+      "OpenAI": 0.0215,
+      "Alibaba": 0.015,
+      "Anthropic": 0.0145,
+      "StepFun": 0.01,
+      "SpaceXAI": 0.01,
+      "Tencent": 0.008,
+      "DeepSeek": 0.008,
+      "Z.ai": 0.007,
+      "Baidu": 0.005,
+      "Mistral": 0.0035
+     },
+     "brier": 0.011818000000000006,
+     "logLoss": 0.10814215861970315,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-01",
+     "h": 3,
+     "asOf": "2026-01-27",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 0.963,
+      "OpenAI": 0.008,
+      "DeepSeek": 0.0065,
+      "Anthropic": 0.005,
+      "Alibaba": 0.0045,
+      "Baidu": 0.0045,
+      "SpaceXAI": 0.003,
+      "Tencent": 0.0025,
+      "Mistral": 0.0015,
+      "Z.ai": 0.0015
+     },
+     "brier": 0.0015605000000000026,
+     "logLoss": 0.03770186718401153,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-01",
+     "h": 1,
+     "asOf": "2026-01-29",
+     "actual": "Google",
+     "leader": "Google",
+     "probs": {
+      "Google": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-02",
+     "h": 15,
+     "asOf": "2026-02-11",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.786,
+      "Google": 0.092,
+      "DeepSeek": 0.045,
+      "Mistral": 0.0225,
+      "Tencent": 0.0115,
+      "OpenAI": 0.011,
+      "Baidu": 0.009,
+      "Alibaba": 0.0075,
+      "Z.ai": 0.006,
+      "SpaceXAI": 0.004,
+      "ByteDance": 0.0035,
+      "Moonshot": 0.002
+     },
+     "brier": 0.05724999999999999,
+     "logLoss": 0.24079848655293046,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-02",
+     "h": 7,
+     "asOf": "2026-02-20",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.8625,
+      "Google": 0.0425,
+      "DeepSeek": 0.0185,
+      "Mistral": 0.0175,
+      "SpaceXAI": 0.0155,
+      "OpenAI": 0.013,
+      "Alibaba": 0.0095,
+      "Tencent": 0.0085,
+      "Baidu": 0.0055,
+      "Z.ai": 0.004,
+      "ByteDance": 0.0015,
+      "Moonshot": 0.0015
+     },
+     "brier": 0.021983499999999982,
+     "logLoss": 0.1479201300766222,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-02",
+     "h": 3,
+     "asOf": "2026-02-24",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.955,
+      "Google": 0.018,
+      "DeepSeek": 0.0075,
+      "SpaceXAI": 0.005,
+      "OpenAI": 0.0035,
+      "Mistral": 0.0035,
+      "Baidu": 0.0025,
+      "ByteDance": 0.002,
+      "Z.ai": 0.001,
+      "Tencent": 0.001,
+      "Alibaba": 0.001
+     },
+     "brier": 0.0024680000000000045,
+     "logLoss": 0.046043938501406846,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-02",
+     "h": 1,
+     "asOf": "2026-02-26",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-03",
+     "h": 15,
+     "asOf": "2026-03-11",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.744,
+      "Google": 0.073,
+      "Mistral": 0.0395,
+      "DeepSeek": 0.0375,
+      "SpaceXAI": 0.0265,
+      "OpenAI": 0.022,
+      "Alibaba": 0.017,
+      "Baidu": 0.0115,
+      "Tencent": 0.01,
+      "Amazon": 0.006,
+      "Z.ai": 0.005,
+      "Moonshot": 0.004,
+      "ByteDance": 0.004
+     },
+     "brier": 0.07563199999999999,
+     "logLoss": 0.2957142441490452,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-03",
+     "h": 7,
+     "asOf": "2026-03-20",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.8235,
+      "Google": 0.041,
+      "OpenAI": 0.033,
+      "DeepSeek": 0.0215,
+      "Z.ai": 0.02,
+      "Mistral": 0.0185,
+      "Alibaba": 0.017,
+      "SpaceXAI": 0.0085,
+      "ByteDance": 0.005,
+      "Baidu": 0.0045,
+      "Tencent": 0.003,
+      "Moonshot": 0.0025,
+      "Amazon": 0.002
+     },
+     "brier": 0.03555249999999999,
+     "logLoss": 0.194191729364442,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-03",
+     "h": 3,
+     "asOf": "2026-03-26",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.9415,
+      "Google": 0.013,
+      "OpenAI": 0.011,
+      "DeepSeek": 0.009,
+      "Z.ai": 0.0055,
+      "Alibaba": 0.0045,
+      "Tencent": 0.004,
+      "SpaceXAI": 0.004,
+      "Mistral": 0.0035,
+      "Baidu": 0.0015,
+      "ByteDance": 0.001,
+      "Moonshot": 0.001,
+      "Amazon": 0.0005
+     },
+     "brier": 0.0038924999999999993,
+     "logLoss": 0.060280930884929945,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-03",
+     "h": 1,
+     "asOf": "2026-03-26",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-04",
+     "h": 15,
+     "asOf": "2026-04-14",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.7005,
+      "Google": 0.075,
+      "OpenAI": 0.045,
+      "Alibaba": 0.0315,
+      "Mistral": 0.029,
+      "DeepSeek": 0.025,
+      "Z.ai": 0.021,
+      "SpaceXAI": 0.0175,
+      "Tencent": 0.0145,
+      "ByteDance": 0.011,
+      "Meta": 0.0105,
+      "Baidu": 0.0095,
+      "Moonshot": 0.004,
+      "": 0.0035,
+      "Amazon": 0.0025
+     },
+     "brier": 0.10112199999999999,
+     "logLoss": 0.35596091320507534,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-04",
+     "h": 7,
+     "asOf": "2026-04-22",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.8395,
+      "Google": 0.0415,
+      "OpenAI": 0.0255,
+      "Alibaba": 0.0175,
+      "Mistral": 0.015,
+      "DeepSeek": 0.013,
+      "Z.ai": 0.011,
+      "SpaceXAI": 0.009,
+      "ByteDance": 0.008,
+      "Tencent": 0.0065,
+      "Baidu": 0.0045,
+      "Meta": 0.0035,
+      "": 0.003,
+      "Moonshot": 0.0015,
+      "Amazon": 0.001
+     },
+     "brier": 0.029185999999999993,
+     "logLoss": 0.1749488024645415,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-04",
+     "h": 3,
+     "asOf": "2026-04-23",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.9435,
+      "Google": 0.014,
+      "OpenAI": 0.01,
+      "DeepSeek": 0.0055,
+      "Z.ai": 0.005,
+      "Alibaba": 0.0045,
+      "Mistral": 0.004,
+      "ByteDance": 0.0035,
+      "SpaceXAI": 0.0025,
+      "Tencent": 0.002,
+      "Meta": 0.0015,
+      "Baidu": 0.0015,
+      "Amazon": 0.001,
+      "Moonshot": 0.001,
+      "": 0.0005
+     },
+     "brier": 0.0036089999999999994,
+     "logLoss": 0.05815891417353214,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-04",
+     "h": 1,
+     "asOf": "2026-04-28",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-05",
+     "h": 15,
+     "asOf": "2026-05-14",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.6905,
+      "Google": 0.067,
+      "Baidu": 0.034,
+      "Alibaba": 0.032,
+      "Mistral": 0.0305,
+      "OpenAI": 0.029,
+      "DeepSeek": 0.025,
+      "Z.ai": 0.0225,
+      "Amazon": 0.0155,
+      "SpaceXAI": 0.015,
+      "ByteDance": 0.0145,
+      "": 0.012,
+      "Meta": 0.0085,
+      "Moonshot": 0.0035,
+      "Xiaomi": 0.0005
+     },
+     "brier": 0.10626599999999999,
+     "logLoss": 0.37033930613279026,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-05",
+     "h": 7,
+     "asOf": "2026-05-19",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.8255,
+      "Google": 0.04,
+      "SpaceXAI": 0.022,
+      "Alibaba": 0.022,
+      "OpenAI": 0.0155,
+      "Baidu": 0.015,
+      "Z.ai": 0.0115,
+      "Mistral": 0.011,
+      "Amazon": 0.011,
+      "DeepSeek": 0.009,
+      "ByteDance": 0.007,
+      "": 0.006,
+      "Moonshot": 0.0025,
+      "Xiaomi": 0.001,
+      "Meta": 0.001
+     },
+     "brier": 0.034032,
+     "logLoss": 0.19176601562195433,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-05",
+     "h": 3,
+     "asOf": "2026-05-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.932,
+      "Google": 0.016,
+      "SpaceXAI": 0.01,
+      "OpenAI": 0.007,
+      "Mistral": 0.0065,
+      "Alibaba": 0.0055,
+      "Baidu": 0.005,
+      "Z.ai": 0.0045,
+      "DeepSeek": 0.0035,
+      "ByteDance": 0.0035,
+      "Amazon": 0.003,
+      "": 0.002,
+      "Meta": 0.001,
+      "Moonshot": 0.0005
+     },
+     "brier": 0.005185499999999994,
+     "logLoss": 0.07042246429654582,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-05",
+     "h": 1,
+     "asOf": "2026-05-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-06",
+     "h": 15,
+     "asOf": "2026-06-10",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.6685,
+      "Google": 0.06,
+      "SpaceXAI": 0.053,
+      "Alibaba": 0.0355,
+      "Mistral": 0.0305,
+      "DeepSeek": 0.0255,
+      "OpenAI": 0.02,
+      "Z.ai": 0.02,
+      "Baidu": 0.0195,
+      "Moonshot": 0.019,
+      "": 0.0155,
+      "Amazon": 0.0135,
+      "ByteDance": 0.012,
+      "Meta": 0.006,
+      "Xiaomi": 0.0015
+     },
+     "brier": 0.121288,
+     "logLoss": 0.4027188824401392,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-06",
+     "h": 7,
+     "asOf": "2026-06-16",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.843,
+      "SpaceXAI": 0.027,
+      "Alibaba": 0.024,
+      "Google": 0.022,
+      "OpenAI": 0.015,
+      "Z.ai": 0.0135,
+      "DeepSeek": 0.0125,
+      "Mistral": 0.0105,
+      "Moonshot": 0.0095,
+      "ByteDance": 0.0065,
+      "Baidu": 0.0065,
+      "": 0.0045,
+      "Amazon": 0.003,
+      "Meta": 0.002,
+      "Xiaomi": 0.0005
+     },
+     "brier": 0.027320000000000004,
+     "logLoss": 0.17078832098028163,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-06",
+     "h": 3,
+     "asOf": "2026-06-25",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.9545,
+      "Google": 0.007,
+      "SpaceXAI": 0.007,
+      "Moonshot": 0.0055,
+      "Baidu": 0.005,
+      "Alibaba": 0.005,
+      "": 0.0035,
+      "Mistral": 0.0035,
+      "OpenAI": 0.0025,
+      "Z.ai": 0.0025,
+      "DeepSeek": 0.0015,
+      "ByteDance": 0.001,
+      "Amazon": 0.001,
+      "Meta": 0.0005
+     },
+     "brier": 0.002289999999999999,
+     "logLoss": 0.04656763581633473,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-06",
+     "h": 1,
+     "asOf": "2026-06-25",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-07",
+     "h": 15,
+     "asOf": "2026-07-14",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.6935,
+      "SpaceXAI": 0.054,
+      "Google": 0.0485,
+      "Alibaba": 0.035,
+      "Mistral": 0.025,
+      "Baidu": 0.0215,
+      "OpenAI": 0.0195,
+      "": 0.0185,
+      "Moonshot": 0.0175,
+      "Amazon": 0.016,
+      "ByteDance": 0.014,
+      "DeepSeek": 0.0135,
+      "Z.ai": 0.013,
+      "Meta": 0.0095,
+      "Xiaomi": 0.001
+     },
+     "brier": 0.103446,
+     "logLoss": 0.3660040392272508,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-07",
+     "h": 7,
+     "asOf": "2026-07-21",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.856,
+      "Google": 0.03,
+      "SpaceXAI": 0.0225,
+      "Mistral": 0.0155,
+      "Alibaba": 0.0125,
+      "OpenAI": 0.011,
+      "Amazon": 0.01,
+      "Meta": 0.01,
+      "Baidu": 0.008,
+      "Z.ai": 0.007,
+      "": 0.0055,
+      "DeepSeek": 0.0055,
+      "ByteDance": 0.005,
+      "Moonshot": 0.0015
+     },
+     "brier": 0.023060500000000005,
+     "logLoss": 0.15548490284039498,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-07",
+     "h": 3,
+     "asOf": "2026-07-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.952,
+      "Z.ai": 0.0105,
+      "SpaceXAI": 0.008,
+      "Google": 0.0065,
+      "Mistral": 0.005,
+      "Alibaba": 0.0045,
+      "DeepSeek": 0.004,
+      "OpenAI": 0.003,
+      "Amazon": 0.003,
+      "Meta": 0.0015,
+      "Baidu": 0.001,
+      "": 0.0005,
+      "ByteDance": 0.0005
+     },
+     "brier": 0.0026035000000000034,
+     "logLoss": 0.04919024419077178,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-07",
+     "h": 1,
+     "asOf": "2026-07-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-08",
+     "h": 15,
+     "asOf": "2026-08-12",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.683,
+      "Baidu": 0.0535,
+      "Google": 0.0435,
+      "SpaceXAI": 0.0425,
+      "Alibaba": 0.0385,
+      "Z.ai": 0.025,
+      "Mistral": 0.0205,
+      "Meta": 0.017,
+      "ByteDance": 0.0155,
+      "OpenAI": 0.0155,
+      "DeepSeek": 0.015,
+      "": 0.013,
+      "Amazon": 0.013,
+      "Moonshot": 0.0045
+     },
+     "brier": 0.11092999999999996,
+     "logLoss": 0.3812604194113469,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-08",
+     "h": 7,
+     "asOf": "2026-08-21",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.817,
+      "Google": 0.034,
+      "Baidu": 0.0275,
+      "OpenAI": 0.0245,
+      "SpaceXAI": 0.023,
+      "Alibaba": 0.015,
+      "Mistral": 0.011,
+      "ByteDance": 0.01,
+      "": 0.0085,
+      "Meta": 0.0085,
+      "Z.ai": 0.0085,
+      "Amazon": 0.005,
+      "DeepSeek": 0.005,
+      "Moonshot": 0.0025
+     },
+     "brier": 0.03724950000000003,
+     "logLoss": 0.20211618412213422,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-08",
+     "h": 3,
+     "asOf": "2026-08-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.9325,
+      "Google": 0.0125,
+      "Baidu": 0.012,
+      "SpaceXAI": 0.009,
+      "OpenAI": 0.0075,
+      "Meta": 0.005,
+      "Mistral": 0.0045,
+      "": 0.004,
+      "DeepSeek": 0.003,
+      "Alibaba": 0.003,
+      "Z.ai": 0.0025,
+      "Amazon": 0.0015,
+      "Moonshot": 0.0015,
+      "ByteDance": 0.0015
+     },
+     "brier": 0.005086000000000001,
+     "logLoss": 0.06988612746416645,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-08",
+     "h": 1,
+     "asOf": "2026-08-27",
+     "actual": "Anthropic",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 0,
+     "logLoss": 0,
+     "leaderBrier": 0
+    },
+    {
+     "month": "2026-09",
+     "h": 15,
+     "asOf": "2026-09-13",
+     "actual": "Google",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.674,
+      "Google": 0.0775,
+      "Baidu": 0.054,
+      "OpenAI": 0.0515,
+      "SpaceXAI": 0.0355,
+      "Meta": 0.0275,
+      "": 0.0175,
+      "Alibaba": 0.014,
+      "Amazon": 0.011,
+      "Moonshot": 0.0105,
+      "Mistral": 0.0105,
+      "ByteDance": 0.01,
+      "Z.ai": 0.0065
+     },
+     "brier": 1.3138530000000002,
+     "logLoss": 2.557477342622836,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2026-09",
+     "h": 7,
+     "asOf": "2026-09-13",
+     "actual": "Google",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.8275,
+      "Google": 0.043,
+      "Baidu": 0.025,
+      "OpenAI": 0.0235,
+      "SpaceXAI": 0.02,
+      "Meta": 0.015,
+      "Alibaba": 0.011,
+      "Amazon": 0.008,
+      "Mistral": 0.007,
+      "": 0.0065,
+      "ByteDance": 0.0055,
+      "Z.ai": 0.005,
+      "Moonshot": 0.003
+     },
+     "brier": 1.6027479999999998,
+     "logLoss": 3.146555163288575,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2026-09",
+     "h": 3,
+     "asOf": "2026-09-25",
+     "actual": "Google",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 0.9505,
+      "Baidu": 0.0075,
+      "SpaceXAI": 0.007,
+      "Google": 0.0065,
+      "OpenAI": 0.0065,
+      "Z.ai": 0.005,
+      "Meta": 0.003,
+      "Alibaba": 0.003,
+      "": 0.0025,
+      "Moonshot": 0.0025,
+      "Mistral": 0.002,
+      "Amazon": 0.0015,
+      "ByteDance": 0.0015,
+      "Xiaomi": 0.001
+     },
+     "brier": 1.8907049999999996,
+     "logLoss": 5.035953102080546,
+     "leaderBrier": 2
+    },
+    {
+     "month": "2026-09",
+     "h": 1,
+     "asOf": "2026-09-25",
+     "actual": "Google",
+     "leader": "Anthropic",
+     "probs": {
+      "Anthropic": 1
+     },
+     "brier": 2,
+     "logLoss": 9.210340371976182,
+     "leaderBrier": 2
+    }
+   ],
+   "n": 96,
+   "brier": 0.1937969791666666,
+   "logLoss": 0.5470740996362992,
+   "hitRate": 0.8958333333333334,
+   "leaderBrier": 0.20833333333333334,
+   "calibration": [
+    {
+     "bin": 0,
+     "n": 833,
+     "meanP": 0.01267346938775511,
+     "freq": 0.009603841536614645
+    },
+    {
+     "bin": 0.1,
+     "n": 3,
+     "meanP": 0.123,
+     "freq": 0.3333333333333333
+    },
+    {
+     "bin": 0.6,
+     "n": 8,
+     "meanP": 0.672375,
+     "freq": 0.75
+    },
+    {
+     "bin": 0.7,
+     "n": 13,
+     "meanP": 0.7408846153846155,
+     "freq": 0.9230769230769231
+    },
+    {
+     "bin": 0.8,
+     "n": 24,
+     "meanP": 0.8517083333333336,
+     "freq": 0.8333333333333334
+    },
+    {
+     "bin": 0.9,
+     "n": 51,
+     "meanP": 0.9729901960784313,
+     "freq": 0.9411764705882353
+    }
+   ],
+   "market": {
+    "n": 68,
+    "brier": 0.0768419227941177,
+    "oursBrierSame": 0.43618281617647064,
+    "proxyAgreement": 0.7058823529411765,
+    "rows": [
+     {
+      "month": "2025-02",
+      "h": 15,
+      "resolved": "xAI",
+      "hfActual": "DeepSeek",
+      "probs": {
+       "Google": 0.775,
+       "DeepSeek": 0.0035,
+       "OpenAI": 0.085,
+       "Meta": 0.0025,
+       "xAI": 0.1005,
+       "Alibaba": 0.0025
+      },
+      "brier": 1.416975,
+      "oursBrier": 1.4154925
+     },
+     {
+      "month": "2025-02",
+      "h": 7,
+      "resolved": "xAI",
+      "hfActual": "DeepSeek",
+      "probs": {
+       "Google": 0.023,
+       "DeepSeek": 0.0065,
+       "OpenAI": 0.141,
+       "Meta": 0.004,
+       "xAI": 0.805,
+       "Alibaba": 0.0055
+      },
+      "brier": 0.05852349999999998,
+      "oursBrier": 1.67728
+     },
+     {
+      "month": "2025-02",
+      "h": 3,
+      "resolved": "xAI",
+      "hfActual": "DeepSeek",
+      "probs": {
+       "Google": 0.007,
+       "DeepSeek": 0.0015,
+       "OpenAI": 0.0385,
+       "xAI": 0.8395,
+       "Alibaba": 0.0025
+      },
+      "brier": 0.02729999999999999,
+      "oursBrier": 1.8639930000000002
+     },
+     {
+      "month": "2025-02",
+      "h": 1,
+      "resolved": "xAI",
+      "hfActual": "DeepSeek",
+      "probs": {
+       "DeepSeek": 0.0025,
+       "xAI": 0.9005
+      },
+      "brier": 0.009906500000000006,
+      "oursBrier": 2
+     },
+     {
+      "month": "2025-03",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.065,
+       "OpenAI": 0.125,
+       "Meta": 0.0035,
+       "Alibaba": 0.0045,
+       "DeepSeek": 0.0145
+      },
+      "brier": 0.8900927500000002,
+      "oursBrier": 1.3645159999999998
+     },
+     {
+      "month": "2025-03",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.0495,
+       "OpenAI": 0.025,
+       "Meta": 0.001,
+       "DeepSeek": 0.0055
+      },
+      "brier": 0.9041065,
+      "oursBrier": 1.6710595
+     },
+     {
+      "month": "2025-03",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.972,
+       "OpenAI": 0.004
+      },
+      "brier": 0.0008000000000000013,
+      "oursBrier": 1.9081024999999996
+     },
+     {
+      "month": "2025-03",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.9815,
+       "OpenAI": 0.008
+      },
+      "brier": 0.0004062499999999985,
+      "oursBrier": 2
+     },
+     {
+      "month": "2025-04",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.61,
+       "OpenAI": 0.3,
+       "DeepSeek": 0.015,
+       "Anthropic": 0.0075,
+       "Meta": 0.0085,
+       "Alibaba": 0.0105
+      },
+      "brier": 0.24256375000000002,
+      "oursBrier": 1.4736165
+     },
+     {
+      "month": "2025-04",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.75,
+       "OpenAI": 0.235,
+       "Anthropic": 0.0025,
+       "Meta": 0.0035
+      },
+      "brier": 0.1177435,
+      "oursBrier": 1.7194975000000003
+     },
+     {
+      "month": "2025-04",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.9665,
+       "OpenAI": 0.022
+      },
+      "brier": 0.0016062499999999983,
+      "oursBrier": 1.912832
+     },
+     {
+      "month": "2025-04",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.978,
+       "OpenAI": 0.008
+      },
+      "brier": 0.0005480000000000009,
+      "oursBrier": 2
+     },
+     {
+      "month": "2025-05",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.8,
+       "OpenAI": 0.043,
+       "DeepSeek": 0.021,
+       "Meta": 0.001,
+       "Anthropic": 0.018
+      },
+      "brier": 0.04261499999999997,
+      "oursBrier": 1.5073440000000002
+     },
+     {
+      "month": "2025-05",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.905,
+       "OpenAI": 0.0115,
+       "Meta": 0.0005,
+       "Anthropic": 0.056
+      },
+      "brier": 0.012293499999999995,
+      "oursBrier": 1.7216704999999997
+     },
+     {
+      "month": "2025-05",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.9615,
+       "OpenAI": 0.013
+      },
+      "brier": 0.0016512499999999982,
+      "oursBrier": 1.9060264999999994
+     },
+     {
+      "month": "2025-05",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "OpenAI",
+      "probs": {
+       "Google": 0.974,
+       "OpenAI": 0.0045
+      },
+      "brier": 0.0006962500000000012,
+      "oursBrier": 2
+     },
+     {
+      "month": "2025-07",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.925,
+       "OpenAI": 0.04,
+       "DeepSeek": 0.004,
+       "Meta": 0.0035
+      },
+      "brier": 0.007253249999999994,
+      "oursBrier": 0.07350849999999998
+     },
+     {
+      "month": "2025-07",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.945,
+       "OpenAI": 0.034,
+       "Meta": 0.0015
+      },
+      "brier": 0.0041832500000000055,
+      "oursBrier": 0.01799599999999999
+     },
+     {
+      "month": "2025-07",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9745
+      },
+      "brier": 0.0006502499999999984,
+      "oursBrier": 0.0014700000000000021
+     },
+     {
+      "month": "2025-07",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9765
+      },
+      "brier": 0.0005522499999999984,
+      "oursBrier": 0
+     },
+     {
+      "month": "2025-08",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.0425,
+       "Meta": 0.002,
+       "Anthropic": 0.002,
+       "Google": 0.93,
+       "DeepSeek": 0.0035,
+       "Alibaba": 0.0005
+      },
+      "brier": 0.006726749999999994,
+      "oursBrier": 0.10897900000000002
+     },
+     {
+      "month": "2025-08",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.009,
+       "Meta": 0.002,
+       "Anthropic": 0.0025,
+       "Google": 0.969,
+       "DeepSeek": 0.0055,
+       "Alibaba": 0.0005
+      },
+      "brier": 0.0010827500000000017,
+      "oursBrier": 0.020596999999999987
+     },
+     {
+      "month": "2025-08",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.0035,
+       "Google": 0.9905
+      },
+      "brier": 0.0001024999999999991,
+      "oursBrier": 0.0025929999999999994
+     },
+     {
+      "month": "2025-08",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.996
+      },
+      "brier": 0.00001600000000000003,
+      "oursBrier": 0
+     },
+     {
+      "month": "2025-09",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.014,
+       "Meta": 0.0015,
+       "Anthropic": 0.022,
+       "Google": 0.945,
+       "DeepSeek": 0.0035,
+       "Alibaba": 0.0025,
+       "Z.ai": 0.0015
+      },
+      "brier": 0.003728000000000006,
+      "oursBrier": 0.09133899999999998
+     },
+     {
+      "month": "2025-09",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.003,
+       "Anthropic": 0.005,
+       "Google": 0.986,
+       "DeepSeek": 0.002,
+       "Alibaba": 0.002
+      },
+      "brier": 0.0002380000000000003,
+      "oursBrier": 0.017195000000000002
+     },
+     {
+      "month": "2025-09",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.989
+      },
+      "brier": 0.00012100000000000022,
+      "oursBrier": 0.0025850000000000035
+     },
+     {
+      "month": "2025-09",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9945
+      },
+      "brier": 0.000030249999999999444,
+      "oursBrier": 0
+     },
+     {
+      "month": "2025-10",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.006,
+       "Anthropic": 0.0105,
+       "Google": 0.964,
+       "DeepSeek": 0.0035,
+       "Alibaba": 0.007,
+       "Z.ai": 0.0025,
+       "Tencent": 0.0015
+      },
+      "brier": 0.0015120000000000023,
+      "oursBrier": 0.09085499999999999
+     },
+     {
+      "month": "2025-10",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.004,
+       "Anthropic": 0.0095,
+       "Google": 0.975,
+       "DeepSeek": 0.0025,
+       "Alibaba": 0.006,
+       "Z.ai": 0.003
+      },
+      "brier": 0.0007825000000000011,
+      "oursBrier": 0.021115000000000002
+     },
+     {
+      "month": "2025-10",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "OpenAI": 0.003,
+       "Google": 0.9885,
+       "Alibaba": 0.003
+      },
+      "brier": 0.00015024999999999896,
+      "oursBrier": 0.003271000000000005
+     },
+     {
+      "month": "2025-10",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9955
+      },
+      "brier": 0.000020249999999999537,
+      "oursBrier": 0
+     },
+     {
+      "month": "2025-11",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9385,
+       "Anthropic": 0.007,
+       "OpenAI": 0.036,
+       "Alibaba": 0.0025,
+       "Z.ai": 0.002,
+       "DeepSeek": 0.003,
+       "Mistral": 0.0015
+      },
+      "brier": 0.00514875,
+      "oursBrier": 0.08633300000000001
+     },
+     {
+      "month": "2025-11",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.983,
+       "OpenAI": 0.006,
+       "Alibaba": 0.002
+      },
+      "brier": 0.0003290000000000005,
+      "oursBrier": 0.011353000000000007
+     },
+     {
+      "month": "2025-11",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9915
+      },
+      "brier": 0.00007224999999999918,
+      "oursBrier": 0.0014680000000000016
+     },
+     {
+      "month": "2025-11",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.998
+      },
+      "brier": 0.0000040000000000000074,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-01",
+      "h": 15,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9445,
+       "Anthropic": 0.004,
+       "OpenAI": 0.0085,
+       "Alibaba": 0.0015,
+       "Z.ai": 0.0005,
+       "DeepSeek": 0.0015
+      },
+      "brier": 0.003173249999999999,
+      "oursBrier": 0.041472
+     },
+     {
+      "month": "2026-01",
+      "h": 7,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9845,
+       "Anthropic": 0.002,
+       "OpenAI": 0.0045,
+       "Alibaba": 0.0005
+      },
+      "brier": 0.00026474999999999866,
+      "oursBrier": 0.011818000000000006
+     },
+     {
+      "month": "2026-01",
+      "h": 3,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9905
+      },
+      "brier": 0.0000902499999999991,
+      "oursBrier": 0.0015605000000000026
+     },
+     {
+      "month": "2026-01",
+      "h": 1,
+      "resolved": "Google",
+      "hfActual": "Google",
+      "probs": {
+       "Google": 0.9975
+      },
+      "brier": 0.0000062499999999997335,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-02",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.245,
+       "OpenAI": 0.026,
+       "Anthropic": 0.705,
+       "DeepSeek": 0.006,
+       "Mistral": 0.0005
+      },
+      "brier": 0.14776225000000004,
+      "oursBrier": 0.05724999999999999
+     },
+     {
+      "month": "2026-02",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.075,
+       "OpenAI": 0.012,
+       "Anthropic": 0.895,
+       "DeepSeek": 0.007,
+       "Mistral": 0.0005
+      },
+      "brier": 0.016843249999999997,
+      "oursBrier": 0.021983499999999982
+     },
+     {
+      "month": "2026-02",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.0225,
+       "Anthropic": 0.949
+      },
+      "brier": 0.003107250000000005,
+      "oursBrier": 0.0024680000000000045
+     },
+     {
+      "month": "2026-02",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.989
+      },
+      "brier": 0.00012100000000000022,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-03",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.045,
+       "Anthropic": 0.912,
+       "OpenAI": 0.013,
+       "Alibaba": 0.0015,
+       "Baidu": 0.0015,
+       "DeepSeek": 0.007,
+       "Mistral": 0.0005
+      },
+      "brier": 0.009991749999999995,
+      "oursBrier": 0.07563199999999999
+     },
+     {
+      "month": "2026-03",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.0125,
+       "Anthropic": 0.9665,
+       "OpenAI": 0.0035,
+       "Alibaba": 0.0015,
+       "Z.ai": 0.0005,
+       "DeepSeek": 0.0035,
+       "Mistral": 0.0005
+      },
+      "brier": 0.0013057499999999988,
+      "oursBrier": 0.03555249999999999
+     },
+     {
+      "month": "2026-03",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.0035,
+       "Anthropic": 0.988,
+       "OpenAI": 0.0015
+      },
+      "brier": 0.00015850000000000025,
+      "oursBrier": 0.0038924999999999993
+     },
+     {
+      "month": "2026-03",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9975
+      },
+      "brier": 0.0000062499999999997335,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-04",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.012,
+       "OpenAI": 0.043,
+       "Alibaba": 0.0015,
+       "ByteDance": 0.0015,
+       "Z.ai": 0.0015,
+       "Mistral": 0.0015,
+       "Meta": 0.0035
+      },
+      "brier": 1.00201425,
+      "oursBrier": 0.10112199999999999
+     },
+     {
+      "month": "2026-04",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.695,
+       "Google": 0.002,
+       "OpenAI": 0.3,
+       "Alibaba": 0.0015,
+       "Z.ai": 0.0015,
+       "Mistral": 0.0005,
+       "DeepSeek": 0.0015
+      },
+      "brier": 0.18303600000000006,
+      "oursBrier": 0.029185999999999993
+     },
+     {
+      "month": "2026-04",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.935,
+       "Google": 0.0025,
+       "OpenAI": 0.062
+      },
+      "brier": 0.008075249999999992,
+      "oursBrier": 0.0036089999999999994
+     },
+     {
+      "month": "2026-04",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9925
+      },
+      "brier": 0.00005624999999999927,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-05",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.815,
+       "Google": 0.185,
+       "OpenAI": 0.0105,
+       "Alibaba": 0.0005,
+       "ByteDance": 0.0015,
+       "Baidu": 0.0005,
+       "Amazon": 0.0005,
+       "Z.ai": 0.0015,
+       "Mistral": 0.0005,
+       "DeepSeek": 0.0005
+      },
+      "brier": 0.06856599999999997,
+      "oursBrier": 0.10626599999999999
+     },
+     {
+      "month": "2026-05",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9805,
+       "Google": 0.006,
+       "OpenAI": 0.0055,
+       "Alibaba": 0.0005,
+       "Baidu": 0.0005,
+       "Amazon": 0.0005,
+       "Z.ai": 0.0005,
+       "Mistral": 0.0005
+      },
+      "brier": 0.00044774999999999844,
+      "oursBrier": 0.034032
+     },
+     {
+      "month": "2026-05",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9885,
+       "Google": 0.005
+      },
+      "brier": 0.00015724999999999897,
+      "oursBrier": 0.005185499999999994
+     },
+     {
+      "month": "2026-05",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.997
+      },
+      "brier": 0.000009000000000000015,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-06",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.065,
+       "Anthropic": 0.8985,
+       "OpenAI": 0.0295,
+       "Alibaba": 0.0005,
+       "Z.ai": 0.0015,
+       "DeepSeek": 0.0005,
+       "Moonshot": 0.0005,
+       "Mistral": 0.0005,
+       "Amazon": 0.0005,
+       "Baidu": 0.0005,
+       "ByteDance": 0.0005
+      },
+      "brier": 0.01540150000000001,
+      "oursBrier": 0.121288
+     },
+     {
+      "month": "2026-06",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.0075,
+       "Anthropic": 0.9815,
+       "OpenAI": 0.0105,
+       "Alibaba": 0.0005,
+       "Z.ai": 0.0005,
+       "DeepSeek": 0.0005,
+       "Mistral": 0.0005
+      },
+      "brier": 0.0005097499999999987,
+      "oursBrier": 0.027320000000000004
+     },
+     {
+      "month": "2026-06",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.989
+      },
+      "brier": 0.00012100000000000022,
+      "oursBrier": 0.002289999999999999
+     },
+     {
+      "month": "2026-06",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9955
+      },
+      "brier": 0.000020249999999999537,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-07",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.013,
+       "Anthropic": 0.9715,
+       "OpenAI": 0.005,
+       "Alibaba": 0.0005,
+       "Z.ai": 0.0005,
+       "DeepSeek": 0.0005,
+       "Moonshot": 0.002,
+       "Mistral": 0.0005,
+       "Amazon": 0.0005,
+       "Baidu": 0.0005,
+       "ByteDance": 0.0005
+      },
+      "brier": 0.0010119999999999986,
+      "oursBrier": 0.103446
+     },
+     {
+      "month": "2026-07",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Google": 0.0055,
+       "Anthropic": 0.9905,
+       "OpenAI": 0.0025,
+       "Alibaba": 0.0005,
+       "Mistral": 0.0005,
+       "Meta": 0.0005,
+       "Amazon": 0.0005
+      },
+      "brier": 0.00012774999999999912,
+      "oursBrier": 0.023060500000000005
+     },
+     {
+      "month": "2026-07",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9945,
+       "Z.ai": 0.0005
+      },
+      "brier": 0.000030499999999999444,
+      "oursBrier": 0.0026035000000000034
+     },
+     {
+      "month": "2026-07",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Anthropic",
+      "probs": {
+       "Anthropic": 0.9985
+      },
+      "brier": 0.0000022499999999998374,
+      "oursBrier": 0
+     },
+     {
+      "month": "2026-09",
+      "h": 15,
+      "resolved": "Anthropic",
+      "hfActual": "Google",
+      "probs": {
+       "Anthropic": 0.961,
+       "Meta": 0.004,
+       "Google": 0.0175,
+       "Alibaba": 0.0005,
+       "Moonshot": 0.0005,
+       "OpenAI": 0.0065,
+       "Baidu": 0.0005,
+       "SpaceXAI": 0.0015,
+       "Amazon": 0.0005,
+       "ByteDance": 0.0005,
+       "Mistral": 0.0005
+      },
+      "brier": 0.001889250000000003,
+      "oursBrier": 0.12085299999999997
+     },
+     {
+      "month": "2026-09",
+      "h": 7,
+      "resolved": "Anthropic",
+      "hfActual": "Google",
+      "probs": {
+       "Anthropic": 0.983,
+       "Meta": 0.0015,
+       "Google": 0.0025,
+       "Alibaba": 0.0005,
+       "OpenAI": 0.0085,
+       "Baidu": 0.0005,
+       "SpaceXAI": 0.0005
+      },
+      "brier": 0.00037050000000000044,
+      "oursBrier": 0.033748
+     },
+     {
+      "month": "2026-09",
+      "h": 3,
+      "resolved": "Anthropic",
+      "hfActual": "Google",
+      "probs": {
+       "Anthropic": 0.9965
+      },
+      "brier": 0.000012249999999999634,
+      "oursBrier": 0.0027049999999999995
+     },
+     {
+      "month": "2026-09",
+      "h": 1,
+      "resolved": "Anthropic",
+      "hfActual": "Google",
+      "probs": {
+       "Anthropic": 0.9945
+      },
+      "brier": 0.000030249999999999444,
+      "oursBrier": 0
+     }
+    ]
+   }
+  }
+ }
+}

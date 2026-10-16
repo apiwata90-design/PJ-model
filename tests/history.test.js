@@ -79,3 +79,11 @@ test('a model renamed between publishes is not a new debut and keeps its trend',
   const d = driftPerDay(renamed, '2026-03-15', { days: 14 });
   assert.ok(Math.abs(d['claude-opus-4-6-high'] - 0.2) < 1e-9);
 });
+
+test('getJson retries an allowed 4xx status when asked', async () => {
+  let calls = 0;
+  const fake = async () => (++calls < 2
+    ? { ok: false, status: 422, text: async () => '{"error":"A query parameter is invalid"}' }
+    : { ok: true, status: 200, text: async () => '{"ok":1}' });
+  assert.deepEqual(await getJson('x', { fetchImpl: fake, baseDelayMs: 1, retryStatuses: [422] }), { ok: 1 });
+});

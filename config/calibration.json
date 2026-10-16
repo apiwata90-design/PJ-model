@@ -1,1 +1,8 @@
-{ "k": 1, "sigmaFloor": 2, "driftShrink": 0.5, "fittedAt": null, "note": "defaults until backtest runs" }
+{
+  "k": 0.75,
+  "sigmaFloor": 0,
+  "newModelScale": 0.5,
+  "driftShrink": 0.5,
+  "fittedAt": "2026-10-16T15:59:02.549Z",
+  "note": "grid search on first half of 24 months, both markets"
+}

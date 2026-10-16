@@ -86,18 +86,21 @@ export function summarize(rows) {
   };
 }
 
-export function fitParams({ historyRows, config, months, grid = { k: [0.5, 0.75, 1, 1.5, 2, 3], sigmaFloor: [0, 2, 4, 8] }, n = 1000 }) {
+export function fitParams({ historyRows, config, months, grid = { k: [0.5, 0.75, 1, 1.5, 2, 3], sigmaFloor: [0, 2, 4, 8], newModelScale: [0.1, 0.25, 0.5, 1] }, n = 1000 }) {
   const half = Math.floor(months.length / 2);
   const train = months.slice(0, half), test = months.slice(half);
   let best = null;
   for (const k of grid.k) {
     for (const sigmaFloor of grid.sigmaFloor) {
-      const r = backtest({ historyRows, config, months: train, params: { k, sigmaFloor }, n });
-      if (r.brier !== null && (!best || r.brier < best.trainBrier)) best = { k, sigmaFloor, trainBrier: r.brier };
+      for (const newModelScale of grid.newModelScale) {
+        const r = backtest({ historyRows, config, months: train, params: { k, sigmaFloor, newModelScale }, n });
+        if (r.brier !== null && (!best || r.brier < best.trainBrier)) best = { k, sigmaFloor, newModelScale, trainBrier: r.brier };
+      }
     }
   }
-  const testChosen = backtest({ historyRows, config, months: test, params: { k: best.k, sigmaFloor: best.sigmaFloor }, n });
-  const testDefault = backtest({ historyRows, config, months: test, params: { k: 1, sigmaFloor: 2 }, n });
+  const chosen = { k: best.k, sigmaFloor: best.sigmaFloor, newModelScale: best.newModelScale };
+  const testChosen = backtest({ historyRows, config, months: test, params: chosen, n });
+  const testDefault = backtest({ historyRows, config, months: test, params: { k: 1, sigmaFloor: 2, newModelScale: 1 }, n });
   return { ...best, testBrier: testChosen.brier, testBrierDefault: testDefault.brier, trainMonths: train.length, testMonths: test.length };
 }
 
@@ -112,9 +115,13 @@ async function marketBaseline(key, rows, config) {
     try { event = await findEvent(key, { year, month: m }, config.markets); } catch { event = null; }
     if (!event) continue;
     const parsed = parseEvent(event);
+    // Ground truth = how the market actually resolved (YES settled at ~1). The HF "last publish before
+    // check time" proxy can disagree (publish after noon ET, older markets using other leaderboard views).
+    const resolved = parsed.outcomes.find(o => o.closed && (o.yesPrice ?? 0) >= 0.99)?.company ?? null;
+    if (!resolved) continue;
     for (const r of mrows) {
       const ts = Math.floor((checkTimeUtc(year, m).getTime() - r.h * DAY_MS) / 1000);
-      const wanted = parsed.outcomes.filter(o => (r.probs[o.company] ?? 0) >= 0.01 || o.company === r.actual);
+      const wanted = parsed.outcomes.filter(o => (r.probs[o.company] ?? 0) >= 0.01 || o.company === resolved);
       const probs = {};
       for (const o of wanted) {
         try {
@@ -122,11 +129,19 @@ async function marketBaseline(key, rows, config) {
           if (hist.length) probs[o.company] = hist.at(-1).p;
         } catch { /* missing price -> company left out */ }
       }
-      if (Object.keys(probs).length) out.push({ month, h: r.h, probs, brier: brier(probs, r.actual), oursBrier: r.brier });
+      if (Object.keys(probs).length) {
+        out.push({ month, h: r.h, resolved, hfActual: r.actual, probs, brier: brier(probs, resolved), oursBrier: brier(r.probs, resolved) });
+      }
     }
   }
   const mean = f => (out.length ? out.reduce((a, x) => a + f(x), 0) / out.length : null);
-  return out.length ? { n: out.length, brier: mean(x => x.brier), oursBrierSame: mean(x => x.oursBrier), rows: out } : null;
+  return out.length ? {
+    n: out.length,
+    brier: mean(x => x.brier),
+    oursBrierSame: mean(x => x.oursBrier),
+    proxyAgreement: mean(x => (x.resolved === x.hfActual ? 1 : 0)),
+    rows: out,
+  } : null;
 }
 
 async function main() {
@@ -143,7 +158,7 @@ async function main() {
     const historyRows = JSON.parse(readFileSync(file, 'utf8'));
     const fit = fitParams({ historyRows, config, months });
     fits.push(fit);
-    const result = backtest({ historyRows, config, months, params: { k: fit.k, sigmaFloor: fit.sigmaFloor } });
+    const result = backtest({ historyRows, config, months, params: { k: fit.k, sigmaFloor: fit.sigmaFloor, newModelScale: fit.newModelScale } });
     const market = args.includes('--market') ? await marketBaseline(key, result.rows, config) : null;
     report.markets[key] = { fit, ...result, market };
     console.log(`${key}: brier ${result.brier?.toFixed(3)} (leader-only ${result.leaderBrier?.toFixed(3)}), hit ${(result.hitRate * 100).toFixed(0)}%, k=${fit.k} floor=${fit.sigmaFloor}` +
@@ -157,6 +172,7 @@ async function main() {
     const calibration = {
       k: pick([0.5, 0.75, 1, 1.5, 2, 3], avg(x => x.k)),
       sigmaFloor: pick([0, 2, 4, 8], avg(x => x.sigmaFloor)),
+      newModelScale: pick([0.1, 0.25, 0.5, 1], avg(x => x.newModelScale)),
       driftShrink: config.calibration.driftShrink ?? 0.5,
       fittedAt: report.generated_at,
       note: `grid search on first half of ${count} months, both markets`,

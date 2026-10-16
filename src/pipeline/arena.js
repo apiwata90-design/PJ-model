@@ -4,8 +4,9 @@ import { getJson } from './http.js';
 const BASE = 'https://datasets-server.huggingface.co';
 const DATASET = 'lmarena-ai/leaderboard-dataset';
 const PAGE = 100;
-// datasets-server can take 15-20 s per filtered page and returns 500 while re-indexing.
-const slowHttp = url => getJson(url, { timeoutMs: 90000, retries: 5, baseDelayMs: 5000 });
+// datasets-server can take 15-20 s per filtered page; while re-indexing it answers 500/502 and even a
+// spurious 422 "A query parameter is invalid" for the same query that succeeds a minute later.
+const slowHttp = url => getJson(url, { timeoutMs: 90000, retries: 5, baseDelayMs: 5000, retryStatuses: [422, 429] });
 
 export const HF_CONFIG = { off: 'text', on: 'text_style_control' };
 

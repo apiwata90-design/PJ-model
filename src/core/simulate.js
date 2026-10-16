@@ -25,7 +25,7 @@ export function simulate(inputs) {
   const contenders = Object.keys({ ...newModel, ...overrides }).map(company => ({
     company,
     best: newModel[company]?.best ?? leader,
-    lambda: (newModel[company]?.lambdaPerDay ?? 0) * debutDays,
+    lambda: (newModel[company]?.lambdaPerDay ?? 0) * debutDays * (params.newModelScale ?? 1),
     override: overrides[company],
   }));
 

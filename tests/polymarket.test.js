@@ -43,3 +43,8 @@ test('findEvent returns null when nothing matches', async () => {
   const http = async url => (url.includes('/public-search') ? { events: [] } : []);
   assert.equal(await findEvent('on', { year: 2026, month: 11 }, {}, { http }), null);
 });
+
+test('placeholder "Company X" outcomes are dropped', () => {
+  const ev = { ...fixture, markets: [...fixture.markets, { ...fixture.markets[0], groupItemTitle: 'Company A' }] };
+  assert.equal(parseEvent(ev).outcomes.some(o => o.company === 'Company A'), false);
+});

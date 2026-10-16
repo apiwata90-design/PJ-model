@@ -27,12 +27,17 @@ test('cacheMerge dedupes by date+model, newer row wins', () => {
 });
 
 test('newModelRates counts debuts per company and ignores the future', () => {
-  const rates = newModelRates(rows, asOf, companyMap, { lookbackDays: 100, priorPerDay: 0 });
-  assert.equal(rates.Anthropic.lambdaPerDay, 1 / 100);
+  const rates = newModelRates(rows, asOf, companyMap, { lookbackDays: 10, priorPerDay: 0 });
+  assert.equal(rates.Anthropic.lambdaPerDay, 1 / 10);
   assert.equal(rates.Google.lambdaPerDay, 0);
   assert.equal(rates.OpenAI, undefined, 'o-late is after asOf');
   assert.equal(rates.Anthropic.best, 1505);
   assert.equal(rates.Google.best, 1496);
+});
+
+test('rates use the available span when history is shorter than the lookback', () => {
+  const rates = newModelRates(rows, asOf, companyMap, { lookbackDays: 365, priorPerDay: 0 });
+  assert.equal(rates.Anthropic.lambdaPerDay, 1 / 19); // 2026-03-01 .. 2026-03-20
 });
 
 test('debutDeltas measures debut against the company best on the previous publish', () => {

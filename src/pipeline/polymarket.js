@@ -54,7 +54,8 @@ export function parseEvent(ev) {
     description: ev.description,
     endDate: ev.endDate,
     closed: Boolean(ev.closed),
-    outcomes: (ev.markets ?? []).map(m => {
+    // "Company A".."Company K" are unlaunched placeholder slots; they have no real book.
+    outcomes: (ev.markets ?? []).filter(m => !/^Company [A-Z]{1,2}$/.test(m.groupItemTitle ?? '')).map(m => {
       const names = parseMaybe(m.outcomes) ?? ['Yes', 'No'];
       const tokens = parseMaybe(m.clobTokenIds) ?? [];
       const prices = (parseMaybe(m.outcomePrices) ?? []).map(Number);

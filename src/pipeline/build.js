@@ -19,6 +19,10 @@ export function simInputsFor({ latestRows, historyRows, target, now, config, see
   const checkAt = checkTimeUtc(target.year, target.month);
   const hDays = Math.max(hoursUntil(now, checkAt) / 24, 0);
   const newModel = newModelRates(history, publishDate, companies, settings.rates);
+  const observed = debutDeltas(history, publishDate, companies, settings.deltas);
+  // Too few debuts observed (e.g. history fetch failed) -> fall back to a documented prior instead of
+  // silently assuming no new model can win.
+  const usePrior = observed.length < (settings.minDeltas ?? 5);
   const inputs = {
     models: models.filter(m => m.rating >= (models[0]?.rating ?? 0) - settings.window).map(m => ({ name: m.model_name, org: m.organization, rating: m.rating, variance: m.variance, drift: trend[m.model_name] ?? 0 })),
     companyMap: companies,
@@ -27,7 +31,8 @@ export function simInputsFor({ latestRows, historyRows, target, now, config, see
     seed,
     params: { k: calibration.k, sigmaFloor: calibration.sigmaFloor, driftShrink: calibration.driftShrink, window: settings.window },
     newModel,
-    debutDeltas: debutDeltas(history, publishDate, companies, settings.deltas),
+    debutDeltas: usePrior ? settings.deltaPrior : observed,
+    deltaSource: usePrior ? 'prior' : 'history',
     overrides: overrides.news ?? {},
     lagDays: settings.lagDays,
   };
@@ -64,7 +69,10 @@ export function buildForecast({ key, latestRows, historyRows, target, now, confi
     })),
     sim,
     simInputs: inputs,
-    reasons: explain({ models, companyMap: companies, sim, newModel: inputs.newModel, hDays: inputs.hDays, trend }),
+    reasons: [
+      ...explain({ models, companyMap: companies, sim, newModel: inputs.newModel, hDays: inputs.hDays, trend }),
+      ...(inputs.deltaSource === 'prior' ? ['⚠ ประวัติ leaderboard ไม่พอ — คะแนนของ model ใหม่ใช้ค่าตั้งต้น (settings.deltaPrior) แทนสถิติจริง'] : []),
+    ],
     chart: chartSeries(history, models, settings.chartDays),
     market: { found: false },
     edges: {},
@@ -88,6 +96,12 @@ export function outcomesNeedingBooks(forecast, event, minProb) {
   return event.outcomes.filter(o => !o.closed && ((probs[o.company] ?? 0) >= minProb || (o.yesPrice ?? 0) >= minProb));
 }
 
+// Quoted mid if both sides exist, else last trade; outcomePrices alone (0.5 on untraded markets) is not a price.
+export function marketMid(o) {
+  if (o.bestBid !== null && o.bestAsk !== null && o.bestAsk > 0) return (o.bestBid + o.bestAsk) / 2;
+  return o.lastPrice ?? null;
+}
+
 export function attachMarket(forecast, event, books, config) {
   const { settings, companies } = config;
   const { models, autoEval, checkAt, now } = forecast._ctx;
@@ -95,7 +109,7 @@ export function attachMarket(forecast, event, books, config) {
   if (event) {
     const probs = outcomeProbs(forecast.sim, event.outcomes.map(o => o.company));
     out.market = { found: true, slug: event.slug, title: event.title, endDate: event.endDate,
-      mids: Object.fromEntries(event.outcomes.map(o => [o.company, o.yesPrice])) };
+      mids: Object.fromEntries(event.outcomes.map(o => [o.company, marketMid(o)])) };
     out.edges = {};
     for (const o of event.outcomes) {
       const yes = books[o.yesToken], no = books[o.noToken];

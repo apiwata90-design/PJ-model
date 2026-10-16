@@ -81,3 +81,10 @@ test('--if-final-hours skips outside the last 72 hours', async () => {
   const out = await run({ root: tmpRoot(), now: new Date('2026-10-16T12:00:00Z'), deps: deps(), ifFinalHours: true, log: quiet });
   assert.equal(out, null);
 });
+
+test('missing history falls back to the delta prior and says so', async () => {
+  const out = await run({ root: tmpRoot(), now: new Date('2026-10-16T12:00:00Z'), deps: deps(), log: quiet });
+  assert.equal(out.markets.off.simInputs.deltaSource, 'prior');
+  assert.ok(out.markets.off.simInputs.debutDeltas.length >= 5);
+  assert.ok(out.markets.off.reasons.some(r => r.includes('deltaPrior')));
+});

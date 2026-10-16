@@ -45,7 +45,9 @@ function bestByCompany(snapshot, companyMap) {
 export function newModelRates(rows, asOf, companyMap, { lookbackDays = 365, topN = 10, priorPerDay = 0.2 / 365 } = {}) {
   const dates = publishDates(upTo(rows, asOf));
   const best = bestByCompany(snapshotAt(rows, dates.at(-1)), companyMap);
-  const from = toDay(asOf) - lookbackDays;
+  // Rate over the span we actually have data for (a 60-day cache must not be divided by 365).
+  const span = Math.max(1, Math.min(lookbackDays, toDay(asOf) - toDay(dates[0] ?? asOf)));
+  const from = toDay(asOf) - span;
   const counts = {};
   for (const d of debuts(rows, asOf, topN)) {
     if (toDay(d.leaderboard_publish_date) < from) continue;
@@ -54,7 +56,7 @@ export function newModelRates(rows, asOf, companyMap, { lookbackDays = 365, topN
   }
   const out = {};
   for (const c of new Set([...Object.keys(best), ...Object.keys(counts)])) {
-    out[c] = { lambdaPerDay: (counts[c] || 0) / lookbackDays + priorPerDay, best: best[c] ?? null };
+    out[c] = { lambdaPerDay: (counts[c] || 0) / span + priorPerDay, best: best[c] ?? null };
   }
   return out;
 }

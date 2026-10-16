@@ -64,8 +64,10 @@ export async function run({ now = new Date(), root, deps = defaultDeps, ifFinalH
     const histFile = join(cacheDir, `history-${cfg}.json`);
     let history = readJson(histFile, []);
     try {
-      const since = history.at(-1)?.leaderboard_publish_date ??
-        new Date(now.getTime() - settings.historyDays * 86400000).toISOString().slice(0, 10);
+      // Never backfill more than 60 days here (HF is slow); the long history comes from scripts/warm-history.js.
+      const floor = new Date(now.getTime() - 60 * 86400000).toISOString().slice(0, 10);
+      const last = history.at(-1)?.leaderboard_publish_date;
+      const since = last && last > floor ? last : floor;
       history = cacheMerge(history, await deps.fetchHistory(cfg, since, settings.historyMaxRank));
       writeJson(histFile, history);
       status[`history-${key}`] = { ok: true, stale: false };

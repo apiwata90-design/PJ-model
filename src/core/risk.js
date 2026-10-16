@@ -5,7 +5,7 @@ import { hoursUntil } from './calendar.js';
 const DAY_MS = 86400000;
 const ci = m => (m.rating_upper - m.rating_lower) / 2;
 
-export function assessRisk({ now, checkAt, publishDate, models, companyMap, autoEval, marketFound, settings }) {
+export function assessRisk({ now, checkAt, publishDate, models, companyMap, autoEval, preliminary = new Set(), marketFound, settings }) {
   const out = [];
   const add = (id, level, text) => out.push({ id, level, text });
 
@@ -33,6 +33,12 @@ export function assessRisk({ now, checkAt, publishDate, models, companyMap, auto
   add('autoeval', 'warn', flagged.length
     ? `ตัดออกเพราะติด AutoEval: ${flagged.join(', ')}`
     : 'dataset ไม่มีข้อมูล AutoEval — ช่วง 48 ชม. สุดท้ายให้เช็คป้าย AutoEval บน arena.ai เอง');
+
+  // "Preliminary" is not "AutoEval": the market still counts these models, but their score can move or be pulled.
+  const prelim = models.slice(0, 3).filter(m => preliminary.has(m.model_name)).map(m => m.model_name);
+  add('preliminary', prelim.length ? 'warn' : 'ok', prelim.length
+    ? `${prelim.join(', ')} ติดป้าย Preliminary — ยังนับในการตัดสิน (กติกาตัดแค่ AutoEval) แต่คะแนนยังขยับได้ หรืออาจถูกถอด/เปลี่ยนป้ายก่อนตัดสิน`
+    : 'ท็อป 3 ไม่มี model ที่ติดป้าย Preliminary (ตามที่ระบุใน config/overrides.json)');
 
   const hLeft = hoursUntil(now, checkAt);
   add('dataset-lag', hLeft < 48 ? 'warn' : 'ok', hLeft < 48

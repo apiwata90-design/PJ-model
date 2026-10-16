@@ -1,4 +1,8 @@
 {
+  "_note": "autoEval = excluded by market rules; preliminary = still counted, flagged as a risk. Names as shown on arena.ai.",
   "autoEval": [],
+  "preliminary": [
+    "Gemini 4 Argon (High)"
+  ],
   "news": {}
 }

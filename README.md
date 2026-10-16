@@ -23,7 +23,7 @@ npm run serve                  # เปิด http://localhost:8787/site/
 
 | ไฟล์ | ใช้ทำอะไร |
 |---|---|
-| `config/overrides.json` | `autoEval`: ชื่อ model ที่ติดป้าย AutoEval บน arena.ai (dataset ไม่มีข้อมูลนี้) · `news`: ข่าวที่มีผลกับผลทายทางการ เช่น `{"OpenAI": {"prob": 0.5, "delta": 15}}` |
+| `config/overrides.json` | `autoEval`: ชื่อ model ที่ติดป้าย AutoEval บน arena.ai (ถูกตัดออกตามกติกาตลาด) · `preliminary`: model ที่ติดป้าย Preliminary (ยังนับ แต่ขึ้นเตือนความเสี่ยง) · `news`: ข่าวที่มีผลกับผลทายทางการ เช่น `{"OpenAI": {"prob": 0.5, "delta": 15}}` |
 | `config/companies.json` | จับคู่ organization ใน HF → ชื่อบริษัทใน Polymarket |
 | `config/markets.json` | กำหนด slug ตลาดเองถ้าค้นหาอัตโนมัติไม่เจอ: `{"2026-11": {"off": "...", "on": "..."}}` |
 | `config/settings.json` | เกณฑ์ edge, stake, จำนวนรอบจำลอง ฯลฯ |

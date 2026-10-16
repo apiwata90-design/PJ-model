@@ -95,3 +95,12 @@ test('marketMid ignores an empty 0.1¢/99.9¢ book', async () => {
   assert.equal(marketMid({ bestBid: 0.70, bestAsk: 0.72, lastPrice: 0.5 }), 0.71);
   assert.equal(marketMid({ bestBid: null, bestAsk: null, lastPrice: null }), null);
 });
+
+test('preliminary model stays in the simulation and raises a risk', async () => {
+  const root = tmpRoot();
+  const { writeFileSync } = await import('node:fs');
+  writeFileSync(join(root, 'config', 'overrides.json'), JSON.stringify({ autoEval: [], preliminary: ['Gemini A'], news: {} }));
+  const out = await run({ root, now: new Date('2026-10-16T12:00:00Z'), deps: deps(), log: quiet });
+  assert.ok(out.markets.off.sim.models['Gemini A'] > 0.3);
+  assert.equal(out.markets.off.risks.find(r => r.id === 'preliminary').level, 'warn');
+});

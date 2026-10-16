@@ -12,6 +12,7 @@ export const MARKET_LABEL = { off: 'Style Control ปิด', on: 'Style Control
 export function simInputsFor({ latestRows, historyRows, target, now, config, seed }) {
   const { settings, calibration, overrides, companies } = config;
   const autoEval = new Set(overrides.autoEval ?? []);
+  const preliminary = new Set(overrides.preliminary ?? []);
   const models = eligible(latestRows, autoEval).sort((a, b) => b.rating - a.rating);
   const publishDate = models[0]?.leaderboard_publish_date;
   const history = cacheMerge(upTo(historyRows, publishDate), latestRows.filter(r => r.rank <= settings.historyMaxRank));
@@ -38,7 +39,7 @@ export function simInputsFor({ latestRows, historyRows, target, now, config, see
     overrides: overrides.news ?? {},
     lagDays: settings.lagDays,
   };
-  return { inputs, models, publishDate, history, trend, checkAt, autoEval };
+  return { inputs, models, publishDate, history, trend, checkAt, autoEval, preliminary };
 }
 
 function chartSeries(history, models, days) {
@@ -54,7 +55,7 @@ function chartSeries(history, models, days) {
 
 export function buildForecast({ key, latestRows, historyRows, target, now, config, seed }) {
   const { settings, companies } = config;
-  const { inputs, models, publishDate, history, trend, checkAt, autoEval } =
+  const { inputs, models, publishDate, history, trend, checkAt, autoEval, preliminary } =
     simInputsFor({ latestRows, historyRows, target, now, config, seed });
   const sim = simulate(inputs);
   return {
@@ -78,8 +79,8 @@ export function buildForecast({ key, latestRows, historyRows, target, now, confi
     chart: chartSeries(history, models, settings.chartDays),
     market: { found: false },
     edges: {},
-    risks: assessRisk({ now, checkAt, publishDate, models, companyMap: companies, autoEval, marketFound: false, settings }),
-    _ctx: { models, autoEval, checkAt, now },
+    risks: assessRisk({ now, checkAt, publishDate, models, companyMap: companies, autoEval, preliminary, marketFound: false, settings }),
+    _ctx: { models, autoEval, preliminary, checkAt, now },
   };
 }
 
@@ -107,7 +108,7 @@ export function marketMid(o) {
 
 export function attachMarket(forecast, event, books, config) {
   const { settings, companies } = config;
-  const { models, autoEval, checkAt, now } = forecast._ctx;
+  const { models, autoEval, preliminary, checkAt, now } = forecast._ctx;
   const out = { ...forecast };
   if (event) {
     const probs = outcomeProbs(forecast.sim, event.outcomes.map(o => o.company));
@@ -122,7 +123,7 @@ export function attachMarket(forecast, event, books, config) {
     }
   }
   out.risks = assessRisk({ now, checkAt, publishDate: forecast.publishDate, models, companyMap: companies,
-    autoEval, marketFound: Boolean(event), settings });
+    autoEval, preliminary, marketFound: Boolean(event), settings });
   delete out._ctx;
   return out;
 }

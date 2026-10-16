@@ -46,3 +46,10 @@ test('autoeval-flagged model in top 5 is called out', () => {
   const r = assessRisk(ctx({ autoEval: new Set(['a']) }));
   assert.ok(r.find(x => x.id === 'autoeval').text.includes('a'));
 });
+
+test('preliminary leader is a warning, not an exclusion', () => {
+  const r = assessRisk(ctx({ preliminary: new Set(['g']) }));
+  assert.equal(level(r, 'preliminary'), 'warn');
+  assert.match(r.find(x => x.id === 'preliminary').text, /ยังนับ/);
+  assert.equal(level(assessRisk(ctx()), 'preliminary'), 'ok');
+});

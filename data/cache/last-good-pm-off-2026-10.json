@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-16T14:55:58.151Z",
+ "savedAt": "2026-10-16T19:04:44.692Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -12,10 +12,10 @@
     "company": "Anthropic",
     "yesToken": "17398972530137600675762712744895375915722542439211248541948693649429200536957",
     "noToken": "85377241479106312434941600365981690112200050573592763839850833219429995374007",
-    "yesPrice": 0.24,
-    "bestBid": 0.23,
-    "bestAsk": 0.25,
-    "lastPrice": 0.23,
+    "yesPrice": 0.26,
+    "bestBid": 0.25,
+    "bestAsk": 0.27,
+    "lastPrice": 0.27,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -31,7 +31,7 @@
     "yesPrice": 0.0035,
     "bestBid": 0.003,
     "bestAsk": 0.004,
-    "lastPrice": 0.004,
+    "lastPrice": 0.003,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -44,10 +44,10 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.717,
-    "bestBid": 0.713,
-    "bestAsk": 0.721,
-    "lastPrice": 0.72,
+    "yesPrice": 0.712,
+    "bestBid": 0.709,
+    "bestAsk": 0.715,
+    "lastPrice": 0.716,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -92,10 +92,10 @@
     "company": "OpenAI",
     "yesToken": "14665933826044668598628417965486222344112965532414111462458988627922152138169",
     "noToken": "68020671648501034488099780264916098001451415265707485792480636952663611175570",
-    "yesPrice": 0.0065,
+    "yesPrice": 0.007,
     "bestBid": 0.006,
-    "bestAsk": 0.007,
-    "lastPrice": 0.007,
+    "bestAsk": 0.008,
+    "lastPrice": 0.008,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -336,166 +336,6 @@
     "bestBid": null,
     "bestAsk": 0.001,
     "lastPrice": 0.001,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company A",
-    "yesToken": "15772069147001591839769625433722998309260407253173003113058633931639541146862",
-    "noToken": "79340015357108777510898420148238971076657405863751846618908250226752452976811",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company B",
-    "yesToken": "14478395018095587403067101231575054134649968137331749707095367499735998796176",
-    "noToken": "35898110163084127650043899363508171505806611257166343377363898745920411457670",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company C",
-    "yesToken": "70361553571907025839343568490661384639993309650756945974743792713292078251796",
-    "noToken": "24348903368891821867708164705528191678377075273913411401970227525059752245868",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company D",
-    "yesToken": "71106986388004713096335246886859295743412829644341814706682017069658433976600",
-    "noToken": "99958324270761673856330624221669704878491583931824673713877947646151239285890",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company E",
-    "yesToken": "90042287768229338732305714411531522291185057659462840129280822650237965353769",
-    "noToken": "44903999146553487493078727739864993110907366341400387388706192889252523566617",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company F",
-    "yesToken": "36439951540841729963109802269702937022729347910356866962589981006117812621067",
-    "noToken": "30690342043878163932628393620451654314930060601906484313048061017884785654213",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company G",
-    "yesToken": "89441157527237551875046119261413812813344154129952918430764627425169738292416",
-    "noToken": "115489078736330086109313055040743015171033289910940274217945586130166870380805",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company H",
-    "yesToken": "89377312030970955463231519014718505874325252780662925300391486406240166885239",
-    "noToken": "64554712586021976648609254875216495283874707363533426387598459917400010661543",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company I",
-    "yesToken": "37611047646562500405177449232612923400865236291126759851283356187163868319694",
-    "noToken": "102230221470967274899915839262854836700815550338893417112615431151449853245447",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
-    "schedule": {
-     "exponent": 1,
-     "rate": 0.04,
-     "takerOnly": true,
-     "rebateRate": 0.25
-    },
-    "closed": false
-   },
-   {
-    "company": "Company K",
-    "yesToken": "53868294351679642564785491498097094712772058771514753450784645357434167260948",
-    "noToken": "46182784404273109549519067832976224210475692918586438609459447215856138763626",
-    "yesPrice": 0.5,
-    "bestBid": 0,
-    "bestAsk": 1,
-    "lastPrice": 0,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,

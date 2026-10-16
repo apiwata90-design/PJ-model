@@ -100,7 +100,8 @@ export function outcomesNeedingBooks(forecast, event, minProb) {
 
 // Quoted mid if both sides exist, else last trade; outcomePrices alone (0.5 on untraded markets) is not a price.
 export function marketMid(o) {
-  if (o.bestBid !== null && o.bestAsk !== null && o.bestAsk > 0) return (o.bestBid + o.bestAsk) / 2;
+  // A 0.1¢/99.9¢ book has a "mid" of 50¢ that nobody trades at; fall back to the last trade.
+  if (o.bestBid !== null && o.bestAsk !== null && o.bestAsk > 0 && o.bestAsk - o.bestBid <= 0.3) return (o.bestBid + o.bestAsk) / 2;
   return o.lastPrice ?? null;
 }
 

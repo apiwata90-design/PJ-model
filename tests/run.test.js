@@ -88,3 +88,10 @@ test('missing history falls back to the delta prior and says so', async () => {
   assert.ok(out.markets.off.simInputs.debutDeltas.length >= 5);
   assert.ok(out.markets.off.reasons.some(r => r.includes('deltaPrior')));
 });
+
+test('marketMid ignores an empty 0.1¢/99.9¢ book', async () => {
+  const { marketMid } = await import('../src/pipeline/build.js');
+  assert.equal(marketMid({ bestBid: 0.001, bestAsk: 0.999, lastPrice: 0.02 }), 0.02);
+  assert.equal(marketMid({ bestBid: 0.70, bestAsk: 0.72, lastPrice: 0.5 }), 0.71);
+  assert.equal(marketMid({ bestBid: null, bestAsk: null, lastPrice: null }), null);
+});

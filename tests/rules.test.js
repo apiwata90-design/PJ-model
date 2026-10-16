@@ -31,3 +31,10 @@ test('better rank wins even with lower rating', () => {
   const rows = [row('a', 'anthropic', 2, 1510), row('g', 'google', 1, 1505)];
   assert.equal(resolveWinner(rows, map).model, 'g');
 });
+
+test('modelKey treats display names and ids as the same model', async () => {
+  const { modelKey } = await import('../src/core/rules.js');
+  assert.equal(modelKey('Claude Opus 4.6 (High)'), modelKey('claude-opus-4-6-high'));
+  assert.equal(modelKey('Claude Opus 5.5 (High)'), modelKey('claude-opus-5.5-high'));
+  assert.notEqual(modelKey('Claude Opus 5 (Max)'), modelKey('Claude Opus 5 (High)'));
+});

@@ -1,6 +1,6 @@
 // Pure glue: data in, MarketForecast out (no network, no fs). Used by run.js and backtest.js.
 import { simulate } from '../core/simulate.js';
-import { eligible, companyOf } from '../core/rules.js';
+import { eligible, companyOf, modelKey } from '../core/rules.js';
 import { checkTimeUtc, hoursUntil } from '../core/calendar.js';
 import { evaluateCompany } from '../core/edge.js';
 import { assessRisk } from '../core/risk.js';
@@ -15,7 +15,8 @@ export function simInputsFor({ latestRows, historyRows, target, now, config, see
   const models = eligible(latestRows, autoEval).sort((a, b) => b.rating - a.rating);
   const publishDate = models[0]?.leaderboard_publish_date;
   const history = cacheMerge(upTo(historyRows, publishDate), latestRows.filter(r => r.rank <= settings.historyMaxRank));
-  const trend = driftPerDay(history, publishDate, { days: settings.driftDays });
+  const byKey = driftPerDay(history, publishDate, { days: settings.driftDays });
+  const trend = Object.fromEntries(models.map(m => [m.model_name, byKey[modelKey(m.model_name)]]).filter(([, v]) => v !== undefined));
   const checkAt = checkTimeUtc(target.year, target.month);
   const hDays = Math.max(hoursUntil(now, checkAt) / 24, 0);
   const newModel = newModelRates(history, publishDate, companies, settings.rates);
@@ -46,7 +47,7 @@ function chartSeries(history, models, days) {
   const shown = dates.filter(d => d >= from);
   const top = models.slice(0, 5).map(m => m.model_name);
   const series = Object.fromEntries(top.map(name => [name, shown.map(d =>
-    snapshotAt(history, d).find(r => r.model_name === name)?.rating ?? null)]));
+    snapshotAt(history, d).find(r => modelKey(r.model_name) === modelKey(name))?.rating ?? null)]));
   return { dates: shown, series };
 }
 

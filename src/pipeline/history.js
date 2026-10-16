@@ -1,13 +1,13 @@
 // Statistics from leaderboard history used by the simulation (spec §5).
 // Every function takes `asOf` and ignores rows published after it, so backtests cannot see the future.
-import { companyOf } from '../core/rules.js';
+import { companyOf, modelKey } from '../core/rules.js';
 
 const DAY_MS = 86400000;
 const toDay = d => new Date(d + 'T00:00:00Z').getTime() / DAY_MS;
 
 export function cacheMerge(oldRows, newRows) {
   const byKey = new Map();
-  for (const r of [...oldRows, ...newRows]) byKey.set(`${r.leaderboard_publish_date}|${r.model_name}`, r);
+  for (const r of [...oldRows, ...newRows]) byKey.set(`${r.leaderboard_publish_date}|${modelKey(r.model_name)}`, r);
   return [...byKey.values()].sort((a, b) =>
     a.leaderboard_publish_date.localeCompare(b.leaderboard_publish_date) || b.rating - a.rating);
 }
@@ -29,7 +29,7 @@ function debuts(rows, asOf, topN) {
   const seen = new Map();
   const sorted = upTo(rows, asOf).sort((a, b) => a.leaderboard_publish_date.localeCompare(b.leaderboard_publish_date));
   const firstDate = sorted[0]?.leaderboard_publish_date;
-  for (const r of sorted) if (!seen.has(r.model_name)) seen.set(r.model_name, r);
+  for (const r of sorted) if (!seen.has(modelKey(r.model_name))) seen.set(modelKey(r.model_name), r);
   return [...seen.values()].filter(r => r.leaderboard_publish_date !== firstDate && r.rank <= topN);
 }
 
@@ -77,13 +77,14 @@ export function debutDeltas(rows, asOf, companyMap, { lookbackDays = 730, topN =
   return deltas;
 }
 
+// Keyed by modelKey().
 export function driftPerDay(rows, asOf, { days = 14 } = {}) {
   const end = toDay(asOf);
   const pts = {};
   for (const r of upTo(rows, asOf)) {
     const t = toDay(r.leaderboard_publish_date);
     if (t <= end - days) continue;
-    (pts[r.model_name] ||= []).push([t, r.rating]);
+    (pts[modelKey(r.model_name)] ||= []).push([t, r.rating]);
   }
   const out = {};
   for (const [name, p] of Object.entries(pts)) {

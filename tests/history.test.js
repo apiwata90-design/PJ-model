@@ -66,3 +66,16 @@ test('getJson does not retry 404', async () => {
   await assert.rejects(getJson('x', { fetchImpl: fake, baseDelayMs: 1 }));
   assert.equal(calls, 1);
 });
+
+test('a model renamed between publishes is not a new debut and keeps its trend', () => {
+  const renamed = [
+    r('2026-03-01', 'x0', 'google', 1400, 5),
+    r('2026-03-05', 'claude-opus-4-6-high', 'anthropic', 1500, 1), r('2026-03-05', 'x0', 'google', 1400, 5),
+    r('2026-03-10', 'claude-opus-4.6-high', 'anthropic', 1501, 1),
+    r('2026-03-15', 'Claude Opus 4.6 (High)', 'anthropic', 1502, 1),
+  ];
+  const rates = newModelRates(renamed, '2026-03-15', companyMap, { lookbackDays: 365, priorPerDay: 0 });
+  assert.equal(rates.Anthropic.lambdaPerDay, 1 / 14, 'one debut (03-05), not three');
+  const d = driftPerDay(renamed, '2026-03-15', { days: 14 });
+  assert.ok(Math.abs(d['claude-opus-4-6-high'] - 0.2) < 1e-9);
+});

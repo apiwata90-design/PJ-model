@@ -6,6 +6,12 @@ export function companyOf(org, map) {
   return map[key] ?? org;
 }
 
+// HF publishes the same model as "Claude Opus 4.6 (High)" on one date and "claude-opus-4-6-high" on another;
+// compare models by this key, display the name from the latest publish.
+export function modelKey(name) {
+  return String(name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 export function eligible(rows, autoEval) {
   return rows.filter(r => !autoEval.has(r.model_name));
 }

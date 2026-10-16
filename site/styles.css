@@ -67,6 +67,7 @@ details[open].card summary::before { content: '▾ '; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
 .advice { margin: 10px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--bg); }
 .advice.good { background: var(--good-bg); color: var(--good); }
+.advice.caution { background: var(--warn-bg); color: var(--warn); }
 
 .table-wrap { overflow-x: auto; }
 table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }

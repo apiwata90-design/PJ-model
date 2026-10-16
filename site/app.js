@@ -99,8 +99,10 @@ function renderSummary(f) {
   const adv = $('advice');
   if (!f.market.found) { adv.className = 'advice'; adv.textContent = 'ยังไม่พบตลาด Polymarket ของเดือนนี้ — มีแค่ผลทาย'; return; }
   if (signals.length) {
-    adv.className = 'advice good';
-    adv.textContent = '💡 ' + signals.map(([c, e]) => `${e.signal === 'yes' ? 'ซื้อ YES' : 'ซื้อ NO'} ${c}: เราให้ ${pct(e.pYes)} ตลาด ${cents(e.mid)} (EV ${pct(e[e.signal][0].ev)} ที่ $${e[e.signal][0].stake})`).join(' · ');
+    const bt = backtest?.markets?.[current]?.market;
+    const proven = bt && bt.oursBrierSame < bt.brier;
+    adv.className = proven ? 'advice good' : 'advice caution';
+    adv.textContent = (proven ? '💡 ' : '⚠ ยังไม่มีหลักฐานว่าระบบแม่นกว่าตลาด — ดูเป็นข้อมูลประกอบเท่านั้น: ') + signals.map(([c, e]) => `${e.signal === 'yes' ? 'ซื้อ YES' : 'ซื้อ NO'} ${c}: เราให้ ${pct(e.pYes)} ตลาด ${cents(e.mid)} (EV ${pct(e[e.signal][0].ev)} ที่ $${e[e.signal][0].stake})`).join(' · ');
   } else {
     adv.className = 'advice';
     adv.textContent = `💡 ยังไม่มีจุดได้เปรียบชัดเจน — ผลทายต่างจากราคาตลาดไม่ถึง 10 จุด หรือส่วนต่างโดนค่าธรรมเนียม/spread กินหมด`;

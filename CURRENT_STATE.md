@@ -1,6 +1,8 @@
 # Current State
 
-- 2026-10-16: สร้าง project — กฎ isolation + ระบบ resume (RESUME.md, sessions/)
-- 2026-10-16: Brainstorm → spec → plan เสร็จ; implement T1–T11 ครบ (Node, ไม่มี dependency), `npm test` ผ่าน 54/54
-  - แหล่งข้อมูล: HF `lmarena-ai/leaderboard-dataset` (arena.ai ถูก Cloudflare บล็อก) + Polymarket Gamma/CLOB
-  - ยังไม่ได้: รัน live เต็มระบบ, backtest กับข้อมูลจริง, เปิด dashboard ดูจริง, สร้าง GitHub repo (ต้องถาม user), commit (รอ user review)
+- 2026-10-16/17: V1 ใช้งานได้ — https://apiwata90-design.github.io/PJ-model/ (repo apiwata90-design/PJ-model)
+  - GitHub Actions: forecast ทุก 2 ชม. (+ทุก 30 นาทีใน 72 ชม. สุดท้าย), backtest รายเดือน, deploy Pages อัตโนมัติ
+  - ข้อมูล: HF lmarena-ai/leaderboard-dataset (cache ใน data/cache) + Polymarket Gamma/CLOB
+  - เทส 61/61 ผ่าน
+- Backtest: ชนะ baseline "ผู้นำชนะ" เล็กน้อย แต่ยังไม่มีหลักฐานว่าแม่นกว่าราคาตลาด → dashboard แสดงสัญญาณเป็น "ระวัง"
+- งานค้าง: ดู NEXT_TASKS.md

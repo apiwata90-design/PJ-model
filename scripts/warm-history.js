@@ -20,7 +20,9 @@ let failed = false;
 for (const config of Object.values(HF_CONFIG)) {
   const file = new URL(`../data/cache/history-${config}.json`, import.meta.url);
   let rows = existsSync(file) ? JSON.parse(readFileSync(file)) : [];
-  let from = rows.length ? rows.at(-1).leaderboard_publish_date : start;
+  // Some configs start later on HF (style control: 2025-05-19); querying before that only returns errors.
+  const first = settings.historyStart?.[config];
+  let from = rows.length ? rows.at(-1).leaderboard_publish_date : (first && first > start ? first : start);
   log(`${config}: start from ${from} (${rows.length} cached rows)`);
   while (from < today) {
     const until = addDays(from, 30) < today ? addDays(from, 30) : today;

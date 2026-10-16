@@ -1,0 +1,36 @@
+name: backtest
+
+on:
+  schedule:
+    - cron: '0 3 2 * *'   # monthly, after the previous month resolves
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh history cache
+        run: node scripts/warm-history.js
+      - name: Backtest + calibration
+        run: node src/pipeline/backtest.js --months=24 --market
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ config/calibration.json
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: backtest $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push

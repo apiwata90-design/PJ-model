@@ -1,0 +1,42 @@
+name: forecast
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'        # every 2 hours
+    - cron: '*/30 * 28-31 * *'    # every 30 min near month end (script skips unless within the final 72 h)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tests
+        run: npm test
+      - name: Forecast
+        run: |
+          if [ "${{ github.event.schedule }}" = "*/30 * 28-31 * *" ]; then
+            node src/pipeline/run.js --if-final-hours
+          else
+            node src/pipeline/run.js
+          fi
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "data: forecast $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase
+          git push

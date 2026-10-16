@@ -1,0 +1,12 @@
+node_modules/
+_site/
+.DS_Store
+*.log
+.env
+.env.*
+
+# private working notes (kept local only)
+CLAUDE.md
+RESUME.md
+sessions/
+data/cache/warm.log

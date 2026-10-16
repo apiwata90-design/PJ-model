@@ -1,0 +1,73 @@
+{
+  "id": "841230",
+  "slug": "which-company-has-the-best-ai-model-end-of-october",
+  "title": "Which company has the best AI model end of October?",
+  "description": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) when the table under the \"Leaderboard\" tab is checked on October 31, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall-no-style-control with style control off (Adjustments: None) and filtered for \"Models\" will be used to resolve this market.\n\nNote: Models marked “AutoEval” at the applicable check time will not be considered, regardless of whether they display a rank or score.\n\nModels will be ordered primarily by their leaderboard rank at the market’s check time. If two or more models are tied on rank, they will be ordered by their Arena score, including any underlying, unrounded, granular values reflected in the data below the leaderboard. If a tie still remains, alphabetical order of company names as listed in this market group will be used as a final tiebreaker (e.g., if the two models are tied by exact arena score, “Google” would be ranked ahead of “SpaceXAI”). This market will resolve based on the company that occupies first place under this ranking.\n\nThe resolution source for this market is the arena.ai Text Arena (Overall). If this resolution source is unavailable at check time, this market will remain open until the leaderboard comes back online and will resolve based on the first check after it becomes available. If it becomes permanently unavailable, this market will resolve to \"Other\".",
+  "endDate": "2026-10-31T16:00:00Z",
+  "closed": false,
+  "markets": [
+    {
+      "id": "3554657",
+      "question": "Will Anthropic have the best AI model at the end of October 2026?",
+      "groupItemTitle": "Anthropic",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.26\", \"0.74\"]",
+      "clobTokenIds": "[\"17398972530137600675762712744895375915722542439211248541948693649429200536957\", \"85377241479106312434941600365981690112200050573592763839850833219429995374007\"]",
+      "bestBid": 0.25,
+      "bestAsk": 0.27,
+      "lastTradePrice": 0.25,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "feesEnabled": true,
+      "active": true,
+      "closed": false,
+      "negRisk": true
+    },
+    {
+      "id": "3554659",
+      "question": "Will Google have the best AI model at the end of October 2026?",
+      "groupItemTitle": "Google",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.709\", \"0.291\"]",
+      "clobTokenIds": "[\"111088620532234518037120406087772586039940496346205331791940213760503764823657\", \"76810674201886111032129055133251049314607750560651731811226197614606577962057\"]",
+      "bestBid": 0.704,
+      "bestAsk": 0.714,
+      "lastTradePrice": 0.714,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "feesEnabled": true,
+      "active": true,
+      "closed": false,
+      "negRisk": true
+    },
+    {
+      "id": "3554662",
+      "question": "Will OpenAI have the best AI model at the end of October 2026?",
+      "groupItemTitle": "OpenAI",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.0065\", \"0.9935\"]",
+      "clobTokenIds": "[\"14665933826044668598628417965486222344112965532414111462458988627922152138169\", \"68020671648501034488099780264916098001451415265707485792480636952663611175570\"]",
+      "bestBid": 0.006,
+      "bestAsk": 0.007,
+      "lastTradePrice": 0.007,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.25
+      },
+      "feesEnabled": true,
+      "active": true,
+      "closed": false,
+      "negRisk": true
+    }
+  ]
+}

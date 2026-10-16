@@ -1,0 +1,42 @@
+name: pages
+
+on:
+  push:
+    branches: [main]
+  # Commits made with GITHUB_TOKEN do not trigger `push`, so redeploy after the data jobs finish.
+  workflow_run:
+    workflows: [forecast, backtest]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site
+        run: |
+          mkdir -p _site/data _site/core
+          cp site/* _site/
+          cp src/core/*.js _site/core/
+          for d in latest history backtest; do
+            if [ -d "data/$d" ]; then cp -r "data/$d" _site/data/; fi
+          done
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

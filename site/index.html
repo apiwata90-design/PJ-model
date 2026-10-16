@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arena #1 Forecast</title>
+  <meta name="description" content="ทายบริษัทที่จะได้อันดับ 1 บน arena.ai Text Arena ตอนสิ้นเดือน เทียบกับราคา Polymarket">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="stale-banner" class="banner danger" hidden></div>
+  <header class="top">
+    <div>
+      <h1>Arena #1 Forecast</h1>
+      <p class="muted" id="subtitle">กำลังโหลด…</p>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="ตลาด">
+      <button role="tab" data-key="off" aria-selected="true">Style Control ปิด</button>
+      <button role="tab" data-key="on" aria-selected="false">Style Control เปิด</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card summary" aria-labelledby="h-summary">
+      <h2 id="h-summary" class="sr-only">สรุป</h2>
+      <div class="countdown"><span class="label">เหลือเวลาถึงตัดสิน</span><strong id="countdown">–</strong><span class="muted" id="check-at"></span></div>
+      <div id="headline" class="headline"></div>
+      <p id="advice" class="advice"></p>
+    </section>
+
+    <section class="card" aria-labelledby="h-edge">
+      <h2 id="h-edge">ผลทาย vs ราคาตลาด</h2>
+      <p class="muted small">ราคา "ซื้อได้จริง" = ราคาเฉลี่ยเมื่อกวาด orderbook รวมค่าธรรมเนียม taker แล้ว · EV = กำไรที่คาดหวังต่อเงิน 1 ดอลลาร์ตามผลทายของเรา</p>
+      <div class="table-wrap"><table id="edge-table"></table></div>
+      <p id="calib-warning" class="note warn" hidden></p>
+    </section>
+
+    <section class="card" aria-labelledby="h-reasons">
+      <h2 id="h-reasons">เหตุผล</h2>
+      <ul id="reasons" class="reasons"></ul>
+    </section>
+
+    <section class="card" aria-labelledby="h-whatif">
+      <h2 id="h-whatif">สิ่งที่คุณรู้ (ลองใส่ข่าว)</h2>
+      <p class="muted small">ถ้ารู้ข่าวว่าบริษัทไหนจะปล่อย model ใหม่ ใส่โอกาสและคะแนนที่คาดว่าจะได้ (เทียบกับ model ที่ดีที่สุดของบริษัทนั้นตอนนี้) ระบบจะคำนวณใหม่ในเครื่องคุณทันที — ไม่เปลี่ยนตัวเลขทางการ และไม่ส่งข้อมูลไปไหน</p>
+      <div id="whatif" class="whatif"></div>
+      <div id="whatif-result" class="whatif-result"></div>
+    </section>
+
+    <section class="card" aria-labelledby="h-charts">
+      <h2 id="h-charts">กราฟ</h2>
+      <h3>คะแนน model ท็อป 5 (30 วัน)</h3>
+      <div class="chart-box"><canvas id="chart-rating" aria-label="กราฟคะแนน model ท็อป 5"></canvas></div>
+      <h3>ผลทายของเรา vs ราคาตลาด เดือนนี้</h3>
+      <div class="chart-box"><canvas id="chart-history" aria-label="กราฟผลทายเทียบราคาตลาด"></canvas></div>
+      <p id="history-empty" class="muted small" hidden>ยังมีข้อมูลน้อยเกินไป — กราฟนี้จะเติมขึ้นทุกครั้งที่ระบบรัน</p>
+    </section>
+
+    <section class="card" aria-labelledby="h-backtest">
+      <h2 id="h-backtest">ระบบนี้เคยทายแม่นแค่ไหน (backtest)</h2>
+      <div id="backtest"></div>
+    </section>
+
+    <section class="card" aria-labelledby="h-status">
+      <h2 id="h-status">สถานะข้อมูล & ความเสี่ยงการตัดสิน</h2>
+      <div id="status"></div>
+      <ul id="risks" class="risks"></ul>
+      <p class="small"><a id="resolve-link" href="https://arena.ai/leaderboard/text/overall-no-style-control" target="_blank" rel="noopener">เปิด leaderboard ที่ใช้ตัดสินจริงบน arena.ai ↗</a></p>
+    </section>
+
+    <details class="card">
+      <summary><h2>ความน่าจะเป็นราย model</h2></summary>
+      <div class="table-wrap"><table id="model-table"></table></div>
+      <h3>Leaderboard ล่าสุด (ท็อป 15)</h3>
+      <div class="table-wrap"><table id="lb-table"></table></div>
+    </details>
+  </main>
+  <footer class="muted small">ข้อมูล: HuggingFace lmarena-ai/leaderboard-dataset · Polymarket Gamma/CLOB · เครื่องมือวิเคราะห์เท่านั้น ไม่ใช่คำแนะนำการลงทุน และไม่เทรดแทนคุณ</footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

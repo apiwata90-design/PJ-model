@@ -1,0 +1,17 @@
+{
+  "nSims": 10000,
+  "edgeThreshold": 0.10,
+  "stakes": [100, 1000],
+  "lowVotes": 3000,
+  "window": 60,
+  "historyDays": 900,
+  "historyMaxRank": 20,
+  "rates": { "lookbackDays": 365, "topN": 10, "priorPerDay": 0.00055 },
+  "deltas": { "lookbackDays": 730, "topN": 10 },
+  "driftDays": 14,
+  "lagDays": 1,
+  "bookMinProb": 0.005,
+  "staleHours": 6,
+  "finalHours": 72,
+  "chartDays": 30
+}

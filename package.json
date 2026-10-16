@@ -1,0 +1,14 @@
+{
+  "name": "arena-first-rank-forecast",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Forecast which company/model will be #1 on arena.ai Text Arena at Polymarket's month-end check",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "run": "node src/pipeline/run.js",
+    "backtest": "node src/pipeline/backtest.js",
+    "serve": "node scripts/serve.js"
+  }
+}

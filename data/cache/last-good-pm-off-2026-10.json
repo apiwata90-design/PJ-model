@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-20T17:04:40.267Z",
+ "savedAt": "2026-10-20T21:34:38.404Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -12,15 +12,15 @@
     "company": "Anthropic",
     "yesToken": "17398972530137600675762712744895375915722542439211248541948693649429200536957",
     "noToken": "85377241479106312434941600365981690112200050573592763839850833219429995374007",
-    "yesPrice": 0.2,
-    "bestBid": 0.19,
-    "bestAsk": 0.21,
-    "lastPrice": 0.21,
+    "yesPrice": 0.185,
+    "bestBid": 0.18,
+    "bestAsk": 0.19,
+    "lastPrice": 0.19,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -28,15 +28,15 @@
     "company": "Meta",
     "yesToken": "67850294165032849315961593437114430140885475241403319796869289837049761569452",
     "noToken": "87456576017377326852249590182450859019384100913215773268047943325689202924521",
-    "yesPrice": 0.0055,
-    "bestBid": 0.005,
-    "bestAsk": 0.006,
+    "yesPrice": 0.0045,
+    "bestBid": 0.004,
+    "bestAsk": 0.005,
     "lastPrice": 0.006,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -44,15 +44,15 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.7885,
-    "bestBid": 0.788,
-    "bestAsk": 0.789,
-    "lastPrice": 0.789,
+    "yesPrice": 0.792,
+    "bestBid": 0.791,
+    "bestAsk": 0.793,
+    "lastPrice": 0.791,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -66,9 +66,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -82,9 +82,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -95,12 +95,12 @@
     "yesPrice": 0.0075,
     "bestBid": 0.006,
     "bestAsk": 0.009,
-    "lastPrice": 0.006,
+    "lastPrice": 0.007,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -114,9 +114,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -130,9 +130,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -146,9 +146,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -162,9 +162,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -178,9 +178,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -194,9 +194,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -210,9 +210,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -226,9 +226,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -242,9 +242,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -258,9 +258,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -274,9 +274,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -290,9 +290,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -306,9 +306,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -322,9 +322,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },
@@ -338,9 +338,9 @@
     "lastPrice": 0.001,
     "schedule": {
      "exponent": 1,
-     "rate": 0.04,
+     "rate": 0,
      "takerOnly": true,
-     "rebateRate": 0.25
+     "rebateRate": 0
     },
     "closed": false
    },

@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-20T11:37:22.153Z",
+ "savedAt": "2026-10-20T17:04:40.267Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -12,10 +12,10 @@
     "company": "Anthropic",
     "yesToken": "17398972530137600675762712744895375915722542439211248541948693649429200536957",
     "noToken": "85377241479106312434941600365981690112200050573592763839850833219429995374007",
-    "yesPrice": 0.225,
-    "bestBid": 0.22,
-    "bestAsk": 0.23,
-    "lastPrice": 0.22,
+    "yesPrice": 0.2,
+    "bestBid": 0.19,
+    "bestAsk": 0.21,
+    "lastPrice": 0.21,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -31,7 +31,7 @@
     "yesPrice": 0.0055,
     "bestBid": 0.005,
     "bestAsk": 0.006,
-    "lastPrice": 0.005,
+    "lastPrice": 0.006,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -44,10 +44,10 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.7375,
-    "bestBid": 0.737,
-    "bestAsk": 0.738,
-    "lastPrice": 0.738,
+    "yesPrice": 0.7885,
+    "bestBid": 0.788,
+    "bestAsk": 0.789,
+    "lastPrice": 0.789,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,
@@ -93,9 +93,9 @@
     "yesToken": "14665933826044668598628417965486222344112965532414111462458988627922152138169",
     "noToken": "68020671648501034488099780264916098001451415265707485792480636952663611175570",
     "yesPrice": 0.0075,
-    "bestBid": 0.007,
-    "bestAsk": 0.008,
-    "lastPrice": 0.008,
+    "bestBid": 0.006,
+    "bestAsk": 0.009,
+    "lastPrice": 0.006,
     "schedule": {
      "exponent": 1,
      "rate": 0.04,

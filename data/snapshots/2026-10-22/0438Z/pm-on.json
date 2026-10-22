@@ -1,0 +1,1236 @@
+{
+ "id": "841241",
+ "slug": "which-company-has-1-ai-model-end-of-october-style-control-on",
+ "title": "Which company has #1 AI model end of October? (Style Control On)",
+ "description": "This market will resolve according to the company which owns the model which has the highest arena rank based on the arena.ai Text Arena (Overall) (Style Control On) when the table under the \"Leaderboard\" tab is checked on October 31, 2026, 12:00 PM ET.\n\nResults from the \"Rank\" column under the \"Text Arena | Overall\" Leaderboard tab at https://arena.ai/leaderboard/text/overall with style control on (Adjustments: Style Control) and filtered for \"Models\" will be used to resolve this market.\n\nNote: Models marked “AutoEval” at the applicable check time will not be considered, regardless of whether they display a rank or score.\n\nModels will be ordered primarily by their leaderboard rank at the market’s check time. If two or more models are tied on rank, they will be ordered by their Arena score, including any underlying, unrounded, granular values reflected in the data below the leaderboard. If a tie still remains, alphabetical order of company names as listed in this market group will be used as a final tiebreaker (e.g., if the two models are tied by exact arena score, “Google” would be ranked ahead of “SpaceXAI”). This market will resolve based on the company that occupies first place under this ranking.\n\nThe resolution source for this market is the arena.ai Text Arena (Overall). If this resolution source is unavailable at check time, this market will remain open until the leaderboard comes back online and will resolve based on the first check after it becomes available. If it becomes permanently unavailable, this market will resolve to \"Other\".",
+ "endDate": "2026-10-31T16:00:00Z",
+ "closed": false,
+ "outcomes": [
+  {
+   "company": "Anthropic",
+   "yesToken": "115259396279115838784122216232451056238631574353820288254865029406753795237524",
+   "noToken": "101296564422492994054364735157207825033132516345358684650869155245453269649928",
+   "yesPrice": 0.166,
+   "bestBid": 0.142,
+   "bestAsk": 0.19,
+   "lastPrice": 0.147,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Meta",
+   "yesToken": "73716092397700380674151171987896470709630281677177126892226330228975169465033",
+   "noToken": "3289623840118509993403266464988518997429562652246681537905562206815192432876",
+   "yesPrice": 0.0315,
+   "bestBid": 0.02,
+   "bestAsk": 0.043,
+   "lastPrice": 0.012,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Google",
+   "yesToken": "15989359370971166038343733693649776320895230450412666607659142460429162309542",
+   "noToken": "112657347526160468390858434816311731925683199463702356223253202188915818453879",
+   "yesPrice": 0.796,
+   "bestBid": 0.785,
+   "bestAsk": 0.807,
+   "lastPrice": 0.757,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Moonshot",
+   "yesToken": "17987235420921157693312897543419596888755638608127251758001335768280801939891",
+   "noToken": "22009623599793832669149475856135188026872008055345613498048756850251915103050",
+   "yesPrice": 0.0015,
+   "bestBid": 0.001,
+   "bestAsk": 0.002,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "OpenAI",
+   "yesToken": "13843590615798130598759552079318931525010962290630936454468904976943031837924",
+   "noToken": "98516975176575710203990594576358850693212788301668308708013669246392324299408",
+   "yesPrice": 0.027,
+   "bestBid": 0.003,
+   "bestAsk": 0.051,
+   "lastPrice": 0.018,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Alibaba",
+   "yesToken": "104181878794391520658471342325113675077581652268398172519363530862176920014945",
+   "noToken": "78029728802516703778695163730742680604213752843273998599392397988052544694317",
+   "yesPrice": 0.0015,
+   "bestBid": 0.001,
+   "bestAsk": 0.002,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "SpaceXAI",
+   "yesToken": "23074445411379837192885766887875804803456559351644146763527744787327673740753",
+   "noToken": "107083042543990643645894548144287633995543885167713894884937267230517254372473",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.002,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Z.ai",
+   "yesToken": "55707449968924057368711857440969218913545100896998228999626866685459623305671",
+   "noToken": "69348765735895981151966387496089191954149439631160869546044165813490690699700",
+   "yesPrice": 0.0015,
+   "bestBid": 0.001,
+   "bestAsk": 0.002,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Baidu",
+   "yesToken": "53959358233599051988537115198105824378114268436111416890294087738101695735049",
+   "noToken": "11377647830674071449943811435672556756615689759663791020764315041977723810627",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Xiaomi",
+   "yesToken": "57826096016777068293960184886227449414396556207608330314158250068401107081530",
+   "noToken": "7507743433442846941515644942600456205091186518841182280884276495226568403102",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "DeepSeek",
+   "yesToken": "24430794955316524297626920960313834129911377089881464295578440339773667685955",
+   "noToken": "57489155509547034487487585736891914913998509474830937871020761948060835833337",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "ByteDance",
+   "yesToken": "91179417982768430986717392554600477070003783274551479254983075035062940038748",
+   "noToken": "109960801805423157296567174080136572848346300761500889910084253414313551731929",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "MiniMax",
+   "yesToken": "48363283846084929985522043753641483442169100767300290170780281947445817546081",
+   "noToken": "57887588813187359832674076135605379271881616855893519451331997220583293024222",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Thinky",
+   "yesToken": "77147378531471562776248434733393694455386555486432450517115336381944737889082",
+   "noToken": "106918900492844542441312583834560903442631642204880366376450153428124756429387",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Meituan",
+   "yesToken": "22953677030771089735204684874171907785975422803022142010306222207910538450919",
+   "noToken": "8110389824182061705644497605902020041328844528528103546399027394660519887618",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Mistral",
+   "yesToken": "95160461590681549542026005943809610476779421208024802142485673394944411630746",
+   "noToken": "18373004801970387748227106792228899947747209856414992040123112726826876282206",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Amazon",
+   "yesToken": "48769050639584150332882769501620287157218606092127005329235121831504422821155",
+   "noToken": "53025790889298683481367845288254012998201495320754199267628162754341447989861",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Nvidia",
+   "yesToken": "35639572620057045586872947650303820614664775166975100656364195623779411985210",
+   "noToken": "24943782165449302029203318045723196067514784331765608103313082508689508973305",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Tencent",
+   "yesToken": "15580160189847725079938421889362599113850754048916078264895343931661511016474",
+   "noToken": "14460554641282469437988404489817364830724708696163711824316163234552972597668",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "StepFun",
+   "yesToken": "105729318102026971557718205561646351778897819718214277164819257961405217309139",
+   "noToken": "89791705406809551421745020142418860299259408145938250393489598866886152106032",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Microsoft",
+   "yesToken": "93145270634408597233319400198160012419447539197885356383106056738101466466425",
+   "noToken": "55292445559016608805277097807036332805085424550423551080637991241911733400304",
+   "yesPrice": 0.0005,
+   "bestBid": null,
+   "bestAsk": 0.001,
+   "lastPrice": 0.001,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0,
+    "takerOnly": true,
+    "rebateRate": 0
+   },
+   "closed": false
+  },
+  {
+   "company": "Other",
+   "yesToken": "99219920495859344621252140108972835904919696380270521602698568370721520073715",
+   "noToken": "31527839586893382855776719221046100860817098327303008326069014072435270473926",
+   "yesPrice": 0.5,
+   "bestBid": 0,
+   "bestAsk": 1,
+   "lastPrice": 0,
+   "schedule": {
+    "exponent": 1,
+    "rate": 0.04,
+    "takerOnly": true,
+    "rebateRate": 0.25
+   },
+   "closed": false
+  }
+ ],
+ "books": {
+  "115259396279115838784122216232451056238631574353820288254865029406753795237524": {
+   "bids": [
+    {
+     "price": 0.142,
+     "size": 43.78
+    },
+    {
+     "price": 0.101,
+     "size": 10
+    },
+    {
+     "price": 0.1,
+     "size": 21
+    },
+    {
+     "price": 0.012,
+     "size": 20
+    },
+    {
+     "price": 0.011,
+     "size": 600
+    },
+    {
+     "price": 0.01,
+     "size": 1000
+    },
+    {
+     "price": 0.003,
+     "size": 473.32
+    },
+    {
+     "price": 0.002,
+     "size": 926
+    },
+    {
+     "price": 0.001,
+     "size": 2031.39
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.19,
+     "size": 174
+    },
+    {
+     "price": 0.191,
+     "size": 34
+    },
+    {
+     "price": 0.192,
+     "size": 30
+    },
+    {
+     "price": 0.193,
+     "size": 22.8
+    },
+    {
+     "price": 0.195,
+     "size": 20
+    },
+    {
+     "price": 0.205,
+     "size": 45
+    },
+    {
+     "price": 0.206,
+     "size": 38.12
+    },
+    {
+     "price": 0.208,
+     "size": 31.77
+    },
+    {
+     "price": 0.209,
+     "size": 30.96
+    },
+    {
+     "price": 0.21,
+     "size": 84.9
+    }
+   ]
+  },
+  "101296564422492994054364735157207825033132516345358684650869155245453269649928": {
+   "bids": [
+    {
+     "price": 0.81,
+     "size": 174
+    },
+    {
+     "price": 0.809,
+     "size": 34
+    },
+    {
+     "price": 0.808,
+     "size": 30
+    },
+    {
+     "price": 0.807,
+     "size": 22.8
+    },
+    {
+     "price": 0.805,
+     "size": 20
+    },
+    {
+     "price": 0.795,
+     "size": 45
+    },
+    {
+     "price": 0.794,
+     "size": 38.12
+    },
+    {
+     "price": 0.792,
+     "size": 31.77
+    },
+    {
+     "price": 0.791,
+     "size": 30.96
+    },
+    {
+     "price": 0.79,
+     "size": 84.9
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.858,
+     "size": 43.78
+    },
+    {
+     "price": 0.899,
+     "size": 10
+    },
+    {
+     "price": 0.9,
+     "size": 21
+    },
+    {
+     "price": 0.988,
+     "size": 20
+    },
+    {
+     "price": 0.989,
+     "size": 600
+    },
+    {
+     "price": 0.99,
+     "size": 1000
+    },
+    {
+     "price": 0.997,
+     "size": 473.32
+    },
+    {
+     "price": 0.998,
+     "size": 926
+    },
+    {
+     "price": 0.999,
+     "size": 2031.39
+    }
+   ]
+  },
+  "73716092397700380674151171987896470709630281677177126892226330228975169465033": {
+   "bids": [
+    {
+     "price": 0.02,
+     "size": 250
+    },
+    {
+     "price": 0.007,
+     "size": 60
+    },
+    {
+     "price": 0.006,
+     "size": 100
+    },
+    {
+     "price": 0.004,
+     "size": 250
+    },
+    {
+     "price": 0.002,
+     "size": 405.1
+    },
+    {
+     "price": 0.001,
+     "size": 887
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.043,
+     "size": 30
+    },
+    {
+     "price": 0.044,
+     "size": 20
+    },
+    {
+     "price": 0.07,
+     "size": 40
+    },
+    {
+     "price": 0.071,
+     "size": 10
+    },
+    {
+     "price": 0.12,
+     "size": 12.8
+    },
+    {
+     "price": 0.122,
+     "size": 300
+    },
+    {
+     "price": 0.271,
+     "size": 195
+    },
+    {
+     "price": 0.272,
+     "size": 50
+    },
+    {
+     "price": 0.381,
+     "size": 400
+    },
+    {
+     "price": 0.382,
+     "size": 110
+    }
+   ]
+  },
+  "3289623840118509993403266464988518997429562652246681537905562206815192432876": {
+   "bids": [
+    {
+     "price": 0.957,
+     "size": 30
+    },
+    {
+     "price": 0.956,
+     "size": 20
+    },
+    {
+     "price": 0.93,
+     "size": 40
+    },
+    {
+     "price": 0.929,
+     "size": 10
+    },
+    {
+     "price": 0.88,
+     "size": 12.8
+    },
+    {
+     "price": 0.878,
+     "size": 300
+    },
+    {
+     "price": 0.729,
+     "size": 195
+    },
+    {
+     "price": 0.728,
+     "size": 50
+    },
+    {
+     "price": 0.619,
+     "size": 400
+    },
+    {
+     "price": 0.618,
+     "size": 110
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.98,
+     "size": 250
+    },
+    {
+     "price": 0.993,
+     "size": 60
+    },
+    {
+     "price": 0.994,
+     "size": 100
+    },
+    {
+     "price": 0.996,
+     "size": 250
+    },
+    {
+     "price": 0.998,
+     "size": 405.1
+    },
+    {
+     "price": 0.999,
+     "size": 887
+    }
+   ]
+  },
+  "15989359370971166038343733693649776320895230450412666607659142460429162309542": {
+   "bids": [
+    {
+     "price": 0.785,
+     "size": 16
+    },
+    {
+     "price": 0.784,
+     "size": 20
+    },
+    {
+     "price": 0.782,
+     "size": 104
+    },
+    {
+     "price": 0.781,
+     "size": 115.19
+    },
+    {
+     "price": 0.775,
+     "size": 187
+    },
+    {
+     "price": 0.774,
+     "size": 540
+    },
+    {
+     "price": 0.773,
+     "size": 20
+    },
+    {
+     "price": 0.771,
+     "size": 127.12
+    },
+    {
+     "price": 0.753,
+     "size": 10
+    },
+    {
+     "price": 0.752,
+     "size": 324.98
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.807,
+     "size": 100
+    },
+    {
+     "price": 0.808,
+     "size": 20
+    },
+    {
+     "price": 0.81,
+     "size": 20
+    },
+    {
+     "price": 0.811,
+     "size": 198.59
+    },
+    {
+     "price": 0.812,
+     "size": 20
+    },
+    {
+     "price": 0.817,
+     "size": 727
+    },
+    {
+     "price": 0.828,
+     "size": 268
+    },
+    {
+     "price": 0.836,
+     "size": 40
+    },
+    {
+     "price": 0.837,
+     "size": 30.03
+    },
+    {
+     "price": 0.839,
+     "size": 310.37
+    }
+   ]
+  },
+  "112657347526160468390858434816311731925683199463702356223253202188915818453879": {
+   "bids": [
+    {
+     "price": 0.193,
+     "size": 100
+    },
+    {
+     "price": 0.192,
+     "size": 20
+    },
+    {
+     "price": 0.19,
+     "size": 20
+    },
+    {
+     "price": 0.189,
+     "size": 198.59
+    },
+    {
+     "price": 0.188,
+     "size": 20
+    },
+    {
+     "price": 0.183,
+     "size": 727
+    },
+    {
+     "price": 0.172,
+     "size": 268
+    },
+    {
+     "price": 0.164,
+     "size": 40
+    },
+    {
+     "price": 0.163,
+     "size": 30.03
+    },
+    {
+     "price": 0.161,
+     "size": 310.37
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.215,
+     "size": 16
+    },
+    {
+     "price": 0.216,
+     "size": 20
+    },
+    {
+     "price": 0.218,
+     "size": 104
+    },
+    {
+     "price": 0.219,
+     "size": 115.19
+    },
+    {
+     "price": 0.225,
+     "size": 187
+    },
+    {
+     "price": 0.226,
+     "size": 540
+    },
+    {
+     "price": 0.227,
+     "size": 20
+    },
+    {
+     "price": 0.229,
+     "size": 127.12
+    },
+    {
+     "price": 0.247,
+     "size": 10
+    },
+    {
+     "price": 0.248,
+     "size": 324.98
+    }
+   ]
+  },
+  "13843590615798130598759552079318931525010962290630936454468904976943031837924": {
+   "bids": [
+    {
+     "price": 0.003,
+     "size": 87.01
+    },
+    {
+     "price": 0.002,
+     "size": 227.1
+    },
+    {
+     "price": 0.001,
+     "size": 371
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.051,
+     "size": 43.75
+    },
+    {
+     "price": 0.053,
+     "size": 52.8
+    },
+    {
+     "price": 0.079,
+     "size": 40
+    },
+    {
+     "price": 0.189,
+     "size": 50
+    },
+    {
+     "price": 0.279,
+     "size": 50
+    },
+    {
+     "price": 0.389,
+     "size": 110
+    },
+    {
+     "price": 0.43,
+     "size": 595
+    },
+    {
+     "price": 0.431,
+     "size": 110
+    },
+    {
+     "price": 0.433,
+     "size": 20
+    },
+    {
+     "price": 0.669,
+     "size": 110
+    }
+   ]
+  },
+  "98516975176575710203990594576358850693212788301668308708013669246392324299408": {
+   "bids": [
+    {
+     "price": 0.949,
+     "size": 43.75
+    },
+    {
+     "price": 0.947,
+     "size": 52.8
+    },
+    {
+     "price": 0.921,
+     "size": 40
+    },
+    {
+     "price": 0.811,
+     "size": 50
+    },
+    {
+     "price": 0.721,
+     "size": 50
+    },
+    {
+     "price": 0.611,
+     "size": 110
+    },
+    {
+     "price": 0.57,
+     "size": 595
+    },
+    {
+     "price": 0.569,
+     "size": 110
+    },
+    {
+     "price": 0.567,
+     "size": 20
+    },
+    {
+     "price": 0.331,
+     "size": 110
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.997,
+     "size": 87.01
+    },
+    {
+     "price": 0.998,
+     "size": 227.1
+    },
+    {
+     "price": 0.999,
+     "size": 371
+    }
+   ]
+  },
+  "104181878794391520658471342325113675077581652268398172519363530862176920014945": {
+   "bids": [
+    {
+     "price": 0.001,
+     "size": 130.68
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.002,
+     "size": 565.1
+    },
+    {
+     "price": 0.008,
+     "size": 148.19
+    },
+    {
+     "price": 0.009,
+     "size": 14
+    },
+    {
+     "price": 0.01,
+     "size": 5
+    },
+    {
+     "price": 0.012,
+     "size": 151.21
+    },
+    {
+     "price": 0.019,
+     "size": 49.99
+    },
+    {
+     "price": 0.02,
+     "size": 6
+    },
+    {
+     "price": 0.03,
+     "size": 57
+    },
+    {
+     "price": 0.056,
+     "size": 40
+    },
+    {
+     "price": 0.057,
+     "size": 30.5
+    }
+   ]
+  },
+  "78029728802516703778695163730742680604213752843273998599392397988052544694317": {
+   "bids": [
+    {
+     "price": 0.998,
+     "size": 565.1
+    },
+    {
+     "price": 0.992,
+     "size": 148.19
+    },
+    {
+     "price": 0.991,
+     "size": 14
+    },
+    {
+     "price": 0.99,
+     "size": 5
+    },
+    {
+     "price": 0.988,
+     "size": 151.21
+    },
+    {
+     "price": 0.981,
+     "size": 49.99
+    },
+    {
+     "price": 0.98,
+     "size": 6
+    },
+    {
+     "price": 0.97,
+     "size": 57
+    },
+    {
+     "price": 0.944,
+     "size": 40
+    },
+    {
+     "price": 0.943,
+     "size": 30.5
+    }
+   ],
+   "asks": [
+    {
+     "price": 0.999,
+     "size": 130.68
+    }
+   ]
+  },
+  "23074445411379837192885766887875804803456559351644146763527744787327673740753": {
+   "bids": [],
+   "asks": [
+    {
+     "price": 0.001,
+     "size": 281.8
+    },
+    {
+     "price": 0.003,
+     "size": 114
+    },
+    {
+     "price": 0.004,
+     "size": 21
+    },
+    {
+     "price": 0.005,
+     "size": 35.89
+    },
+    {
+     "price": 0.009,
+     "size": 150
+    },
+    {
+     "price": 0.01,
+     "size": 10
+    },
+    {
+     "price": 0.012,
+     "size": 156
+    },
+    {
+     "price": 0.019,
+     "size": 50
+    },
+    {
+     "price": 0.02,
+     "size": 10
+    },
+    {
+     "price": 0.03,
+     "size": 60
+    }
+   ]
+  },
+  "107083042543990643645894548144287633995543885167713894884937267230517254372473": {
+   "bids": [
+    {
+     "price": 0.999,
+     "size": 281.8
+    },
+    {
+     "price": 0.997,
+     "size": 114
+    },
+    {
+     "price": 0.996,
+     "size": 21
+    },
+    {
+     "price": 0.995,
+     "size": 35.89
+    },
+    {
+     "price": 0.991,
+     "size": 150
+    },
+    {
+     "price": 0.99,
+     "size": 10
+    },
+    {
+     "price": 0.988,
+     "size": 156
+    },
+    {
+     "price": 0.981,
+     "size": 50
+    },
+    {
+     "price": 0.98,
+     "size": 10
+    },
+    {
+     "price": 0.97,
+     "size": 60
+    }
+   ],
+   "asks": []
+  },
+  "53959358233599051988537115198105824378114268436111416890294087738101695735049": {
+   "bids": [],
+   "asks": [
+    {
+     "price": 0.001,
+     "size": 905.59
+    },
+    {
+     "price": 0.009,
+     "size": 148.19
+    },
+    {
+     "price": 0.01,
+     "size": 9
+    },
+    {
+     "price": 0.012,
+     "size": 156
+    },
+    {
+     "price": 0.019,
+     "size": 50
+    },
+    {
+     "price": 0.02,
+     "size": 6
+    },
+    {
+     "price": 0.03,
+     "size": 50
+    },
+    {
+     "price": 0.05,
+     "size": 40
+    },
+    {
+     "price": 0.051,
+     "size": 10
+    },
+    {
+     "price": 0.219,
+     "size": 11.97
+    }
+   ]
+  },
+  "11377647830674071449943811435672556756615689759663791020764315041977723810627": {
+   "bids": [
+    {
+     "price": 0.999,
+     "size": 905.59
+    },
+    {
+     "price": 0.991,
+     "size": 148.19
+    },
+    {
+     "price": 0.99,
+     "size": 9
+    },
+    {
+     "price": 0.988,
+     "size": 156
+    },
+    {
+     "price": 0.981,
+     "size": 50
+    },
+    {
+     "price": 0.98,
+     "size": 6
+    },
+    {
+     "price": 0.97,
+     "size": 50
+    },
+    {
+     "price": 0.95,
+     "size": 40
+    },
+    {
+     "price": 0.949,
+     "size": 10
+    },
+    {
+     "price": 0.781,
+     "size": 11.97
+    }
+   ],
+   "asks": []
+  }
+ }
+}

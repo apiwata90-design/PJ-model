@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-22T11:46:39.759Z",
- "seed": 1792669599,
+ "generated_at": "2026-10-22T17:07:10.659Z",
+ "seed": 1792688830,
  "target": {
   "year": 2026,
   "month": 10
@@ -14,8 +14,9 @@
     "stale": false
    },
    "history-off": {
-    "ok": true,
-    "stale": false
+    "ok": false,
+    "stale": true,
+    "error": "HTTP 500 for https://datasets-server.huggingface.co/filter?dataset=lmarena-ai%2Fleaderboard-dataset&config=text&split=full&where=%22category%22%3D'overall'%20AND%20%22rank%22%3C%3D20%20AND%20%22leaderboard_publish_date%22%3E'2026-10-20'&offset=0&length=100&orderby=%22leaderboard_publish_date%22%20AS"
    },
    "pm-off": {
     "ok": true,
@@ -26,15 +27,16 @@
     "stale": false
    },
    "history-on": {
-    "ok": true,
-    "stale": false
+    "ok": false,
+    "stale": true,
+    "error": "HTTP 500 for https://datasets-server.huggingface.co/filter?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_style_control&split=full&where=%22category%22%3D'overall'%20AND%20%22rank%22%3C%3D20%20AND%20%22leaderboard_publish_date%22%3E'2026-10-20'&offset=0&length=100&orderby=%22leaderboard_publis"
    },
    "pm-on": {
     "ok": true,
     "stale": false
    }
   },
-  "stale": false
+  "stale": true
  },
  "markets": {
   "off": {
@@ -45,7 +47,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 220.22228916666666,
+   "hoursLeft": 214.8803725,
    "publishDate": "2026-10-20",
    "leaderboard": [
     {
@@ -216,38 +218,38 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.872,
-     "Anthropic": 0.0361,
-     "Baidu": 0.021,
+     "Google": 0.8785,
+     "Anthropic": 0.0339,
+     "Baidu": 0.0223,
      "OpenAI": 0.0173,
-     "SpaceXAI": 0.011,
-     "Z.ai": 0.0094,
-     "Meta": 0.0072,
-     "ByteDance": 0.0055,
-     "Mistral": 0.0048,
-     "Amazon": 0.0048,
-     "Moonshot": 0.0046,
-     "": 0.0043,
-     "Alibaba": 0.001,
-     "Xiaomi": 0.001
+     "SpaceXAI": 0.0094,
+     "Z.ai": 0.0092,
+     "Meta": 0.0057,
+     "Mistral": 0.0053,
+     "ByteDance": 0.0044,
+     "Moonshot": 0.0044,
+     "Amazon": 0.0041,
+     "": 0.0039,
+     "Alibaba": 0.0012,
+     "Xiaomi": 0.0004
     },
     "models": {
-     "Gemini 4 Argon (High)": 0.8251,
-     "Google · model ใหม่": 0.0469,
-     "Anthropic · model ใหม่": 0.0354,
-     "Baidu · model ใหม่": 0.021,
+     "Gemini 4 Argon (High)": 0.8339,
+     "Google · model ใหม่": 0.0446,
+     "Anthropic · model ใหม่": 0.0334,
+     "Baidu · model ใหม่": 0.0223,
      "OpenAI · model ใหม่": 0.0173,
-     "SpaceXAI · model ใหม่": 0.011,
-     "Z.ai · model ใหม่": 0.0094,
-     "Meta · model ใหม่": 0.0072,
-     "ByteDance · model ใหม่": 0.0055,
-     "Mistral · model ใหม่": 0.0048,
-     "Amazon · model ใหม่": 0.0048,
-     "Moonshot · model ใหม่": 0.0046,
-     " · model ใหม่": 0.0043,
-     "Alibaba · model ใหม่": 0.001,
-     "Xiaomi · model ใหม่": 0.001,
-     "Claude Opus 5.5 (High)": 0.0007
+     "SpaceXAI · model ใหม่": 0.0094,
+     "Z.ai · model ใหม่": 0.0092,
+     "Meta · model ใหม่": 0.0057,
+     "Mistral · model ใหม่": 0.0053,
+     "ByteDance · model ใหม่": 0.0044,
+     "Moonshot · model ใหม่": 0.0044,
+     "Amazon · model ใหม่": 0.0041,
+     " · model ใหม่": 0.0039,
+     "Alibaba · model ใหม่": 0.0012,
+     "Claude Opus 5.5 (High)": 0.0005,
+     "Xiaomi · model ใหม่": 0.0004
     },
     "n": 10000
    },
@@ -479,9 +481,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 9.175928715277777,
+    "hDays": 8.953348854166666,
     "n": 10000,
-    "seed": 1792669599,
+    "seed": 1792688830,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -651,10 +653,10 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 87% · เหลือ 9.2 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 88% · เหลือ 9.0 วันถึงเวลาตัดสิน",
     "Gemini 4 Argon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 16.1 แต้ม — ห่างเกินช่วง CI (±15.8)",
     "ช่วง 14 วันล่าสุด ระยะห่างแคบลง ~1.8 แต้ม/สัปดาห์",
-    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 17% — มากสุดคือ Google 5%",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 17% — มากสุดคือ Google 4%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~0.9 · Meta ~0.4"
    ],
    "chart": {
@@ -721,12 +723,12 @@
     "title": "Which company has the best AI model end of October?",
     "endDate": "2026-10-31T16:00:00Z",
     "mids": {
-     "Anthropic": 0.175,
-     "Meta": 0.0015,
-     "Google": 0.8075000000000001,
+     "Anthropic": 0.11,
+     "Meta": 0.006,
+     "Google": 0.868,
      "Alibaba": 0.001,
      "Moonshot": 0.001,
-     "OpenAI": 0.0045000000000000005,
+     "OpenAI": 0.006500000000000001,
      "Baidu": 0.001,
      "Z.ai": 0.001,
      "Xiaomi": 0.001,
@@ -747,221 +749,221 @@
    },
    "edges": {
     "Anthropic": {
-     "pYes": 0.0361,
-     "mid": 0.175,
-     "diff": -0.1389,
-     "bestBid": 0.17,
-     "bestAsk": 0.18,
+     "pYes": 0.0339,
+     "mid": 0.11,
+     "diff": -0.0761,
+     "bestBid": 0.1,
+     "bestAsk": 0.12,
      "yes": [
       {
        "stake": 100,
-       "shares": 555.5555555555555,
-       "avgPrice": 0.18,
+       "shares": 778.9257142857143,
+       "avgPrice": 0.1283819472973766,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.7994444444444444
+       "ev": -0.7359441828571429
       },
       {
        "stake": 1000,
-       "shares": 5239.032,
-       "avgPrice": 0.19087495552613537,
+       "shares": 6620.278823529412,
+       "avgPrice": 0.15105103979093115,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": -0.8108709448
+       "ev": -0.775572547882353
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 120.48192771084338,
-       "avgPrice": 0.83,
+       "shares": 111.11111111111111,
+       "avgPrice": 0.9,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.16132530120481925
+       "ev": 0.07344444444444442
       },
       {
        "stake": 1000,
-       "shares": 1193.1242857142859,
-       "avgPrice": 0.838135651057787,
+       "shares": 1111.111111111111,
+       "avgPrice": 0.9,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": 0.15005249900000006
+       "ev": 0.07344444444444442
       }
      ],
-     "signal": "no"
+     "signal": null
     },
     "Meta": {
-     "pYes": 0.0072,
-     "mid": 0.0015,
-     "diff": 0.0057,
-     "bestBid": 0.001,
-     "bestAsk": 0.002,
+     "pYes": 0.0057,
+     "mid": 0.006,
+     "diff": -0.0002999999999999999,
+     "bestBid": 0.005,
+     "bestAsk": 0.007,
      "yes": [
       {
        "stake": 100,
-       "shares": 13304.91,
-       "avgPrice": 0.005330420874699641,
+       "shares": 8165.57,
+       "avgPrice": 0.012235285473028828,
        "feeUsd": 0,
-       "spentUsd": 70.92076999999998,
+       "spentUsd": 99.90808000000001,
        "complete": false,
-       "ev": 0.3507376188950011
+       "ev": -0.5341342862359082
       },
       {
        "stake": 1000,
-       "shares": 13304.91,
-       "avgPrice": 0.005330420874699641,
+       "shares": 8165.57,
+       "avgPrice": 0.012235285473028828,
        "feeUsd": 0,
-       "spentUsd": 70.92077000000018,
+       "spentUsd": 99.90808000000004,
        "complete": false,
-       "ev": 0.3507376188949973
+       "ev": -0.5341342862359082
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 100.10010010010011,
-       "avgPrice": 0.9989999999999999,
+       "shares": 100.4367469879518,
+       "avgPrice": 0.9956515219673114,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.006206206206206155
+       "ev": -0.0013574246987951843
       },
       {
        "stake": 1000,
-       "shares": 1001.001001001001,
-       "avgPrice": 0.999,
+       "shares": 1002.427254509018,
+       "avgPrice": 0.9975786227897336,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": -0.006206206206206155
+       "ev": -0.0032865808416834286
       }
      ],
      "signal": null
     },
     "Google": {
-     "pYes": 0.872,
-     "mid": 0.8075000000000001,
-     "diff": 0.06449999999999989,
-     "bestBid": 0.803,
-     "bestAsk": 0.812,
+     "pYes": 0.8785,
+     "mid": 0.8725,
+     "diff": 0.005999999999999894,
+     "bestBid": 0.859,
+     "bestAsk": 0.886,
      "yes": [
       {
        "stake": 100,
-       "shares": 123.15184501845017,
-       "avgPrice": 0.8120056990215482,
+       "shares": 112.64674915635544,
+       "avgPrice": 0.8877308999054953,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.07388408856088535
+       "ev": -0.010398308661417555
       },
       {
        "stake": 1000,
-       "shares": 1220.919501216545,
-       "avgPrice": 0.8190548181133833,
+       "shares": 1123.7411422172452,
+       "avgPrice": 0.889884656200188,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": 0.06464180506082728
+       "ev": -0.012793406562150111
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 505.9823232323232,
-       "avgPrice": 0.19763536275571572,
+       "shares": 697.669103448276,
+       "avgPrice": 0.1433344253110011,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.35234262626262636
+       "ev": -0.15233203931034422
       },
       {
        "stake": 1000,
-       "shares": 4762.71602739726,
-       "avgPrice": 0.20996422928588546,
+       "shares": 4373.78,
+       "avgPrice": 0.14741660988892902,
        "feeUsd": 0,
-       "spentUsd": 1000,
-       "complete": true,
-       "ev": -0.3903723484931506
+       "spentUsd": 644.7678200000003,
+       "complete": false,
+       "ev": -0.17580522241324015
       }
      ],
      "signal": null
     },
     "OpenAI": {
      "pYes": 0.0173,
-     "mid": 0.0045000000000000005,
-     "diff": 0.012799999999999999,
-     "bestBid": 0.004,
-     "bestAsk": 0.005,
+     "mid": 0.006500000000000001,
+     "diff": 0.010799999999999999,
+     "bestBid": 0.006,
+     "bestAsk": 0.007,
      "yes": [
       {
        "stake": 100,
-       "shares": 2734.56,
-       "avgPrice": 0.010029778099584576,
+       "shares": 4186.1,
+       "avgPrice": 0.022042717565275552,
        "feeUsd": 0,
-       "spentUsd": 27.427029999999988,
+       "spentUsd": 92.27301999999999,
        "complete": false,
-       "ev": 0.7248636837455611
+       "ev": -0.21516029279197735
       },
       {
        "stake": 1000,
-       "shares": 2734.56,
-       "avgPrice": 0.010029778099584576,
+       "shares": 4186.1,
+       "avgPrice": 0.022042717565275552,
        "feeUsd": 0,
-       "spentUsd": 27.42702999999983,
+       "spentUsd": 92.27301999999997,
        "complete": false,
-       "ev": 0.7248636837455711
+       "ev": -0.21516029279197724
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 100.40160642570281,
-       "avgPrice": 0.996,
+       "shares": 100.6036217303823,
+       "avgPrice": 0.9939999999999999,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.013353413654618396
+       "ev": -0.011368209255533057
       },
       {
        "stake": 1000,
-       "shares": 1004.0160642570281,
-       "avgPrice": 0.996,
+       "shares": 1005.3786934673367,
+       "avgPrice": 0.9946500821011168,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": -0.013353413654618396
+       "ev": -0.012014357929648223
       }
      ],
      "signal": null
     },
     "Baidu": {
-     "pYes": 0.021,
+     "pYes": 0.0223,
      "mid": 0.001,
-     "diff": 0.02,
+     "diff": 0.0213,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 83410.16333333334,
-       "avgPrice": 0.0011988946670727454,
+       "shares": 83423.38555555556,
+       "avgPrice": 0.0011987046477921384,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 16.516134300000004
+       "ev": 17.603414978888893
       },
       {
        "stake": 1000,
-       "shares": 84304.95000000001,
-       "avgPrice": 0.0013033398394756179,
+       "shares": 84322.95000000001,
+       "avgPrice": 0.0013035715662224813,
        "feeUsd": 0,
-       "spentUsd": 109.87800000000004,
+       "spentUsd": 109.92099999999994,
        "complete": false,
-       "ev": 15.11245153715939
+       "ev": 16.106847508665325
       }
      ],
      "no": [
@@ -987,29 +989,29 @@
      "signal": null
     },
     "Z.ai": {
-     "pYes": 0.0094,
+     "pYes": 0.0092,
      "mid": 0.001,
-     "diff": 0.008400000000000001,
+     "diff": 0.008199999999999999,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 18658.68,
-       "avgPrice": 0.004503601540945018,
+       "shares": 18709.68,
+       "avgPrice": 0.004495387414429322,
        "feeUsd": 0,
-       "spentUsd": 84.03126,
+       "spentUsd": 84.10726000000001,
        "complete": false,
-       "ev": 1.0872183994384947
+       "ev": 1.0465421891047213
       },
       {
        "stake": 1000,
-       "shares": 18658.68,
-       "avgPrice": 0.004503601540945018,
+       "shares": 18709.68,
+       "avgPrice": 0.004495387414429322,
        "feeUsd": 0,
-       "spentUsd": 84.03125999999986,
+       "spentUsd": 84.10725999999988,
        "complete": false,
-       "ev": 1.0872183994384983
+       "ev": 1.0465421891047244
       }
      ],
      "no": [
@@ -1035,29 +1037,29 @@
      "signal": null
     },
     "SpaceXAI": {
-     "pYes": 0.011,
+     "pYes": 0.0094,
      "mid": 0.001,
-     "diff": 0.009999999999999998,
+     "diff": 0.008400000000000001,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 30150.738749999997,
-       "avgPrice": 0.003316668318782073,
+       "shares": 30237.238749999997,
+       "avgPrice": 0.0033071802894039065,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 2.3165812624999997
+       "ev": 1.8423004425
       },
       {
        "stake": 1000,
-       "shares": 36016.21,
-       "avgPrice": 0.004220981052698216,
+       "shares": 36047.21,
+       "avgPrice": 0.004205033898601307,
        "feeUsd": 0,
-       "spentUsd": 152.0237400000001,
+       "spentUsd": 151.57974000000002,
        "complete": false,
-       "ev": 1.6060292293821985
+       "ev": 1.2354159863316823
       }
      ],
      "no": [
@@ -1082,30 +1084,30 @@
      ],
      "signal": null
     },
-    "ByteDance": {
-     "pYes": 0.0055,
+    "Mistral": {
+     "pYes": 0.0053,
      "mid": 0.001,
-     "diff": 0.0045,
+     "diff": 0.0043,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 82100.50142857143,
-       "avgPrice": 0.001218019357494441,
+       "shares": 65739.41,
+       "avgPrice": 0.0014330396333036757,
        "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": 3.5155275785714277
+       "spentUsd": 94.20718,
+       "complete": false,
+       "ev": 2.698432253252884
       },
       {
        "stake": 1000,
-       "shares": 84320.94,
-       "avgPrice": 0.0014506733440115822,
+       "shares": 65739.41,
+       "avgPrice": 0.0014330396333036757,
        "feeUsd": 0,
-       "spentUsd": 122.32213999999988,
+       "spentUsd": 94.20718,
        "complete": false,
-       "ev": 2.791342842759295
+       "ev": 2.698432253252884
       }
      ],
      "no": [
@@ -1135,7 +1137,7 @@
     {
      "id": "freshness",
      "level": "ok",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-20 (2.5 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-20 (2.7 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -1182,7 +1184,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 220.22228916666666,
+   "hoursLeft": 214.8803725,
    "publishDate": "2026-10-20",
    "leaderboard": [
     {
@@ -1353,29 +1355,29 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.8983,
-     "Anthropic": 0.0372,
-     "OpenAI": 0.0192,
-     "SpaceXAI": 0.0171,
-     "Meta": 0.012,
-     "Baidu": 0.0069,
-     "Z.ai": 0.0045,
-     "Alibaba": 0.0035,
-     "Moonshot": 0.0013
+     "Google": 0.8957,
+     "Anthropic": 0.0395,
+     "OpenAI": 0.0191,
+     "SpaceXAI": 0.0157,
+     "Meta": 0.0112,
+     "Baidu": 0.0082,
+     "Z.ai": 0.0055,
+     "Alibaba": 0.0046,
+     "Moonshot": 0.0005
     },
     "models": {
-     "Gemini 4 Argon (High)": 0.8697,
-     "Anthropic · model ใหม่": 0.0356,
-     "Google · model ใหม่": 0.0286,
-     "OpenAI · model ใหม่": 0.0192,
-     "SpaceXAI · model ใหม่": 0.0171,
-     "Meta · model ใหม่": 0.0108,
-     "Baidu · model ใหม่": 0.0069,
-     "Z.ai · model ใหม่": 0.0045,
-     "Alibaba · model ใหม่": 0.0035,
-     "Claude Opus 5.5 (High)": 0.0016,
-     "Moonshot · model ใหม่": 0.0013,
-     "Muse Wonder (Max)": 0.0012
+     "Gemini 4 Argon (High)": 0.8642,
+     "Anthropic · model ใหม่": 0.0373,
+     "Google · model ใหม่": 0.0315,
+     "OpenAI · model ใหม่": 0.0191,
+     "SpaceXAI · model ใหม่": 0.0157,
+     "Meta · model ใหม่": 0.0106,
+     "Baidu · model ใหม่": 0.0082,
+     "Z.ai · model ใหม่": 0.0055,
+     "Alibaba · model ใหม่": 0.0046,
+     "Claude Opus 5.5 (High)": 0.0022,
+     "Muse Wonder (Max)": 0.0006,
+     "Moonshot · model ใหม่": 0.0005
     },
     "n": 10000
    },
@@ -1810,9 +1812,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 9.175928715277777,
+    "hDays": 8.953348854166666,
     "n": 10000,
-    "seed": 1792669599,
+    "seed": 1792688830,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -1926,7 +1928,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 90% · เหลือ 9.2 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 90% · เหลือ 9.0 วันถึงเวลาตัดสิน",
     "Gemini 4 Argon (High) (Google) นำ Muse Wonder (Max) (Meta) อยู่ 14.4 แต้ม — ช่วง CI ยังซ้อนกัน (±17.6) จึงสลับกันได้",
     "ช่วง 14 วันล่าสุด ระยะห่างกว้างขึ้น ~1.5 แต้ม/สัปดาห์",
     "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 13% — มากสุดคือ Anthropic 4%",
@@ -1996,11 +1998,11 @@
     "title": "Which company has #1 AI model end of October? (Style Control On)",
     "endDate": "2026-10-31T16:00:00Z",
     "mids": {
-     "Anthropic": 0.1535,
-     "Meta": 0.033,
-     "Google": 0.806,
+     "Anthropic": 0.15150000000000002,
+     "Meta": 0.028499999999999998,
+     "Google": 0.8245,
      "Moonshot": 0.0015,
-     "OpenAI": 0.029500000000000002,
+     "OpenAI": 0.0195,
      "Alibaba": 0.0015,
      "SpaceXAI": 0.002,
      "Z.ai": 0.0015,
@@ -2022,77 +2024,77 @@
    },
    "edges": {
     "Anthropic": {
-     "pYes": 0.0372,
-     "mid": 0.1535,
-     "diff": -0.1163,
-     "bestBid": 0.128,
-     "bestAsk": 0.179,
+     "pYes": 0.0395,
+     "mid": 0.15150000000000002,
+     "diff": -0.11200000000000002,
+     "bestBid": 0.137,
+     "bestAsk": 0.166,
      "yes": [
       {
        "stake": 100,
-       "shares": 540.0668783068784,
-       "avgPrice": 0.18516225307780812,
+       "shares": 510.4753424657534,
+       "avgPrice": 0.1958958478130778,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.7990951212698413
+       "ev": -0.7983622397260274
       },
       {
        "stake": 1000,
-       "shares": 3859.370000000001,
-       "avgPrice": 0.19884856854875274,
+       "shares": 1575.11,
+       "avgPrice": 0.24056846188520167,
        "feeUsd": 0,
-       "spentUsd": 767.4302000000001,
+       "spentUsd": 378.9217899999999,
        "complete": false,
-       "ev": -0.8129229681083701
+       "ev": -0.8358055761322145
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 114.6788990825688,
-       "avgPrice": 0.872,
+       "shares": 106.48635437881876,
+       "avgPrice": 0.9390874594528427,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.10412844036697244
+       "ev": 0.02280143380855426
       },
       {
        "stake": 1000,
-       "shares": 1084.3295959595962,
-       "avgPrice": 0.9222288165205275,
+       "shares": 1017.8744242424243,
+       "avgPrice": 0.982439460294203,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": 0.0439925349898993
+       "ev": -0.022331615515151393
       }
      ],
      "signal": "no"
     },
     "Meta": {
-     "pYes": 0.012,
-     "mid": 0.033,
-     "diff": -0.021,
+     "pYes": 0.0112,
+     "mid": 0.028499999999999998,
+     "diff": -0.017299999999999996,
      "bestBid": 0.02,
-     "bestAsk": 0.046,
+     "bestAsk": 0.037,
      "yes": [
       {
        "stake": 100,
-       "shares": 878.6,
-       "avgPrice": 0.11232756658320055,
+       "shares": 686.5999999999999,
+       "avgPrice": 0.10747014273230412,
        "feeUsd": 0,
-       "spentUsd": 98.69100000000002,
+       "spentUsd": 73.789,
        "complete": false,
-       "ev": -0.8931695899322127
+       "ev": -0.8957850086056187
       },
       {
        "stake": 1000,
-       "shares": 878.6,
-       "avgPrice": 0.11232756658320055,
+       "shares": 686.5999999999999,
+       "avgPrice": 0.10747014273230412,
        "feeUsd": 0,
-       "spentUsd": 98.69099999999992,
+       "spentUsd": 73.78900000000021,
        "complete": false,
-       "ev": -0.8931695899322125
+       "ev": -0.895785008605619
       }
      ],
      "no": [
@@ -2103,140 +2105,140 @@
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.008163265306122547
+       "ev": 0.008979591836734802
       },
       {
        "stake": 1000,
-       "shares": 1007.7154308617235,
-       "avgPrice": 0.992343641244904,
+       "shares": 1007.625250501002,
+       "avgPrice": 0.9924324539334334,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": -0.004377154308617293
+       "ev": -0.0036601523046091433
       }
      ],
      "signal": null
     },
     "Google": {
-     "pYes": 0.8983,
-     "mid": 0.806,
-     "diff": 0.09229999999999994,
-     "bestBid": 0.79,
-     "bestAsk": 0.822,
+     "pYes": 0.8957,
+     "mid": 0.8245,
+     "diff": 0.07120000000000004,
+     "bestBid": 0.811,
+     "bestAsk": 0.838,
      "yes": [
       {
        "stake": 100,
-       "shares": 121.62621359223303,
-       "avgPrice": 0.8221911794053082,
+       "shares": 119.33174224343676,
+       "avgPrice": 0.838,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.09256827669902923
+       "ev": 0.06885441527446323
       },
       {
        "stake": 1000,
-       "shares": 1019.5799999999999,
-       "avgPrice": 0.8436203927107242,
+       "shares": 401.62,
+       "avgPrice": 0.903676485234799,
        "feeUsd": 0,
-       "spentUsd": 860.1384800000001,
+       "spentUsd": 362.9345500000002,
        "complete": false,
-       "ev": 0.06481541669894808
+       "ev": -0.00882670442921496
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 438.11444827586206,
-       "avgPrice": 0.22825086091895844,
+       "shares": 138.19260563380283,
+       "avgPrice": 0.7236277190184143,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.5544376061034482
+       "ev": -0.8558651123239437
       },
       {
        "stake": 1000,
-       "shares": 1713.32,
-       "avgPrice": 0.40930212686480055,
+       "shares": 1033.42,
+       "avgPrice": 0.9584254514137523,
        "feeUsd": 0,
-       "spentUsd": 701.2655200000002,
+       "spentUsd": 990.45603,
        "complete": false,
-       "ev": -0.7515282884577015
+       "ev": -0.8911756779349408
       }
      ],
      "signal": null
     },
     "OpenAI": {
-     "pYes": 0.0192,
-     "mid": 0.029500000000000002,
-     "diff": -0.010300000000000004,
+     "pYes": 0.0191,
+     "mid": 0.0195,
+     "diff": -0.00040000000000000105,
      "bestBid": 0.003,
-     "bestAsk": 0.056,
+     "bestAsk": 0.036,
      "yes": [
       {
        "stake": 100,
-       "shares": 564.6661616161617,
-       "avgPrice": 0.17709579003952458,
+       "shares": 284.6818380062305,
+       "avgPrice": 0.35126933527038495,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.891584096969697
+       "ev": -0.94562576894081
       },
       {
        "stake": 1000,
-       "shares": 631.55,
-       "avgPrice": 0.2014503998099913,
+       "shares": 365.96999999999997,
+       "avgPrice": 0.4873227313714239,
        "feeUsd": 0,
-       "spentUsd": 127.22600000000011,
+       "spentUsd": 178.3454999999999,
        "complete": false,
-       "ev": -0.9046911794758934
+       "ev": -0.960806260881267
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 100.28758517034069,
-       "avgPrice": 0.9971323951030208,
+       "shares": 100.2825751503006,
+       "avgPrice": 0.9971822108688665,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": -0.016379364649298456
+       "ev": -0.01632822035070136
       },
       {
        "stake": 1000,
-       "shares": 735.11,
-       "avgPrice": 0.9984543401667778,
+       "shares": 730.11,
+       "avgPrice": 0.998464299900015,
        "feeUsd": 0,
-       "spentUsd": 733.9737700000001,
+       "spentUsd": 728.9887699999999,
        "complete": false,
-       "ev": -0.01768167001390253
+       "ev": -0.01759131488404131
       }
      ],
      "signal": null
     },
     "SpaceXAI": {
-     "pYes": 0.0171,
+     "pYes": 0.0157,
      "mid": 0.001,
-     "diff": 0.0161,
+     "diff": 0.014699999999999998,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 1164.58,
-       "avgPrice": 0.006384396091294716,
+       "shares": 1134.58,
+       "avgPrice": 0.005707081034391582,
        "feeUsd": 0,
-       "spentUsd": 7.43513999999999,
+       "spentUsd": 6.475139999999996,
        "complete": false,
-       "ev": 1.678405248589808
+       "ev": 1.750968473268533
       },
       {
        "stake": 1000,
-       "shares": 1164.58,
-       "avgPrice": 0.006384396091294716,
+       "shares": 1134.58,
+       "avgPrice": 0.005707081034391582,
        "feeUsd": 0,
-       "spentUsd": 7.435139999999933,
+       "spentUsd": 6.47514000000001,
        "complete": false,
-       "ev": 1.6784052485898284
+       "ev": 1.750968473268527
       }
      ],
      "no": [
@@ -2261,30 +2263,78 @@
      ],
      "signal": null
     },
+    "Z.ai": {
+     "pYes": 0.0055,
+     "mid": 0.0015,
+     "diff": 0.004,
+     "bestBid": 0.001,
+     "bestAsk": 0.002,
+     "yes": [
+      {
+       "stake": 100,
+       "shares": 1108.29,
+       "avgPrice": 0.011440543540048182,
+       "feeUsd": 0,
+       "spentUsd": 12.679439999999985,
+       "complete": false,
+       "ev": -0.5192536105695514
+      },
+      {
+       "stake": 1000,
+       "shares": 1108.29,
+       "avgPrice": 0.011440543540048182,
+       "feeUsd": 0,
+       "spentUsd": 12.679439999999886,
+       "complete": false,
+       "ev": -0.5192536105695477
+      }
+     ],
+     "no": [
+      {
+       "stake": 100,
+       "shares": 100.10010010010011,
+       "avgPrice": 0.9989999999999999,
+       "feeUsd": 0,
+       "spentUsd": 100,
+       "complete": true,
+       "ev": -0.0045045045045043475
+      },
+      {
+       "stake": 1000,
+       "shares": 152.86,
+       "avgPrice": 0.999,
+       "feeUsd": 0,
+       "spentUsd": 152.70713999999998,
+       "complete": false,
+       "ev": -0.004504504504504125
+      }
+     ],
+     "signal": null
+    },
     "Baidu": {
-     "pYes": 0.0069,
+     "pYes": 0.0082,
      "mid": 0.001,
-     "diff": 0.0059,
+     "diff": 0.007200000000000001,
      "bestBid": null,
      "bestAsk": 0.001,
      "yes": [
       {
        "stake": 100,
-       "shares": 1893.25,
-       "avgPrice": 0.013480723623398918,
+       "shares": 1788.25,
+       "avgPrice": 0.00632868446805536,
        "feeUsd": 0,
-       "spentUsd": 25.522380000000013,
+       "spentUsd": 11.317270000000008,
        "complete": false,
-       "ev": -0.4881580401200831
+       "ev": 0.2956879176691898
       },
       {
        "stake": 1000,
-       "shares": 1893.25,
-       "avgPrice": 0.013480723623398918,
+       "shares": 1788.25,
+       "avgPrice": 0.00632868446805536,
        "feeUsd": 0,
-       "spentUsd": 25.52238,
+       "spentUsd": 11.317270000000008,
        "complete": false,
-       "ev": -0.4881580401200828
+       "ev": 0.2956879176691898
       }
      ],
      "no": [
@@ -2314,7 +2364,7 @@
     {
      "id": "freshness",
      "level": "ok",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-20 (2.5 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-20 (2.7 วันก่อน)"
     },
     {
      "id": "close-race",

@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-22T21:37:22.770Z",
+ "savedAt": "2026-10-23T00:39:15.314Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -15,7 +15,7 @@
     "yesPrice": 0.105,
     "bestBid": 0.1,
     "bestAsk": 0.11,
-    "lastPrice": 0.1,
+    "lastPrice": 0.11,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -44,10 +44,10 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.891,
-    "bestBid": 0.888,
-    "bestAsk": 0.894,
-    "lastPrice": 0.889,
+    "yesPrice": 0.889,
+    "bestBid": 0.887,
+    "bestAsk": 0.891,
+    "lastPrice": 0.884,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -92,10 +92,10 @@
     "company": "OpenAI",
     "yesToken": "14665933826044668598628417965486222344112965532414111462458988627922152138169",
     "noToken": "68020671648501034488099780264916098001451415265707485792480636952663611175570",
-    "yesPrice": 0.0055,
-    "bestBid": 0.005,
-    "bestAsk": 0.006,
-    "lastPrice": 0.005,
+    "yesPrice": 0.0085,
+    "bestBid": 0.008,
+    "bestAsk": 0.009,
+    "lastPrice": 0.006,
     "schedule": {
      "exponent": 1,
      "rate": 0,

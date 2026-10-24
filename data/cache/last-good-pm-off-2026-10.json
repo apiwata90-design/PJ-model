@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-24T18:46:26.809Z",
+ "savedAt": "2026-10-24T22:28:38.397Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -44,10 +44,10 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.911,
-    "bestBid": 0.906,
-    "bestAsk": 0.916,
-    "lastPrice": 0.906,
+    "yesPrice": 0.907,
+    "bestBid": 0.905,
+    "bestAsk": 0.909,
+    "lastPrice": 0.902,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -76,10 +76,10 @@
     "company": "Moonshot",
     "yesToken": "69933113107652185818115764646609294026925367308002705366985764292349964623886",
     "noToken": "14790005446784612515771525034970199674886826291924741657011500508241104425526",
-    "yesPrice": 0.0015,
-    "bestBid": 0.001,
-    "bestAsk": 0.002,
-    "lastPrice": 0.001,
+    "yesPrice": 0.0035,
+    "bestBid": 0.002,
+    "bestAsk": 0.005,
+    "lastPrice": 0.004,
     "schedule": {
      "exponent": 1,
      "rate": 0,

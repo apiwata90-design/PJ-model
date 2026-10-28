@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-28T16:16:34.354Z",
+ "savedAt": "2026-10-28T16:43:35.379Z",
  "value": {
   "id": "841230",
   "slug": "which-company-has-the-best-ai-model-end-of-october",
@@ -12,10 +12,10 @@
     "company": "Anthropic",
     "yesToken": "17398972530137600675762712744895375915722542439211248541948693649429200536957",
     "noToken": "85377241479106312434941600365981690112200050573592763839850833219429995374007",
-    "yesPrice": 0.0275,
-    "bestBid": 0.022,
-    "bestAsk": 0.033,
-    "lastPrice": 0.034,
+    "yesPrice": 0.0205,
+    "bestBid": 0.017,
+    "bestAsk": 0.024,
+    "lastPrice": 0.021,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -31,7 +31,7 @@
     "yesPrice": 0.004,
     "bestBid": 0.003,
     "bestAsk": 0.005,
-    "lastPrice": 0.004,
+    "lastPrice": 0.003,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -44,10 +44,10 @@
     "company": "Google",
     "yesToken": "111088620532234518037120406087772586039940496346205331791940213760503764823657",
     "noToken": "76810674201886111032129055133251049314607750560651731811226197614606577962057",
-    "yesPrice": 0.9655,
+    "yesPrice": 0.9635,
     "bestBid": 0.962,
-    "bestAsk": 0.969,
-    "lastPrice": 0.963,
+    "bestAsk": 0.965,
+    "lastPrice": 0.961,
     "schedule": {
      "exponent": 1,
      "rate": 0,

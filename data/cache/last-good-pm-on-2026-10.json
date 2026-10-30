@@ -1,5 +1,5 @@
 {
- "savedAt": "2026-10-30T16:46:10.946Z",
+ "savedAt": "2026-10-30T19:23:24.946Z",
  "value": {
   "id": "841241",
   "slug": "which-company-has-1-ai-model-end-of-october-style-control-on",
@@ -12,10 +12,10 @@
     "company": "Anthropic",
     "yesToken": "115259396279115838784122216232451056238631574353820288254865029406753795237524",
     "noToken": "101296564422492994054364735157207825033132516345358684650869155245453269649928",
-    "yesPrice": 0.009,
+    "yesPrice": 0.0085,
     "bestBid": 0.004,
-    "bestAsk": 0.014,
-    "lastPrice": 0.023,
+    "bestAsk": 0.013,
+    "lastPrice": 0.004,
     "schedule": {
      "exponent": 1,
      "rate": 0,
@@ -76,9 +76,9 @@
     "company": "OpenAI",
     "yesToken": "13843590615798130598759552079318931525010962290630936454468904976943031837924",
     "noToken": "98516975176575710203990594576358850693212788301668308708013669246392324299408",
-    "yesPrice": 0.0085,
-    "bestBid": 0.002,
-    "bestAsk": 0.015,
+    "yesPrice": 0.0065,
+    "bestBid": 0.001,
+    "bestAsk": 0.012,
     "lastPrice": 0.017,
     "schedule": {
      "exponent": 1,

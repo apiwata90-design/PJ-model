@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-31T12:52:28.633Z",
- "seed": 1793451148,
+ "generated_at": "2026-10-31T18:30:42.274Z",
+ "seed": 1793471442,
  "target": {
   "year": 2026,
-  "month": 10
+  "month": 11
  },
- "targetKey": "2026-10",
- "checkAt": "2026-10-31T16:00:00.000Z",
+ "targetKey": "2026-11",
+ "checkAt": "2026-11-30T17:00:00.000Z",
  "status": {
   "sources": {
    "arena-off": {
@@ -18,21 +18,24 @@
     "stale": false
    },
    "pm-off": {
-    "ok": true,
-    "stale": false
+    "ok": false,
+    "stale": false,
+    "error": "ไม่พบตลาด off ของ 2026-11",
+    "staleSince": null
    },
    "arena-on": {
     "ok": true,
     "stale": false
    },
    "history-on": {
-    "ok": false,
-    "stale": true,
-    "error": "HTTP 500 for https://datasets-server.huggingface.co/filter?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_style_control&split=full&where=%22category%22%3D'overall'%20AND%20%22rank%22%3C%3D20%20AND%20%22leaderboard_publish_date%22%3E'2026-10-28'&offset=0&length=100&orderby=%22leaderboard_publis"
-   },
-   "pm-on": {
     "ok": true,
     "stale": false
+   },
+   "pm-on": {
+    "ok": false,
+    "stale": false,
+    "error": "ไม่พบตลาด on ของ 2026-11",
+    "staleSince": null
    }
   },
   "stale": true
@@ -43,10 +46,10 @@
    "label": "Style Control ปิด",
    "target": {
     "year": 2026,
-    "month": 10
+    "month": 11
    },
-   "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 3.125379722222222,
+   "checkAt": "2026-11-30T17:00:00.000Z",
+   "hoursLeft": 718.4882572222223,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -217,10 +220,40 @@
    ],
    "sim": {
     "companies": {
-     "Google": 1
+     "Google": 0.6802,
+     "Anthropic": 0.0675,
+     "Baidu": 0.0601,
+     "OpenAI": 0.0462,
+     "SpaceXAI": 0.0338,
+     "Z.ai": 0.026,
+     "Moonshot": 0.0151,
+     "": 0.0151,
+     "Amazon": 0.0146,
+     "ByteDance": 0.0142,
+     "Mistral": 0.0136,
+     "Meta": 0.0102,
+     "Alibaba": 0.0026,
+     "Xiaomi": 0.0008
     },
     "models": {
-     "Gemini 4 Carbon (High)": 1
+     "Gemini 4 Carbon (High)": 0.5279,
+     "Google · model ใหม่": 0.1394,
+     "Anthropic · model ใหม่": 0.066,
+     "Baidu · model ใหม่": 0.0601,
+     "OpenAI · model ใหม่": 0.0462,
+     "SpaceXAI · model ใหม่": 0.0338,
+     "Z.ai · model ใหม่": 0.026,
+     "Moonshot · model ใหม่": 0.0151,
+     " · model ใหม่": 0.0151,
+     "Amazon · model ใหม่": 0.0146,
+     "ByteDance · model ใหม่": 0.0142,
+     "Mistral · model ใหม่": 0.0136,
+     "Gemini 4 Argon (High)": 0.0129,
+     "Meta · model ใหม่": 0.0102,
+     "Alibaba · model ใหม่": 0.0026,
+     "Claude Opus 5.5 (High)": 0.0008,
+     "Xiaomi · model ใหม่": 0.0008,
+     "Claude Fable 5.1 (Max)": 0.0007
     },
     "n": 10000
    },
@@ -396,9 +429,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.13022415509259258,
+    "hDays": 29.937010717592596,
     "n": 10000,
-    "seed": 1793451148,
+    "seed": 1793471442,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -569,9 +602,9 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.1 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 68% · เหลือ 29.9 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 24.2 แต้ม — ห่างเกินช่วง CI (±16.0)",
-    "โอกาสที่ model ใหม่จะขึ้นมาแซงก่อนตัดสินต่ำมากในรอบนี้",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 46% — มากสุดคือ Google 14%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~1.0 · Meta ~0.4"
    ],
    "chart": {
@@ -639,90 +672,14 @@
     }
    },
    "market": {
-    "found": true,
-    "slug": "which-company-has-the-best-ai-model-end-of-october",
-    "title": "Which company has the best AI model end of October?",
-    "endDate": "2026-10-31T16:00:00Z",
-    "mids": {
-     "Anthropic": 0.001,
-     "Meta": 0.001,
-     "Google": 0.994,
-     "Alibaba": 0.002,
-     "Moonshot": 0.001,
-     "OpenAI": 0.0025,
-     "Baidu": 0.001,
-     "Z.ai": 0.001,
-     "Xiaomi": 0.001,
-     "SpaceXAI": 0.001,
-     "DeepSeek": 0.001,
-     "Amazon": 0.001,
-     "ByteDance": 0.001,
-     "Nvidia": 0.001,
-     "Thinky": 0.001,
-     "MiniMax": 0.001,
-     "Mistral": 0.001,
-     "Meituan": 0.001,
-     "Tencent": 0.001,
-     "StepFun": 0.001,
-     "Microsoft": 0.001,
-     "Other": 0
-    }
+    "found": false
    },
-   "edges": {
-    "Google": {
-     "pYes": 1,
-     "mid": 0.994,
-     "diff": 0.006000000000000005,
-     "bestBid": 0.991,
-     "bestAsk": 0.997,
-     "yes": [
-      {
-       "stake": 100,
-       "shares": 100.30090270812437,
-       "avgPrice": 0.997,
-       "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": 0.0030090270812437314
-      },
-      {
-       "stake": 1000,
-       "shares": 1003.0090270812437,
-       "avgPrice": 0.997,
-       "feeUsd": 0,
-       "spentUsd": 1000,
-       "complete": true,
-       "ev": 0.0030090270812437314
-      }
-     ],
-     "no": [
-      {
-       "stake": 100,
-       "shares": 6136.345,
-       "avgPrice": 0.016296345788902024,
-       "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": -1
-      },
-      {
-       "stake": 1000,
-       "shares": 11252.86,
-       "avgPrice": 0.02115279049059528,
-       "feeUsd": 0,
-       "spentUsd": 238.02938999999992,
-       "complete": false,
-       "ev": -1
-      }
-     ],
-     "signal": null
-    }
-   },
+   "edges": {},
    "risks": [
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.5 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.8 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -746,8 +703,8 @@
     },
     {
      "id": "dataset-lag",
-     "level": "warn",
-     "text": "เหลือไม่ถึง 48 ชม. — ข้อมูล HF อาจช้ากว่าเว็บจริง เปิด arena.ai เช็คด้วยตาก่อนเดิมพัน"
+     "level": "ok",
+     "text": "ยังไม่เข้าช่วง 48 ชม. สุดท้าย"
     },
     {
      "id": "unknown-org",
@@ -756,8 +713,8 @@
     },
     {
      "id": "market-missing",
-     "level": "ok",
-     "text": "พบตลาด Polymarket ของเดือนนี้"
+     "level": "danger",
+     "text": "ไม่พบตลาด Polymarket ของเดือนนี้ — แสดงผลทายได้ แต่คำนวณ edge ไม่ได้"
     }
    ]
   },
@@ -766,10 +723,10 @@
    "label": "Style Control เปิด",
    "target": {
     "year": 2026,
-    "month": 10
+    "month": 11
    },
-   "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 3.125379722222222,
+   "checkAt": "2026-11-30T17:00:00.000Z",
+   "hoursLeft": 718.4882572222223,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -940,10 +897,32 @@
    ],
    "sim": {
     "companies": {
-     "Google": 1
+     "Google": 0.7273,
+     "Anthropic": 0.0935,
+     "OpenAI": 0.0554,
+     "SpaceXAI": 0.0476,
+     "Meta": 0.0262,
+     "Baidu": 0.0212,
+     "Alibaba": 0.0134,
+     "Z.ai": 0.0128,
+     "Moonshot": 0.0026
     },
     "models": {
-     "Gemini 4 Carbon (High)": 1
+     "Gemini 4 Carbon (High)": 0.5799,
+     "Google · model ใหม่": 0.1041,
+     "Anthropic · model ใหม่": 0.0859,
+     "OpenAI · model ใหม่": 0.0554,
+     "SpaceXAI · model ใหม่": 0.0476,
+     "Gemini 4 Argon (High)": 0.0433,
+     "Meta · model ใหม่": 0.0245,
+     "Baidu · model ใหม่": 0.0212,
+     "Alibaba · model ใหม่": 0.0134,
+     "Z.ai · model ใหม่": 0.0128,
+     "Claude Opus 5.5 (High)": 0.006,
+     "Moonshot · model ใหม่": 0.0026,
+     "Muse Wonder (Max)": 0.0017,
+     "Claude Fable 5.1 (Max)": 0.0015,
+     "Claude Fable 5 (High)": 0.0001
     },
     "n": 10000
    },
@@ -1322,9 +1301,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.13022415509259258,
+    "hDays": 29.937010717592596,
     "n": 10000,
-    "seed": 1793451148,
+    "seed": 1793471442,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -1439,9 +1418,9 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.1 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 73% · เหลือ 29.9 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 18.8 แต้ม — ห่างเกินช่วง CI (±16.0)",
-    "โอกาสที่ model ใหม่จะขึ้นมาแซงก่อนตัดสินต่ำมากในรอบนี้",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 37% — มากสุดคือ Google 10%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.3 · Google ~0.8 · Meta ~0.4"
    ],
    "chart": {
@@ -1509,186 +1488,14 @@
     }
    },
    "market": {
-    "found": true,
-    "slug": "which-company-has-1-ai-model-end-of-october-style-control-on",
-    "title": "Which company has #1 AI model end of October? (Style Control On)",
-    "endDate": "2026-10-31T16:00:00Z",
-    "mids": {
-     "Anthropic": 0.0085,
-     "Meta": 0.044,
-     "Google": 0.99,
-     "Moonshot": 0.006,
-     "OpenAI": 0.017,
-     "Alibaba": 0.002,
-     "SpaceXAI": 0.002,
-     "Z.ai": 0.001,
-     "Baidu": 0.001,
-     "Xiaomi": 0.001,
-     "DeepSeek": 0.001,
-     "ByteDance": 0.001,
-     "MiniMax": 0.001,
-     "Thinky": 0.001,
-     "Meituan": 0.001,
-     "Mistral": 0.001,
-     "Amazon": 0.001,
-     "Nvidia": 0.001,
-     "Tencent": 0.001,
-     "StepFun": 0.001,
-     "Microsoft": 0.001,
-     "Other": 0
-    }
+    "found": false
    },
-   "edges": {
-    "Anthropic": {
-     "pYes": 0,
-     "mid": 0.006500000000000001,
-     "diff": -0.006500000000000001,
-     "bestBid": 0.003,
-     "bestAsk": 0.01,
-     "yes": [
-      {
-       "stake": 100,
-       "shares": 502.26000000000005,
-       "avgPrice": 0.03937872814876756,
-       "feeUsd": 0,
-       "spentUsd": 19.77836000000002,
-       "complete": false,
-       "ev": -1
-      },
-      {
-       "stake": 1000,
-       "shares": 502.26000000000005,
-       "avgPrice": 0.03937872814876756,
-       "feeUsd": 0,
-       "spentUsd": 19.77836000000002,
-       "complete": false,
-       "ev": -1
-      }
-     ],
-     "no": [
-      {
-       "stake": 100,
-       "shares": 100.19543543543544,
-       "avgPrice": 0.9980494576964898,
-       "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": 0.001954354354354315
-      },
-      {
-       "stake": 1000,
-       "shares": 135.12,
-       "avgPrice": 0.9982951450562464,
-       "feeUsd": 0,
-       "spentUsd": 134.88963999999987,
-       "complete": false,
-       "ev": 0.0017077664378088997
-      }
-     ],
-     "signal": null
-    },
-    "Google": {
-     "pYes": 1,
-     "mid": 0.99,
-     "diff": 0.010000000000000009,
-     "bestBid": 0.984,
-     "bestAsk": 0.996,
-     "yes": [
-      {
-       "stake": 100,
-       "shares": 73.09,
-       "avgPrice": 0.9978470378984812,
-       "feeUsd": 0,
-       "spentUsd": 72.93264,
-       "complete": false,
-       "ev": 0.0021576073483695613
-      },
-      {
-       "stake": 1000,
-       "shares": 73.09,
-       "avgPrice": 0.9978470378984812,
-       "feeUsd": 0,
-       "spentUsd": 72.93263999999999,
-       "complete": false,
-       "ev": 0.0021576073483697833
-      }
-     ],
-     "no": [
-      {
-       "stake": 100,
-       "shares": 606.585166093929,
-       "avgPrice": 0.1648573120307975,
-       "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": -1
-      },
-      {
-       "stake": 1000,
-       "shares": 1508.42,
-       "avgPrice": 0.6584858195993157,
-       "feeUsd": 0,
-       "spentUsd": 993.2731799999999,
-       "complete": false,
-       "ev": -1
-      }
-     ],
-     "signal": null
-    },
-    "Moonshot": {
-     "pYes": 0,
-     "mid": 0.006,
-     "diff": -0.006,
-     "bestBid": 0.003,
-     "bestAsk": 0.009,
-     "yes": [
-      {
-       "stake": 100,
-       "shares": 493.79,
-       "avgPrice": 0.022798922618927072,
-       "feeUsd": 0,
-       "spentUsd": 11.257880000000014,
-       "complete": false,
-       "ev": -1
-      },
-      {
-       "stake": 1000,
-       "shares": 493.79,
-       "avgPrice": 0.022798922618927072,
-       "feeUsd": 0,
-       "spentUsd": 11.25788,
-       "complete": false,
-       "ev": -1
-      }
-     ],
-     "no": [
-      {
-       "stake": 100,
-       "shares": 100.28780561122244,
-       "avgPrice": 0.9971302033236409,
-       "feeUsd": 0,
-       "spentUsd": 100,
-       "complete": true,
-       "ev": 0.0028780561122243586
-      },
-      {
-       "stake": 1000,
-       "shares": 495.46000000000004,
-       "avgPrice": 0.9983390788358292,
-       "feeUsd": 0,
-       "spentUsd": 494.6370799999999,
-       "complete": false,
-       "ev": 0.001663684412822608
-      }
-     ],
-     "signal": null
-    }
-   },
+   "edges": {},
    "risks": [
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.5 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.8 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -1712,8 +1519,8 @@
     },
     {
      "id": "dataset-lag",
-     "level": "warn",
-     "text": "เหลือไม่ถึง 48 ชม. — ข้อมูล HF อาจช้ากว่าเว็บจริง เปิด arena.ai เช็คด้วยตาก่อนเดิมพัน"
+     "level": "ok",
+     "text": "ยังไม่เข้าช่วง 48 ชม. สุดท้าย"
     },
     {
      "id": "unknown-org",
@@ -1722,8 +1529,8 @@
     },
     {
      "id": "market-missing",
-     "level": "ok",
-     "text": "พบตลาด Polymarket ของเดือนนี้"
+     "level": "danger",
+     "text": "ไม่พบตลาด Polymarket ของเดือนนี้ — แสดงผลทายได้ แต่คำนวณ edge ไม่ได้"
     }
    ]
   }

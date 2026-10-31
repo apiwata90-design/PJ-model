@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-31T12:20:17.954Z",
- "seed": 1793449217,
+ "generated_at": "2026-10-31T12:52:28.633Z",
+ "seed": 1793451148,
  "target": {
   "year": 2026,
   "month": 10
@@ -26,15 +26,16 @@
     "stale": false
    },
    "history-on": {
-    "ok": true,
-    "stale": false
+    "ok": false,
+    "stale": true,
+    "error": "HTTP 500 for https://datasets-server.huggingface.co/filter?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_style_control&split=full&where=%22category%22%3D'overall'%20AND%20%22rank%22%3C%3D20%20AND%20%22leaderboard_publish_date%22%3E'2026-10-28'&offset=0&length=100&orderby=%22leaderboard_publis"
    },
    "pm-on": {
     "ok": true,
     "stale": false
    }
   },
-  "stale": false
+  "stale": true
  },
  "markets": {
   "off": {
@@ -45,7 +46,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 3.6616794444444443,
+   "hoursLeft": 3.125379722222222,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -395,9 +396,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.15256997685185184,
+    "hDays": 0.13022415509259258,
     "n": 10000,
-    "seed": 1793449217,
+    "seed": 1793451148,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -568,7 +569,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.2 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.1 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 24.2 แต้ม — ห่างเกินช่วง CI (±16.0)",
     "โอกาสที่ model ใหม่จะขึ้นมาแซงก่อนตัดสินต่ำมากในรอบนี้",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~1.0 · Meta ~0.4"
@@ -645,7 +646,7 @@
     "mids": {
      "Anthropic": 0.001,
      "Meta": 0.001,
-     "Google": 0.993,
+     "Google": 0.994,
      "Alibaba": 0.002,
      "Moonshot": 0.001,
      "OpenAI": 0.0025,
@@ -670,35 +671,35 @@
    "edges": {
     "Google": {
      "pYes": 1,
-     "mid": 0.993,
-     "diff": 0.007000000000000006,
-     "bestBid": 0.99,
-     "bestAsk": 0.996,
+     "mid": 0.994,
+     "diff": 0.006000000000000005,
+     "bestBid": 0.991,
+     "bestAsk": 0.997,
      "yes": [
       {
        "stake": 100,
-       "shares": 100.38870611835506,
-       "avgPrice": 0.996127989557941,
+       "shares": 100.30090270812437,
+       "avgPrice": 0.997,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
-       "ev": 0.003887061183550644
+       "ev": 0.0030090270812437314
       },
       {
        "stake": 1000,
-       "shares": 1003.0968304914744,
-       "avgPrice": 0.996912730259593,
+       "shares": 1003.0090270812437,
+       "avgPrice": 0.997,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": 0.003096830491474467
+       "ev": 0.0030090270812437314
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 6687.4725,
-       "avgPrice": 0.014953332518376711,
+       "shares": 6136.345,
+       "avgPrice": 0.016296345788902024,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
@@ -706,10 +707,10 @@
       },
       {
        "stake": 1000,
-       "shares": 8820.06,
-       "avgPrice": 0.016513691516837754,
+       "shares": 11252.86,
+       "avgPrice": 0.02115279049059528,
        "feeUsd": 0,
-       "spentUsd": 145.65175,
+       "spentUsd": 238.02938999999992,
        "complete": false,
        "ev": -1
       }
@@ -768,7 +769,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 3.6616794444444443,
+   "hoursLeft": 3.125379722222222,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -1321,9 +1322,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.15256997685185184,
+    "hDays": 0.13022415509259258,
     "n": 10000,
-    "seed": 1793449217,
+    "seed": 1793451148,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -1438,7 +1439,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.2 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 100% · เหลือ 0.1 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 18.8 แต้ม — ห่างเกินช่วง CI (±16.0)",
     "โอกาสที่ model ใหม่จะขึ้นมาแซงก่อนตัดสินต่ำมากในรอบนี้",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.3 · Google ~0.8 · Meta ~0.4"
@@ -1513,10 +1514,10 @@
     "title": "Which company has #1 AI model end of October? (Style Control On)",
     "endDate": "2026-10-31T16:00:00Z",
     "mids": {
-     "Anthropic": 0.0055,
+     "Anthropic": 0.0085,
      "Meta": 0.044,
-     "Google": 0.991,
-     "Moonshot": 0.006500000000000001,
+     "Google": 0.99,
+     "Moonshot": 0.006,
      "OpenAI": 0.017,
      "Alibaba": 0.002,
      "SpaceXAI": 0.002,
@@ -1540,26 +1541,26 @@
    "edges": {
     "Anthropic": {
      "pYes": 0,
-     "mid": 0.0075,
-     "diff": -0.0075,
+     "mid": 0.006500000000000001,
+     "diff": -0.006500000000000001,
      "bestBid": 0.003,
-     "bestAsk": 0.012,
+     "bestAsk": 0.01,
      "yes": [
       {
        "stake": 100,
-       "shares": 589.27,
-       "avgPrice": 0.061162455241230686,
+       "shares": 502.26000000000005,
+       "avgPrice": 0.03937872814876756,
        "feeUsd": 0,
-       "spentUsd": 36.04120000000001,
+       "spentUsd": 19.77836000000002,
        "complete": false,
        "ev": -1
       },
       {
        "stake": 1000,
-       "shares": 589.27,
-       "avgPrice": 0.061162455241230686,
+       "shares": 502.26000000000005,
+       "avgPrice": 0.03937872814876756,
        "feeUsd": 0,
-       "spentUsd": 36.04119999999989,
+       "spentUsd": 19.77836000000002,
        "complete": false,
        "ev": -1
       }
@@ -1588,35 +1589,35 @@
     },
     "Google": {
      "pYes": 1,
-     "mid": 0.991,
-     "diff": 0.009000000000000008,
-     "bestBid": 0.986,
+     "mid": 0.99,
+     "diff": 0.010000000000000009,
+     "bestBid": 0.984,
      "bestAsk": 0.996,
      "yes": [
       {
        "stake": 100,
-       "shares": 43.09,
-       "avgPrice": 0.9970443258296587,
+       "shares": 73.09,
+       "avgPrice": 0.9978470378984812,
        "feeUsd": 0,
-       "spentUsd": 42.96264000000001,
+       "spentUsd": 72.93264,
        "complete": false,
-       "ev": 0.0029644360774849776
+       "ev": 0.0021576073483695613
       },
       {
        "stake": 1000,
-       "shares": 43.09,
-       "avgPrice": 0.9970443258296587,
+       "shares": 73.09,
+       "avgPrice": 0.9978470378984812,
        "feeUsd": 0,
-       "spentUsd": 42.962639999999965,
+       "spentUsd": 72.93263999999999,
        "complete": false,
-       "ev": 0.002964436077485866
+       "ev": 0.0021576073483697833
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 568.6222,
-       "avgPrice": 0.17586369297575793,
+       "shares": 606.585166093929,
+       "avgPrice": 0.1648573120307975,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
@@ -1624,10 +1625,10 @@
       },
       {
        "stake": 1000,
-       "shares": 580.42,
-       "avgPrice": 0.18550113710761174,
+       "shares": 1508.42,
+       "avgPrice": 0.6584858195993157,
        "feeUsd": 0,
-       "spentUsd": 107.66857000000005,
+       "spentUsd": 993.2731799999999,
        "complete": false,
        "ev": -1
       }
@@ -1643,19 +1644,19 @@
      "yes": [
       {
        "stake": 100,
-       "shares": 666.09,
-       "avgPrice": 0.08315224669338979,
+       "shares": 493.79,
+       "avgPrice": 0.022798922618927072,
        "feeUsd": 0,
-       "spentUsd": 55.386880000000005,
+       "spentUsd": 11.257880000000014,
        "complete": false,
        "ev": -1
       },
       {
        "stake": 1000,
-       "shares": 666.09,
-       "avgPrice": 0.08315224669338979,
+       "shares": 493.79,
+       "avgPrice": 0.022798922618927072,
        "feeUsd": 0,
-       "spentUsd": 55.38688000000025,
+       "spentUsd": 11.25788,
        "complete": false,
        "ev": -1
       }

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-31T05:34:59.127Z",
- "seed": 1793424899,
+ "generated_at": "2026-10-31T06:25:30.866Z",
+ "seed": 1793427930,
  "target": {
   "year": 2026,
   "month": 10
@@ -45,7 +45,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 10.416909166666667,
+   "hoursLeft": 9.574759444444444,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -395,9 +395,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.4340378819444444,
+    "hDays": 0.3989483101851852,
     "n": 10000,
-    "seed": 1793424899,
+    "seed": 1793427930,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -686,19 +686,19 @@
       },
       {
        "stake": 1000,
-       "shares": 1004.2734002006018,
-       "avgPrice": 0.9957447840401347,
+       "shares": 1003.994964894684,
+       "avgPrice": 0.9960209313449067,
        "feeUsd": 0,
        "spentUsd": 1000,
        "complete": true,
-       "ev": 0.00427340020060174
+       "ev": 0.003994964894683983
       }
      ],
      "no": [
       {
        "stake": 100,
-       "shares": 5886.503636363635,
-       "avgPrice": 0.01698801294919009,
+       "shares": 5645.661818181818,
+       "avgPrice": 0.017712715217541128,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
@@ -706,10 +706,10 @@
       },
       {
        "stake": 1000,
-       "shares": 6304.2,
-       "avgPrice": 0.017415266013134104,
+       "shares": 5885.1,
+       "avgPrice": 0.017887145503050074,
        "feeUsd": 0,
-       "spentUsd": 109.78931999999998,
+       "spentUsd": 105.26764000000003,
        "complete": false,
        "ev": -1
       }
@@ -721,7 +721,7 @@
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.2 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.3 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -768,7 +768,7 @@
     "month": 10
    },
    "checkAt": "2026-10-31T16:00:00.000Z",
-   "hoursLeft": 10.416909166666667,
+   "hoursLeft": 9.574759444444444,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -1321,9 +1321,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 0.4340378819444444,
+    "hDays": 0.3989483101851852,
     "n": 10000,
-    "seed": 1793424899,
+    "seed": 1793427930,
     "params": {
      "k": 1.5,
      "sigmaFloor": 0,
@@ -1547,19 +1547,19 @@
      "yes": [
       {
        "stake": 100,
-       "shares": 2682.92,
-       "avgPrice": 0.022292025106972996,
+       "shares": 2807.8527152317884,
+       "avgPrice": 0.03561440365355666,
        "feeUsd": 0,
-       "spentUsd": 59.80772000000001,
-       "complete": false,
+       "spentUsd": 100,
+       "complete": true,
        "ev": -1
       },
       {
        "stake": 1000,
-       "shares": 2682.92,
-       "avgPrice": 0.022292025106972996,
+       "shares": 3042.26,
+       "avgPrice": 0.04450490753584506,
        "feeUsd": 0,
-       "spentUsd": 59.80772000000002,
+       "spentUsd": 135.39549999999986,
        "complete": false,
        "ev": -1
       }
@@ -1615,8 +1615,8 @@
      "no": [
       {
        "stake": 100,
-       "shares": 804.0001688311688,
-       "avgPrice": 0.124378083334705,
+       "shares": 831.0042631578947,
+       "avgPrice": 0.12033632609776343,
        "feeUsd": 0,
        "spentUsd": 100,
        "complete": true,
@@ -1624,10 +1624,10 @@
       },
       {
        "stake": 1000,
-       "shares": 826.79,
-       "avgPrice": 0.14217415546874054,
+       "shares": 896.36,
+       "avgPrice": 0.16065718015083227,
        "feeUsd": 0,
-       "spentUsd": 117.54817000000014,
+       "spentUsd": 144.0066700000001,
        "complete": false,
        "ev": -1
       }
@@ -1644,18 +1644,18 @@
       {
        "stake": 100,
        "shares": 1103.79,
-       "avgPrice": 0.08235776732893033,
+       "avgPrice": 0.08069984326728817,
        "feeUsd": 0,
-       "spentUsd": 90.90568000000002,
+       "spentUsd": 89.07568000000002,
        "complete": false,
        "ev": -1
       },
       {
        "stake": 1000,
        "shares": 1103.79,
-       "avgPrice": 0.08235776732893033,
+       "avgPrice": 0.08069984326728817,
        "feeUsd": 0,
-       "spentUsd": 90.90568000000007,
+       "spentUsd": 89.07568000000003,
        "complete": false,
        "ev": -1
       }
@@ -1687,7 +1687,7 @@
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.2 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (3.3 วันก่อน)"
     },
     {
      "id": "close-race",

@@ -1,8 +1,8 @@
 {
-  "k": 1.5,
+  "k": 0.5,
   "sigmaFloor": 0,
   "newModelScale": 0.25,
   "driftShrink": 0.5,
-  "fittedAt": "2026-10-16T17:40:01.600Z",
+  "fittedAt": "2026-11-02T10:35:33.046Z",
   "note": "grid search on first half of 24 months, both markets"
 }

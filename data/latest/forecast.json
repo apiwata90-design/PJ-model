@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-04T19:42:41.487Z",
- "seed": 1793821361,
+ "generated_at": "2026-11-05T00:53:27.353Z",
+ "seed": 1793840007,
  "target": {
   "year": 2026,
   "month": 11
@@ -29,9 +29,8 @@
     "stale": false
    },
    "history-on": {
-    "ok": false,
-    "stale": true,
-    "error": "HTTP 500 for https://datasets-server.huggingface.co/filter?dataset=lmarena-ai%2Fleaderboard-dataset&config=text_style_control&split=full&where=%22category%22%3D'overall'%20AND%20%22rank%22%3C%3D20%20AND%20%22leaderboard_publish_date%22%3E'2026-10-28'&offset=0&length=100&orderby=%22leaderboard_publis"
+    "ok": true,
+    "stale": false
    },
    "pm-on": {
     "ok": false,
@@ -51,7 +50,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 621.2884758333333,
+   "hoursLeft": 616.1090686111111,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -222,37 +221,37 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.7119,
-     "Anthropic": 0.0567,
-     "Baidu": 0.0539,
-     "OpenAI": 0.044,
-     "SpaceXAI": 0.0335,
-     "Z.ai": 0.0225,
-     "": 0.0138,
-     "ByteDance": 0.0134,
-     "Amazon": 0.0121,
-     "Moonshot": 0.012,
-     "Mistral": 0.012,
-     "Meta": 0.0093,
-     "Alibaba": 0.003,
-     "Xiaomi": 0.0019
+     "Google": 0.7111,
+     "Anthropic": 0.0576,
+     "Baidu": 0.0558,
+     "OpenAI": 0.0453,
+     "SpaceXAI": 0.032,
+     "Z.ai": 0.0222,
+     "Amazon": 0.0138,
+     "ByteDance": 0.0127,
+     "Mistral": 0.0123,
+     "": 0.0122,
+     "Moonshot": 0.0121,
+     "Meta": 0.0094,
+     "Alibaba": 0.0025,
+     "Xiaomi": 0.001
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.5874,
-     "Google · model ใหม่": 0.1245,
-     "Anthropic · model ใหม่": 0.0567,
-     "Baidu · model ใหม่": 0.0539,
-     "OpenAI · model ใหม่": 0.044,
-     "SpaceXAI · model ใหม่": 0.0335,
-     "Z.ai · model ใหม่": 0.0225,
-     " · model ใหม่": 0.0138,
-     "ByteDance · model ใหม่": 0.0134,
-     "Amazon · model ใหม่": 0.0121,
-     "Moonshot · model ใหม่": 0.012,
-     "Mistral · model ใหม่": 0.012,
-     "Meta · model ใหม่": 0.0093,
-     "Alibaba · model ใหม่": 0.003,
-     "Xiaomi · model ใหม่": 0.0019
+     "Gemini 4 Carbon (High)": 0.5861,
+     "Google · model ใหม่": 0.125,
+     "Anthropic · model ใหม่": 0.0576,
+     "Baidu · model ใหม่": 0.0558,
+     "OpenAI · model ใหม่": 0.0453,
+     "SpaceXAI · model ใหม่": 0.032,
+     "Z.ai · model ใหม่": 0.0222,
+     "Amazon · model ใหม่": 0.0138,
+     "ByteDance · model ใหม่": 0.0127,
+     "Mistral · model ใหม่": 0.0123,
+     " · model ใหม่": 0.0122,
+     "Moonshot · model ใหม่": 0.0121,
+     "Meta · model ใหม่": 0.0094,
+     "Alibaba · model ใหม่": 0.0025,
+     "Xiaomi · model ใหม่": 0.001
     },
     "n": 10000
    },
@@ -428,9 +427,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 25.88701982638889,
+    "hDays": 25.67121119212963,
     "n": 10000,
-    "seed": 1793821361,
+    "seed": 1793840007,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -601,9 +600,9 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 71% · เหลือ 25.9 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 71% · เหลือ 25.7 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 24.2 แต้ม — ห่างเกินช่วง CI (±16.0)",
-    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 41% — มากสุดคือ Google 12%",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 41% — มากสุดคือ Google 13%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~1.0 · Meta ~0.4"
    ],
    "chart": {
@@ -678,7 +677,7 @@
     {
      "id": "freshness",
      "level": "danger",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (7.8 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (8.0 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -725,7 +724,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 621.2884758333333,
+   "hoursLeft": 616.1090686111111,
    "publishDate": "2026-10-28",
    "leaderboard": [
     {
@@ -896,27 +895,27 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.7612,
-     "Anthropic": 0.0738,
-     "OpenAI": 0.0537,
-     "SpaceXAI": 0.0422,
-     "Meta": 0.0222,
-     "Baidu": 0.0199,
-     "Z.ai": 0.014,
-     "Alibaba": 0.0111,
-     "Moonshot": 0.0019
+     "Google": 0.7559,
+     "Anthropic": 0.0733,
+     "OpenAI": 0.0551,
+     "SpaceXAI": 0.0433,
+     "Meta": 0.0245,
+     "Baidu": 0.0224,
+     "Z.ai": 0.0121,
+     "Alibaba": 0.0117,
+     "Moonshot": 0.0017
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.6671,
-     "Google · model ใหม่": 0.0941,
-     "Anthropic · model ใหม่": 0.0738,
-     "OpenAI · model ใหม่": 0.0537,
-     "SpaceXAI · model ใหม่": 0.0422,
-     "Meta · model ใหม่": 0.0222,
-     "Baidu · model ใหม่": 0.0199,
-     "Z.ai · model ใหม่": 0.014,
-     "Alibaba · model ใหม่": 0.0111,
-     "Moonshot · model ใหม่": 0.0019
+     "Gemini 4 Carbon (High)": 0.6659,
+     "Google · model ใหม่": 0.09,
+     "Anthropic · model ใหม่": 0.0733,
+     "OpenAI · model ใหม่": 0.0551,
+     "SpaceXAI · model ใหม่": 0.0433,
+     "Meta · model ใหม่": 0.0245,
+     "Baidu · model ใหม่": 0.0224,
+     "Z.ai · model ใหม่": 0.0121,
+     "Alibaba · model ใหม่": 0.0117,
+     "Moonshot · model ใหม่": 0.0017
     },
     "n": 10000
    },
@@ -1295,9 +1294,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 25.88701982638889,
+    "hDays": 25.67121119212963,
     "n": 10000,
-    "seed": 1793821361,
+    "seed": 1793840007,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -1412,7 +1411,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 76% · เหลือ 25.9 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 76% · เหลือ 25.7 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 18.8 แต้ม — ห่างเกินช่วง CI (±16.0)",
     "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 33% — มากสุดคือ Google 9%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.3 · Google ~0.8 · Meta ~0.4"
@@ -1489,7 +1488,7 @@
     {
      "id": "freshness",
      "level": "danger",
-     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (7.8 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-10-28 (8.0 วันก่อน)"
     },
     {
      "id": "close-race",

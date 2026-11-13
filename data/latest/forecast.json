@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-13T16:16:55.282Z",
- "seed": 1794586615,
+ "generated_at": "2026-11-13T21:59:26.285Z",
+ "seed": 1794607166,
  "target": {
   "year": 2026,
   "month": 11
@@ -12,7 +12,7 @@
    "arena-off": {
     "ok": false,
     "stale": true,
-    "error": "HTTP 502 for https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text&split=latest&offset=0&length=100: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+    "error": "HTTP 501 for https://datasets-server.huggingface.co/rows?dataset=lmarena-ai%2Fleaderboard-dataset&config=text&split=latest&offset=0&length=100: {\"error\":\"Job has been terminated due to a temporary spike in resource usage and may be restarted later.\"}",
     "staleSince": "2026-11-12T23:39:34.519Z"
    },
    "history-off": {
@@ -52,7 +52,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 408.7179772222222,
+   "hoursLeft": 403.00936527777776,
    "publishDate": "2026-11-09",
    "leaderboard": [
     {
@@ -223,38 +223,38 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.7938,
-     "Baidu": 0.0391,
-     "Anthropic": 0.0388,
-     "OpenAI": 0.0274,
-     "SpaceXAI": 0.0244,
-     "Z.ai": 0.0158,
-     "Meta": 0.0108,
-     "Mistral": 0.0102,
-     "Moonshot": 0.0097,
-     "Amazon": 0.0093,
-     "": 0.0091,
-     "ByteDance": 0.0087,
-     "Alibaba": 0.0021,
-     "Xiaomi": 0.0008
+     "Google": 0.7923,
+     "Anthropic": 0.041,
+     "Baidu": 0.0377,
+     "OpenAI": 0.0288,
+     "SpaceXAI": 0.0232,
+     "Z.ai": 0.0174,
+     "Moonshot": 0.0107,
+     "": 0.0106,
+     "Meta": 0.0101,
+     "Amazon": 0.0091,
+     "ByteDance": 0.0085,
+     "Mistral": 0.008,
+     "Alibaba": 0.0017,
+     "Xiaomi": 0.0009
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.7058,
-     "Google · model ใหม่": 0.0863,
-     "Baidu · model ใหม่": 0.0391,
-     "Anthropic · model ใหม่": 0.0388,
-     "OpenAI · model ใหม่": 0.0274,
-     "SpaceXAI · model ใหม่": 0.0244,
-     "Z.ai · model ใหม่": 0.0158,
-     "Meta · model ใหม่": 0.0108,
-     "Mistral · model ใหม่": 0.0102,
-     "Moonshot · model ใหม่": 0.0097,
-     "Amazon · model ใหม่": 0.0093,
-     " · model ใหม่": 0.0091,
-     "ByteDance · model ใหม่": 0.0087,
-     "Alibaba · model ใหม่": 0.0021,
-     "Gemini 4 Argon (High)": 0.0017,
-     "Xiaomi · model ใหม่": 0.0008
+     "Gemini 4 Carbon (High)": 0.7003,
+     "Google · model ใหม่": 0.0904,
+     "Anthropic · model ใหม่": 0.041,
+     "Baidu · model ใหม่": 0.0377,
+     "OpenAI · model ใหม่": 0.0288,
+     "SpaceXAI · model ใหม่": 0.0232,
+     "Z.ai · model ใหม่": 0.0174,
+     "Moonshot · model ใหม่": 0.0107,
+     " · model ใหม่": 0.0106,
+     "Meta · model ใหม่": 0.0101,
+     "Amazon · model ใหม่": 0.0091,
+     "ByteDance · model ใหม่": 0.0085,
+     "Mistral · model ใหม่": 0.008,
+     "Alibaba · model ใหม่": 0.0017,
+     "Gemini 4 Argon (High)": 0.0016,
+     "Xiaomi · model ใหม่": 0.0009
     },
     "n": 10000
    },
@@ -451,9 +451,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 17.02991571759259,
+    "hDays": 16.792056886574073,
     "n": 10000,
-    "seed": 1794586615,
+    "seed": 1794607166,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -623,10 +623,10 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 79% · เหลือ 17.0 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 79% · เหลือ 16.8 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 25.3 แต้ม — ห่างเกินช่วง CI (±15.6)",
     "ช่วง 14 วันล่าสุด ระยะห่างกว้างขึ้น ~1.0 แต้ม/สัปดาห์",
-    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 29% — มากสุดคือ Google 9%",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 30% — มากสุดคือ Google 9%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~1.0 · Meta ~0.4"
    ],
    "chart": {
@@ -701,7 +701,7 @@
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-11-09 (4.7 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-11-09 (4.9 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -748,7 +748,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 408.7179772222222,
+   "hoursLeft": 403.00936527777776,
    "publishDate": "2026-11-11",
    "leaderboard": [
     {
@@ -919,28 +919,28 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.8314,
-     "Anthropic": 0.0525,
-     "OpenAI": 0.0338,
-     "SpaceXAI": 0.0276,
-     "Meta": 0.02,
-     "Baidu": 0.0158,
-     "Alibaba": 0.0087,
-     "Z.ai": 0.0084,
-     "Moonshot": 0.0018
+     "Google": 0.8244,
+     "Anthropic": 0.0541,
+     "OpenAI": 0.0381,
+     "SpaceXAI": 0.0292,
+     "Meta": 0.0204,
+     "Baidu": 0.0146,
+     "Alibaba": 0.0103,
+     "Z.ai": 0.007,
+     "Moonshot": 0.0019
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.7637,
-     "Google · model ใหม่": 0.0632,
-     "Anthropic · model ใหม่": 0.0525,
-     "OpenAI · model ใหม่": 0.0338,
-     "SpaceXAI · model ใหม่": 0.0276,
-     "Meta · model ใหม่": 0.02,
-     "Baidu · model ใหม่": 0.0158,
-     "Alibaba · model ใหม่": 0.0087,
-     "Z.ai · model ใหม่": 0.0084,
-     "Gemini 4 Argon (High)": 0.0045,
-     "Moonshot · model ใหม่": 0.0018
+     "Gemini 4 Carbon (High)": 0.7608,
+     "Google · model ใหม่": 0.0589,
+     "Anthropic · model ใหม่": 0.0541,
+     "OpenAI · model ใหม่": 0.0381,
+     "SpaceXAI · model ใหม่": 0.0292,
+     "Meta · model ใหม่": 0.0204,
+     "Baidu · model ใหม่": 0.0146,
+     "Alibaba · model ใหม่": 0.0103,
+     "Z.ai · model ใหม่": 0.007,
+     "Gemini 4 Argon (High)": 0.0047,
+     "Moonshot · model ใหม่": 0.0019
     },
     "n": 10000
    },
@@ -1354,9 +1354,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 17.02991571759259,
+    "hDays": 16.792056886574073,
     "n": 10000,
-    "seed": 1794586615,
+    "seed": 1794607166,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -1471,7 +1471,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 83% · เหลือ 17.0 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 82% · เหลือ 16.8 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Muse Wonder (Max) (Meta) อยู่ 15.3 แต้ม — ช่วง CI ยังซ้อนกัน (±15.8) จึงสลับกันได้",
     "ช่วง 14 วันล่าสุด ระยะห่างกว้างขึ้น ~2.8 แต้ม/สัปดาห์",
     "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 23% — มากสุดคือ Google 6%",
@@ -1555,7 +1555,7 @@
     {
      "id": "freshness",
      "level": "ok",
-     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (2.7 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (2.9 วันก่อน)"
     },
     {
      "id": "close-race",

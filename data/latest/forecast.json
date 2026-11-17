@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-17T04:27:50.308Z",
- "seed": 1794889670,
+ "generated_at": "2026-11-17T15:55:50.342Z",
+ "seed": 1794930950,
  "target": {
   "year": 2026,
   "month": 11
@@ -51,7 +51,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 324.53602555555557,
+   "hoursLeft": 313.06934944444447,
    "publishDate": "2026-11-11",
    "leaderboard": [
     {
@@ -222,36 +222,36 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.8365,
-     "Anthropic": 0.0324,
-     "Baidu": 0.031,
-     "OpenAI": 0.0259,
-     "SpaceXAI": 0.0178,
-     "Z.ai": 0.0121,
-     "": 0.0084,
-     "Meta": 0.0077,
-     "ByteDance": 0.0068,
-     "Mistral": 0.0062,
-     "Amazon": 0.0062,
-     "Moonshot": 0.0059,
-     "Alibaba": 0.0023,
+     "Google": 0.8448,
+     "Anthropic": 0.0306,
+     "Baidu": 0.0267,
+     "OpenAI": 0.0245,
+     "SpaceXAI": 0.0174,
+     "Z.ai": 0.0136,
+     "Moonshot": 0.0076,
+     "ByteDance": 0.0071,
+     "Meta": 0.007,
+     "": 0.0064,
+     "Mistral": 0.0059,
+     "Amazon": 0.0057,
+     "Alibaba": 0.0019,
      "Xiaomi": 0.0008
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.7578,
-     "Google · model ใหม่": 0.0787,
-     "Anthropic · model ใหม่": 0.0324,
-     "Baidu · model ใหม่": 0.031,
-     "OpenAI · model ใหม่": 0.0259,
-     "SpaceXAI · model ใหม่": 0.0178,
-     "Z.ai · model ใหม่": 0.0121,
-     " · model ใหม่": 0.0084,
-     "Meta · model ใหม่": 0.0077,
-     "ByteDance · model ใหม่": 0.0068,
-     "Mistral · model ใหม่": 0.0062,
-     "Amazon · model ใหม่": 0.0062,
-     "Moonshot · model ใหม่": 0.0059,
-     "Alibaba · model ใหม่": 0.0023,
+     "Gemini 4 Carbon (High)": 0.7701,
+     "Google · model ใหม่": 0.0747,
+     "Anthropic · model ใหม่": 0.0306,
+     "Baidu · model ใหม่": 0.0267,
+     "OpenAI · model ใหม่": 0.0245,
+     "SpaceXAI · model ใหม่": 0.0174,
+     "Z.ai · model ใหม่": 0.0136,
+     "Moonshot · model ใหม่": 0.0076,
+     "ByteDance · model ใหม่": 0.0071,
+     "Meta · model ใหม่": 0.007,
+     " · model ใหม่": 0.0064,
+     "Mistral · model ใหม่": 0.0059,
+     "Amazon · model ใหม่": 0.0057,
+     "Alibaba · model ใหม่": 0.0019,
      "Xiaomi · model ใหม่": 0.0008
     },
     "n": 10000
@@ -456,9 +456,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 13.522334398148148,
+    "hDays": 13.044556226851853,
     "n": 10000,
-    "seed": 1794889670,
+    "seed": 1794930950,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -629,10 +629,10 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 84% · เหลือ 13.5 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 84% · เหลือ 13.0 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Claude Opus 5.5 (High) (Anthropic) อยู่ 24.7 แต้ม — ห่างเกินช่วง CI (±15.5)",
     "ช่วง 14 วันล่าสุด ระยะห่างแคบลง ~3.1 แต้ม/สัปดาห์",
-    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 24% — มากสุดคือ Google 8%",
+    "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 23% — มากสุดคือ Google 7%",
     "สถิติปีที่ผ่านมา: model ใหม่ที่ติด top 10 ต่อเดือน — Anthropic ~1.2 · Google ~1.1 · Meta ~0.4"
    ],
    "chart": {
@@ -713,7 +713,7 @@
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (6.2 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (6.7 วันก่อน)"
     },
     {
      "id": "close-race",
@@ -760,7 +760,7 @@
     "month": 11
    },
    "checkAt": "2026-11-30T17:00:00.000Z",
-   "hoursLeft": 324.53602555555557,
+   "hoursLeft": 313.06934944444447,
    "publishDate": "2026-11-11",
    "leaderboard": [
     {
@@ -931,28 +931,28 @@
    ],
    "sim": {
     "companies": {
-     "Google": 0.861,
-     "Anthropic": 0.0424,
-     "OpenAI": 0.0283,
-     "SpaceXAI": 0.0234,
-     "Meta": 0.0164,
-     "Baidu": 0.0128,
-     "Alibaba": 0.0073,
-     "Z.ai": 0.007,
-     "Moonshot": 0.0014
+     "Google": 0.8627,
+     "Anthropic": 0.0438,
+     "OpenAI": 0.0284,
+     "SpaceXAI": 0.0236,
+     "Meta": 0.0156,
+     "Baidu": 0.0124,
+     "Alibaba": 0.0064,
+     "Z.ai": 0.0062,
+     "Moonshot": 0.0009
     },
     "models": {
-     "Gemini 4 Carbon (High)": 0.8037,
-     "Google · model ใหม่": 0.0538,
-     "Anthropic · model ใหม่": 0.0424,
-     "OpenAI · model ใหม่": 0.0283,
-     "SpaceXAI · model ใหม่": 0.0234,
-     "Meta · model ใหม่": 0.0164,
-     "Baidu · model ใหม่": 0.0128,
-     "Alibaba · model ใหม่": 0.0073,
-     "Z.ai · model ใหม่": 0.007,
-     "Gemini 4 Argon (High)": 0.0035,
-     "Moonshot · model ใหม่": 0.0014
+     "Gemini 4 Carbon (High)": 0.8084,
+     "Google · model ใหม่": 0.0514,
+     "Anthropic · model ใหม่": 0.0438,
+     "OpenAI · model ใหม่": 0.0284,
+     "SpaceXAI · model ใหม่": 0.0236,
+     "Meta · model ใหม่": 0.0156,
+     "Baidu · model ใหม่": 0.0124,
+     "Alibaba · model ใหม่": 0.0064,
+     "Z.ai · model ใหม่": 0.0062,
+     "Gemini 4 Argon (High)": 0.0029,
+     "Moonshot · model ใหม่": 0.0009
     },
     "n": 10000
    },
@@ -1366,9 +1366,9 @@
      "stepfun": "StepFun",
      "microsoft": "Microsoft"
     },
-    "hDays": 13.522334398148148,
+    "hDays": 13.044556226851853,
     "n": 10000,
-    "seed": 1794889670,
+    "seed": 1794930950,
     "params": {
      "k": 0.5,
      "sigmaFloor": 0,
@@ -1483,7 +1483,7 @@
     "lagDays": 1
    },
    "reasons": [
-    "จำลอง 10000 รอบ: Google ได้อันดับ 1 86% · เหลือ 13.5 วันถึงเวลาตัดสิน",
+    "จำลอง 10000 รอบ: Google ได้อันดับ 1 86% · เหลือ 13.0 วันถึงเวลาตัดสิน",
     "Gemini 4 Carbon (High) (Google) นำ Muse Wonder (Max) (Meta) อยู่ 15.3 แต้ม — ช่วง CI ยังซ้อนกัน (±15.8) จึงสลับกันได้",
     "ช่วง 14 วันล่าสุด ระยะห่างกว้างขึ้น ~2.8 แต้ม/สัปดาห์",
     "โอกาสที่ model ใหม่ (ยังไม่อยู่บน leaderboard) ขึ้นมาเป็นอันดับ 1 รวม 19% — มากสุดคือ Google 5%",
@@ -1567,7 +1567,7 @@
     {
      "id": "freshness",
      "level": "warn",
-     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (6.2 วันก่อน)"
+     "text": "leaderboard อัปเดตล่าสุด 2026-11-11 (6.7 วันก่อน)"
     },
     {
      "id": "close-race",

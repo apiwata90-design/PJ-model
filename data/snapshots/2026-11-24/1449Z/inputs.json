@@ -1,0 +1,1025 @@
+{
+ "generated_at": "2026-11-24T14:49:22.021Z",
+ "seed": 1795531762,
+ "config": {
+  "settings": {
+   "nSims": 10000,
+   "edgeThreshold": 0.1,
+   "stakes": [
+    100,
+    1000
+   ],
+   "lowVotes": 3000,
+   "window": 60,
+   "historyDays": 900,
+   "historyMaxRank": 20,
+   "rates": {
+    "lookbackDays": 365,
+    "topN": 10,
+    "priorPerDay": 0.00055
+   },
+   "deltas": {
+    "lookbackDays": 730,
+    "topN": 10
+   },
+   "driftDays": 14,
+   "lagDays": 1,
+   "bookMinProb": 0.005,
+   "staleHours": 6,
+   "finalHours": 72,
+   "chartDays": 30,
+   "minDeltas": 5,
+   "deltaPrior": [
+    -25,
+    -15,
+    -10,
+    -5,
+    0,
+    5,
+    10,
+    15,
+    20,
+    30
+   ],
+   "historyStart": {
+    "text_style_control": "2025-05-18"
+   }
+  },
+  "calibration": {
+   "k": 0.5,
+   "sigmaFloor": 0,
+   "newModelScale": 0.25,
+   "driftShrink": 0.5,
+   "fittedAt": "2026-11-02T10:35:33.046Z",
+   "note": "grid search on first half of 24 months, both markets"
+  },
+  "overrides": {
+   "_note": "autoEval = excluded by market rules; preliminary = still counted, flagged as a risk. Names as shown on arena.ai.",
+   "autoEval": [],
+   "preliminary": [
+    "Gemini 4 Argon (High)"
+   ],
+   "news": {}
+  },
+  "companies": {
+   "google": "Google",
+   "anthropic": "Anthropic",
+   "openai": "OpenAI",
+   "meta": "Meta",
+   "xai": "SpaceXAI",
+   "deepseek": "DeepSeek",
+   "deepseek ai": "DeepSeek",
+   "alibaba": "Alibaba",
+   "qwen": "Alibaba",
+   "moonshot": "Moonshot",
+   "moonshot ai": "Moonshot",
+   "z.ai": "Z.ai",
+   "zai": "Z.ai",
+   "zhipu": "Z.ai",
+   "zhipu ai": "Z.ai",
+   "baidu": "Baidu",
+   "xiaomi": "Xiaomi",
+   "amazon": "Amazon",
+   "bytedance": "ByteDance",
+   "nvidia": "Nvidia",
+   "thinking machines": "Thinky",
+   "minimax": "MiniMax",
+   "mistral": "Mistral",
+   "meituan": "Meituan",
+   "tencent": "Tencent",
+   "stepfun": "StepFun",
+   "microsoft": "Microsoft"
+  }
+ },
+ "simInputs": {
+  "off": {
+   "models": [
+    {
+     "name": "Gemini 4 Carbon (High)",
+     "org": "google",
+     "rating": 1538.8733656178997,
+     "variance": 23.77670504381913,
+     "drift": 0.052340049358649415
+    },
+    {
+     "name": "Gemini 4 Argon (High)",
+     "org": "google",
+     "rating": 1527.6707454486746,
+     "variance": 6.493833869105634,
+     "drift": -0.19484825886047621
+    },
+    {
+     "name": "Gemini 4 Neon (High)",
+     "org": "google",
+     "rating": 1522.8896905416118,
+     "variance": 18.491243520720783,
+     "drift": -1.3567194397010622
+    },
+    {
+     "name": "Claude Opus 5.5 (High)",
+     "org": "anthropic",
+     "rating": 1514.1182801107798,
+     "variance": 8.27147474107819,
+     "drift": 0.045063728804498375
+    },
+    {
+     "name": "Claude Fable 5.1 (Max)",
+     "org": "anthropic",
+     "rating": 1511.7703155455783,
+     "variance": 7.226405295053676,
+     "drift": -0.023331842937512733
+    },
+    {
+     "name": "Claude Opus 5 (Max)",
+     "org": "anthropic",
+     "rating": 1506.1795360065344,
+     "variance": 5.724199816124159,
+     "drift": -0.012598928735312024
+    },
+    {
+     "name": "Muse Wonder (Max)",
+     "org": "meta",
+     "rating": 1503.6619735295121,
+     "variance": 8.329669139884203,
+     "drift": 0.0323585000061909
+    },
+    {
+     "name": "Claude Opus 5 (High)",
+     "org": "anthropic",
+     "rating": 1502.1947940909968,
+     "variance": 3.3888356365718355,
+     "drift": -0.002643422982134669
+    },
+    {
+     "name": "Gemini 4 Hydrogen (High)",
+     "org": "google",
+     "rating": 1502.1451228167848,
+     "variance": 20.810441867463506,
+     "drift": -0.009160635446036954
+    },
+    {
+     "name": "Claude Opus 4.6 (High)",
+     "org": "anthropic",
+     "rating": 1501.5275016749329,
+     "variance": 2.7277014800442787,
+     "drift": -0.007932986193653775
+    },
+    {
+     "name": "Gemini 3.8 Flash (High)",
+     "org": "google",
+     "rating": 1500.8803494450558,
+     "variance": 4.136667263655946,
+     "drift": 0.040584661049275064
+    },
+    {
+     "name": "Claude Opus 4.6",
+     "org": "anthropic",
+     "rating": 1496.7892465167702,
+     "variance": 2.610122127711741,
+     "drift": 0.00419431571378344
+    },
+    {
+     "name": "Muse Spark 1.3 (Max)",
+     "org": "meta",
+     "rating": 1492.9022275319262,
+     "variance": 5.896146296698911,
+     "drift": 0.14463703149683907
+    },
+    {
+     "name": "MiMo-V2.6-Pro",
+     "org": "xiaomi",
+     "rating": 1492.8697235495856,
+     "variance": 23.20532775693721,
+     "drift": 0.09656655732898979
+    },
+    {
+     "name": "Claude Fable 5 (High)",
+     "org": "anthropic",
+     "rating": 1491.7552175389037,
+     "variance": 4.5530752324298,
+     "drift": 0.015366360001033185
+    },
+    {
+     "name": "Claude Opus 4.7 (High)",
+     "org": "anthropic",
+     "rating": 1489.8288192461714,
+     "variance": 3.669125698942462,
+     "drift": 0.008694917883630035
+    },
+    {
+     "name": "Gemini 3.7 Flash (High)",
+     "org": "google",
+     "rating": 1489.1400216744582,
+     "variance": 5.69794915170431,
+     "drift": 0.04084138863262078
+    },
+    {
+     "name": "Qwen3.8-Max",
+     "org": "alibaba",
+     "rating": 1484.9138435273762,
+     "variance": 5.004701833320767,
+     "drift": -0.007370177987661873
+    },
+    {
+     "name": "Muse Spark 1.2 (xHigh)",
+     "org": "meta",
+     "rating": 1483.5168032483698,
+     "variance": 7.628801612752087,
+     "drift": -0.009472439153135571
+    },
+    {
+     "name": "Claude Opus 4.7",
+     "org": "anthropic",
+     "rating": 1483.3737608184583,
+     "variance": 3.688493882422126,
+     "drift": 0.01581885606503467
+    },
+    {
+     "name": "Gemini 3.5 Flash (High)",
+     "org": "google",
+     "rating": 1482.809520861872,
+     "variance": 3.9395384816308794,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.1 Pro Preview",
+     "org": "google",
+     "rating": 1480.0053904777624,
+     "variance": 2.2084273148595788,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3 Pro",
+     "org": "google",
+     "rating": 1479.731647527069,
+     "variance": 3.7070764325580483,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.6 Flash (High)",
+     "org": "google",
+     "rating": 1479.2971128164313,
+     "variance": 5.091509348653012,
+     "drift": 0
+    },
+    {
+     "name": "Muse Spark 1.1",
+     "org": "meta",
+     "rating": 1479.180123692261,
+     "variance": 4.4729681080658406,
+     "drift": 0
+    }
+   ],
+   "companyMap": {
+    "google": "Google",
+    "anthropic": "Anthropic",
+    "openai": "OpenAI",
+    "meta": "Meta",
+    "xai": "SpaceXAI",
+    "deepseek": "DeepSeek",
+    "deepseek ai": "DeepSeek",
+    "alibaba": "Alibaba",
+    "qwen": "Alibaba",
+    "moonshot": "Moonshot",
+    "moonshot ai": "Moonshot",
+    "z.ai": "Z.ai",
+    "zai": "Z.ai",
+    "zhipu": "Z.ai",
+    "zhipu ai": "Z.ai",
+    "baidu": "Baidu",
+    "xiaomi": "Xiaomi",
+    "amazon": "Amazon",
+    "bytedance": "ByteDance",
+    "nvidia": "Nvidia",
+    "thinking machines": "Thinky",
+    "minimax": "MiniMax",
+    "mistral": "Mistral",
+    "meituan": "Meituan",
+    "tencent": "Tencent",
+    "stepfun": "StepFun",
+    "microsoft": "Microsoft"
+   },
+   "hDays": 6.090717349537037,
+   "n": 10000,
+   "seed": 1795531762,
+   "params": {
+    "k": 0.5,
+    "sigmaFloor": 0,
+    "driftShrink": 0.5,
+    "newModelScale": 0.25,
+    "window": 60
+   },
+   "newModel": {
+    "Google": {
+     "lambdaPerDay": 0.036166438356164385,
+     "best": 1538.8733656178997
+    },
+    "Anthropic": {
+     "lambdaPerDay": 0.03890616438356165,
+     "best": 1514.1182801107798
+    },
+    "Meta": {
+     "lambdaPerDay": 0.0142486301369863,
+     "best": 1503.6619735295121
+    },
+    "Xiaomi": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": 1492.8697235495856
+    },
+    "Alibaba": {
+     "lambdaPerDay": 0.00876917808219178,
+     "best": 1484.9138435273762
+    },
+    "Mistral": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "Baidu": {
+     "lambdaPerDay": 0.011508904109589041,
+     "best": null
+    },
+    "Moonshot": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "Z.ai": {
+     "lambdaPerDay": 0.006029452054794521,
+     "best": null
+    },
+    "ByteDance": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "OpenAI": {
+     "lambdaPerDay": 0.00876917808219178,
+     "best": null
+    },
+    "SpaceXAI": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "Amazon": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    }
+   },
+   "debutDeltas": [
+    14.89436694266601,
+    18.226317009974082,
+    14.283201538166395,
+    24.132790960255534,
+    37.0827937760464,
+    38.781975873740976,
+    37.32555094535792,
+    49.584446073665504,
+    31.259361611128725,
+    54.94595426868909,
+    -41.87341901366335,
+    -47.78669870851627,
+    -15.620230129694392,
+    -20.573655305319107,
+    29.597723479555725,
+    123.87097028148901,
+    58.29607455294217,
+    -18.293352413423918,
+    9.662289713365226,
+    10.347304622862339,
+    11.542701463738695,
+    -43.52442528461529,
+    -56.0243265786296,
+    42.83139645795836,
+    48.42430494239443,
+    37.76519218372505,
+    25.378424463536703,
+    14.209338037831458,
+    100.33169476610237,
+    43.11113847859178,
+    17.964283916108116,
+    40.52335030925201,
+    22.53131623457125,
+    67.91199607546832,
+    32.030481418535146,
+    62.73696603296048,
+    -13.663585724468248,
+    55.69977894365434,
+    -5.0475260376015285,
+    18.16583839596592,
+    -8.404904247590594,
+    16.502149714106054,
+    10.516716036139542,
+    29.118307233019777,
+    31.24742302113009,
+    19.856069327553996,
+    13.091327693789026,
+    14.606188044827832,
+    17.55623211481702,
+    7.382988208075858,
+    3.8478340250783276,
+    -15.599141144048644,
+    23.285557198316383,
+    15.01112530679984,
+    -33.63439962336065,
+    17.869006850940195,
+    57.55035214157874,
+    15.519992701938918,
+    50.106092797605925,
+    21.589603504183515,
+    23.496811543576314,
+    19.389106589303537,
+    24.832250150562913,
+    8.944300939851473,
+    27.327593528917532,
+    21.62651994830503,
+    12.550027150858341,
+    18.824093135301837,
+    26.57397919100913,
+    -9.40099797285211,
+    -14.678521286575005,
+    1.6308412884163772,
+    20.77074512165541,
+    -0.5158246742541905,
+    4.568386914324265,
+    3.2400483239350706,
+    -3.836147107124816,
+    -2.2692118662484972,
+    5.339143292195331,
+    -5.568016932287719,
+    0.9379088021621556,
+    3.4850678089801477,
+    5.597863322918329,
+    20.96418891254143,
+    10.248604314463364,
+    -4.265970447049767,
+    -16.821824779989356,
+    8.979487399012669,
+    8.734191650078856,
+    4.130524929441208,
+    0.4348009996140263,
+    10.210372612083347,
+    -16.40162304455066,
+    15.650042074283874,
+    38.73734774800391,
+    14.30201451140374,
+    14.31549342380822,
+    -36.15423439763617,
+    -8.697798768315351
+   ],
+   "deltaSource": "history",
+   "overrides": {},
+   "lagDays": 1
+  },
+  "on": {
+   "models": [
+    {
+     "name": "Gemini 4 Carbon (High)",
+     "org": "google",
+     "rating": 1526.543936260111,
+     "variance": 24.0952503078892,
+     "drift": 0.04721672151079012
+    },
+    {
+     "name": "Gemini 4 Argon (High)",
+     "org": "google",
+     "rating": 1519.8114468595227,
+     "variance": 6.584275579200537,
+     "drift": -0.20716042698652598
+    },
+    {
+     "name": "Gemini 4 Neon (High)",
+     "org": "google",
+     "rating": 1512.226938554825,
+     "variance": 18.638724150479035,
+     "drift": -1.254191752695892
+    },
+    {
+     "name": "Muse Wonder (Max)",
+     "org": "meta",
+     "rating": 1511.8985659708128,
+     "variance": 8.407967967250714,
+     "drift": 0.05876034085774724
+    },
+    {
+     "name": "Claude Opus 5.5 (High)",
+     "org": "anthropic",
+     "rating": 1507.0327466262702,
+     "variance": 8.273203311177156,
+     "drift": 0.03484094638628647
+    },
+    {
+     "name": "Claude Fable 5 (High)",
+     "org": "anthropic",
+     "rating": 1504.072155378689,
+     "variance": 4.541552176710728,
+     "drift": 0.014425424400749403
+    },
+    {
+     "name": "Claude Opus 4.6 (High)",
+     "org": "anthropic",
+     "rating": 1502.8710959213875,
+     "variance": 2.764131835612324,
+     "drift": -0.008629398858571408
+    },
+    {
+     "name": "Claude Fable 5.2 (Max)",
+     "org": "anthropic",
+     "rating": 1502.1805939266787,
+     "variance": 18.363644893525073,
+     "drift": 0
+    },
+    {
+     "name": "Claude Fable 5.1 (Max)",
+     "org": "anthropic",
+     "rating": 1502.0627808642776,
+     "variance": 7.277881032227937,
+     "drift": -0.025791578724567048
+    },
+    {
+     "name": "Claude Opus 4.7 (High)",
+     "org": "anthropic",
+     "rating": 1501.1717437622683,
+     "variance": 3.706301513916594,
+     "drift": 0.007493779171353196
+    },
+    {
+     "name": "Gemini 3.8 Flash (High)",
+     "org": "google",
+     "rating": 1497.954229206517,
+     "variance": 4.161835499428885,
+     "drift": 0.03642132829073572
+    },
+    {
+     "name": "Muse Spark 1.3 (Max)",
+     "org": "meta",
+     "rating": 1497.7839963933334,
+     "variance": 5.9583890838163525,
+     "drift": 0.14370576875487565
+    },
+    {
+     "name": "Claude Opus 4.6",
+     "org": "anthropic",
+     "rating": 1496.4718891475065,
+     "variance": 2.6458398536714918,
+     "drift": 0.0020366494185163637
+    },
+    {
+     "name": "Claude Opus 4.7",
+     "org": "anthropic",
+     "rating": 1494.0471779748168,
+     "variance": 3.712463042834727,
+     "drift": 0.018370605852479644
+    },
+    {
+     "name": "Muse Spark 1.2 (xHigh)",
+     "org": "meta",
+     "rating": 1492.7642653940172,
+     "variance": 7.667312721968728,
+     "drift": -0.028162610797172204
+    },
+    {
+     "name": "Muse Spark 1.1",
+     "org": "meta",
+     "rating": 1491.246693534639,
+     "variance": 4.535402698992066,
+     "drift": 0.03641149150003662
+    },
+    {
+     "name": "Gemini 4 Hydrogen (High)",
+     "org": "google",
+     "rating": 1490.1353746999825,
+     "variance": 20.94221332752561,
+     "drift": -0.04032826747861341
+    },
+    {
+     "name": "Gemini 3.7 Flash (High)",
+     "org": "google",
+     "rating": 1489.7018571063725,
+     "variance": 5.730619336366424,
+     "drift": 0.03827585312293982
+    },
+    {
+     "name": "Claude Opus 5 (High)",
+     "org": "anthropic",
+     "rating": 1489.66835772869,
+     "variance": 3.4179436147383857,
+     "drift": -0.005459222910135528
+    },
+    {
+     "name": "Muse Spark",
+     "org": "meta",
+     "rating": 1489.4349483450035,
+     "variance": 8.64904594506382,
+     "drift": 0.021725821083897225
+    },
+    {
+     "name": "Claude Opus 5 (Max)",
+     "org": "anthropic",
+     "rating": 1488.5635865232452,
+     "variance": 5.814908966190489,
+     "drift": -0.012588052231292939
+    },
+    {
+     "name": "Kimi K3 (Max)",
+     "org": "moonshot",
+     "rating": 1487.8970071808358,
+     "variance": 4.491778821956049,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.1 Pro Preview",
+     "org": "google",
+     "rating": 1486.7030392329555,
+     "variance": 2.2298052953993035,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3 Pro",
+     "org": "google",
+     "rating": 1485.7687463779434,
+     "variance": 3.7622805409588036,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.6 Sol (xHigh)",
+     "org": "openai",
+     "rating": 1485.180311561821,
+     "variance": 4.708904207210204,
+     "drift": 0
+    },
+    {
+     "name": "Qwen3.8-Max",
+     "org": "alibaba",
+     "rating": 1483.516538192489,
+     "variance": 5.060429466539543,
+     "drift": 0
+    },
+    {
+     "name": "Kimi K3.1 Pro (Max)",
+     "org": "moonshot",
+     "rating": 1483.0666284140307,
+     "variance": 16.02538876538731,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.6 Flash (High)",
+     "org": "google",
+     "rating": 1482.4875821809069,
+     "variance": 5.162666734147364,
+     "drift": 0
+    },
+    {
+     "name": "GPT-6.1 Sol (Max)",
+     "org": "openai",
+     "rating": 1481.8998106503136,
+     "variance": 8.895013204320628,
+     "drift": 0
+    },
+    {
+     "name": "Claude Opus 4.8 (High)",
+     "org": "anthropic",
+     "rating": 1481.8799361241695,
+     "variance": 3.9230621771490592,
+     "drift": 0
+    },
+    {
+     "name": "MiMo-V2.6-Pro",
+     "org": "xiaomi",
+     "rating": 1481.2556394601008,
+     "variance": 23.458663407582762,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.5 (High)",
+     "org": "openai",
+     "rating": 1481.147223344677,
+     "variance": 3.6294695870103615,
+     "drift": 0
+    },
+    {
+     "name": "GLM-5.3 (Max)",
+     "org": "zai",
+     "rating": 1481.1422239634946,
+     "variance": 5.363288239961561,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.5 Flash (High)",
+     "org": "google",
+     "rating": 1478.2414787844184,
+     "variance": 3.9845431944196545,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.5",
+     "org": "openai",
+     "rating": 1476.1548587699135,
+     "variance": 3.573559808913854,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3.5 Flash (Medium)",
+     "org": "google",
+     "rating": 1475.9386702865822,
+     "variance": 4.5349831473110545,
+     "drift": 0
+    },
+    {
+     "name": "GLM-5.3-Flash",
+     "org": "zai",
+     "rating": 1475.8012314236319,
+     "variance": 4.773373228588858,
+     "drift": 0
+    },
+    {
+     "name": "GPT-6 Astra (Max)",
+     "org": "openai",
+     "rating": 1475.4334453779193,
+     "variance": 7.233238602797325,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.2 Chat (20260210)",
+     "org": "openai",
+     "rating": 1475.3293501212358,
+     "variance": 4.278862814647893,
+     "drift": 0
+    },
+    {
+     "name": "GLM-5.2 (Max)",
+     "org": "zai",
+     "rating": 1475.2129849345965,
+     "variance": 4.334558017609266,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.4 (High)",
+     "org": "openai",
+     "rating": 1474.913085982831,
+     "variance": 3.7152296654295354,
+     "drift": 0
+    },
+    {
+     "name": "Grok 4.20 Beta 1",
+     "org": "xai",
+     "rating": 1474.7327203184918,
+     "variance": 5.483965973620961,
+     "drift": 0
+    },
+    {
+     "name": "DeepSeek-V4.1-Flash-20260910 (Max)",
+     "org": "deepseek",
+     "rating": 1474.3740737650662,
+     "variance": 9.852969280953163,
+     "drift": 0
+    },
+    {
+     "name": "Claude Opus 4.8",
+     "org": "anthropic",
+     "rating": 1474.0463729209052,
+     "variance": 3.890174119035802,
+     "drift": 0
+    },
+    {
+     "name": "GPT-6.1 Terra (Max)",
+     "org": "openai",
+     "rating": 1473.8559043505186,
+     "variance": 15.05881627693411,
+     "drift": 0
+    },
+    {
+     "name": "Qwen3.7-Max-Preview",
+     "org": "alibaba",
+     "rating": 1473.7481554133542,
+     "variance": 24.947248170525576,
+     "drift": 0
+    },
+    {
+     "name": "Claude Opus 4.5 (High, 32K, 20251101)",
+     "org": "anthropic",
+     "rating": 1473.492557279481,
+     "variance": 3.839068877821924,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.5 Instant",
+     "org": "openai",
+     "rating": 1473.359101564699,
+     "variance": 6.533217688703064,
+     "drift": 0
+    },
+    {
+     "name": "Claude Sonnet 5.5 (xHigh)",
+     "org": "anthropic",
+     "rating": 1472.9711656587913,
+     "variance": 8.27706708638197,
+     "drift": 0
+    },
+    {
+     "name": "Gemini 3 Flash",
+     "org": "google",
+     "rating": 1472.955704786647,
+     "variance": 4.926828371541306,
+     "drift": 0
+    },
+    {
+     "name": "Grok 4.20 Beta (Reasoning, 0309)",
+     "org": "xai",
+     "rating": 1472.0555283778347,
+     "variance": 3.5284696574151035,
+     "drift": 0
+    },
+    {
+     "name": "Claude Sonnet 4.6",
+     "org": "anthropic",
+     "rating": 1471.938709940921,
+     "variance": 3.2293752862343013,
+     "drift": 0
+    },
+    {
+     "name": "Grok 4.20 Multi-Agent Beta (0309)",
+     "org": "xai",
+     "rating": 1471.0950525035914,
+     "variance": 3.5822261243951394,
+     "drift": 0
+    },
+    {
+     "name": "Claude Opus 4.5 (20251101)",
+     "org": "anthropic",
+     "rating": 1469.482143738405,
+     "variance": 2.5665586497259114,
+     "drift": 0
+    },
+    {
+     "name": "GPT-5.6 Terra (xHigh)",
+     "org": "openai",
+     "rating": 1468.065243411021,
+     "variance": 4.525135863052221,
+     "drift": 0
+    },
+    {
+     "name": "ERNIE 5.1",
+     "org": "baidu",
+     "rating": 1467.3225350537114,
+     "variance": 5.406269131948423,
+     "drift": 0
+    },
+    {
+     "name": "GPT-6.2 Astra (Max)",
+     "org": "openai",
+     "rating": 1466.6602280718705,
+     "variance": 19.483079548030364,
+     "drift": 0
+    }
+   ],
+   "companyMap": {
+    "google": "Google",
+    "anthropic": "Anthropic",
+    "openai": "OpenAI",
+    "meta": "Meta",
+    "xai": "SpaceXAI",
+    "deepseek": "DeepSeek",
+    "deepseek ai": "DeepSeek",
+    "alibaba": "Alibaba",
+    "qwen": "Alibaba",
+    "moonshot": "Moonshot",
+    "moonshot ai": "Moonshot",
+    "z.ai": "Z.ai",
+    "zai": "Z.ai",
+    "zhipu": "Z.ai",
+    "zhipu ai": "Z.ai",
+    "baidu": "Baidu",
+    "xiaomi": "Xiaomi",
+    "amazon": "Amazon",
+    "bytedance": "ByteDance",
+    "nvidia": "Nvidia",
+    "thinking machines": "Thinky",
+    "minimax": "MiniMax",
+    "mistral": "Mistral",
+    "meituan": "Meituan",
+    "tencent": "Tencent",
+    "stepfun": "StepFun",
+    "microsoft": "Microsoft"
+   },
+   "hDays": 6.090717349537037,
+   "n": 10000,
+   "seed": 1795531762,
+   "params": {
+    "k": 0.5,
+    "sigmaFloor": 0,
+    "driftShrink": 0.5,
+    "newModelScale": 0.25,
+    "window": 60
+   },
+   "newModel": {
+    "Google": {
+     "lambdaPerDay": 0.02520753424657534,
+     "best": 1526.543936260111
+    },
+    "Meta": {
+     "lambdaPerDay": 0.0142486301369863,
+     "best": 1511.8985659708128
+    },
+    "Anthropic": {
+     "lambdaPerDay": 0.04712534246575343,
+     "best": 1507.0327466262702
+    },
+    "Baidu": {
+     "lambdaPerDay": 0.006029452054794521,
+     "best": null
+    },
+    "Z.ai": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "OpenAI": {
+     "lambdaPerDay": 0.00876917808219178,
+     "best": null
+    },
+    "SpaceXAI": {
+     "lambdaPerDay": 0.006029452054794521,
+     "best": null
+    },
+    "Moonshot": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    },
+    "Alibaba": {
+     "lambdaPerDay": 0.0032897260273972604,
+     "best": null
+    }
+   },
+   "debutDeltas": [
+    42.791678415021124,
+    19.40286204257154,
+    16.64902652637852,
+    79.9545099811221,
+    30.858363339374137,
+    24.75112492274252,
+    1.9220503332280714,
+    34.73509382583211,
+    35.80614099325862,
+    27.640252322687274,
+    30.06185055134938,
+    42.61344683358129,
+    -10.650972941702776,
+    -53.92408037762016,
+    8.850353531417795,
+    4.599256508623284,
+    -8.95641489071113,
+    4.147473117073105,
+    48.594316765643725,
+    63.95787024090441,
+    45.088435490430356,
+    -0.6829007523426753,
+    12.09970610017308,
+    17.50512395847727,
+    11.573719675480106,
+    -13.953675216065221,
+    17.423366752709626,
+    -25.59607121802037,
+    8.196703317972606,
+    35.6686708335244,
+    12.827249434277292,
+    28.360107447326072,
+    26.12951927168274,
+    43.13381770023739,
+    20.99590100790374,
+    -13.89590038613892,
+    26.042475465627604,
+    2.191084748342746,
+    -3.86782388301458,
+    7.4746629780158855,
+    -8.030505538250509,
+    -15.41494680260007,
+    -19.43317256442856,
+    6.726571370448937,
+    2.122978913772158,
+    5.034886256622485,
+    11.485977438552936,
+    -12.421473041046283,
+    -13.409574614349367,
+    19.82026156330312,
+    8.087924812639358,
+    -1.6508675732181928,
+    -4.132680890206757,
+    3.953432316973931,
+    -3.191283625866845,
+    3.2754805180338735,
+    -6.225863704594531,
+    2.8711037528212273,
+    -1.8676283977988533,
+    32.4486549726048,
+    18.485857666463517,
+    10.33497068740462,
+    -7.716933341098866,
+    -3.9689700795202043
+   ],
+   "deltaSource": "history",
+   "overrides": {},
+   "lagDays": 1
+  }
+ }
+}
